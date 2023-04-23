@@ -1,0 +1,24 @@
+book_filename: psych-methods
+delete_merged_file: true
+rmd_files:
+- index.Rmd
+- 01-science-of-psych.Rmd
+- 02-getting-started.Rmd
+- 03-theory.Rmd
+- 04-ethics.Rmd
+- 05-experiments.Rmd
+- 06-measurement.Rmd
+- 07-sampling.Rmd
+- 08-complex-designs.Rmd
+- 09-nonexperiments.Rmd
+- 10-single-N.Rmd
+- 11-ideas.Rmd
+- 12-presenting.Rmd
+- 13-descriptives.Rmd
+- 14-inferentials.Rmd
+- 15-references.Rmd
+output_dir: docs
+language:
+  ui:
+    chapter_name: 'Chapter '
+new_session: true
