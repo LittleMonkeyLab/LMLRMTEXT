@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.80">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Research Methods in Psychology">
+
+<title>Monkey Methods - (PART*) Analyzing Data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./14-inferentials.html" rel="next">
+<link href="./12-presenting.html" rel="prev">
+<link href="./images/logos/LMLLOGO.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<link rel="stylesheet" href="include/booktem.css">
+<link rel="stylesheet" href="include/webex.css">
+<link rel="stylesheet" href="include/glossary.css">
+<link rel="stylesheet" href="include/style.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./13-descriptives.html">(PART*) Analyzing Data</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/logos/LMLLOGO.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">MONKEY METHODS draft</a> 
+        <div class="sidebar-tools-main">
+    <a href="./Monkey-Methods.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Research 🐵 Methods in Psychology</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles of Research in Psychology</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-getting-started.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Experimental Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-measurement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-sampling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sampling</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-complex-designs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Complex Research Designs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-nonexperiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-single-N.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Single-Subject Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-ideas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">(PART*) Conducting Your Own Study</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-presenting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-descriptives.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">(PART*) Analyzing Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-inferentials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./15-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./webexercises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#descriptive-statistics" id="toc-descriptive-statistics" class="nav-link active" data-scroll-target="#descriptive-statistics">Descriptive Statistics</a>
+  <ul class="collapse">
+  <li><a href="#describing-single-variables" id="toc-describing-single-variables" class="nav-link" data-scroll-target="#describing-single-variables">Describing Single Variables</a>
+  <ul class="collapse">
+  <li><a href="#the-distribution-of-a-variable" id="toc-the-distribution-of-a-variable" class="nav-link" data-scroll-target="#the-distribution-of-a-variable">The Distribution of a Variable</a></li>
+  <li><a href="#measures-of-central-tendency-and-variability" id="toc-measures-of-central-tendency-and-variability" class="nav-link" data-scroll-target="#measures-of-central-tendency-and-variability">Measures of Central Tendency and Variability</a></li>
+  </ul></li>
+  <li><a href="#describing-statistical-relationships" id="toc-describing-statistical-relationships" class="nav-link" data-scroll-target="#describing-statistical-relationships">Describing Statistical Relationships</a>
+  <ul class="collapse">
+  <li><a href="#differences-between-groups-or-conditions" id="toc-differences-between-groups-or-conditions" class="nav-link" data-scroll-target="#differences-between-groups-or-conditions">Differences Between Groups or Conditions</a></li>
+  <li><a href="#correlations-between-quantitative-variables" id="toc-correlations-between-quantitative-variables" class="nav-link" data-scroll-target="#correlations-between-quantitative-variables">Correlations Between Quantitative Variables</a></li>
+  </ul></li>
+  <li><a href="#expressing-your-results" id="toc-expressing-your-results" class="nav-link" data-scroll-target="#expressing-your-results">Expressing Your Results</a>
+  <ul class="collapse">
+  <li><a href="#presenting-descriptive-statistics-in-writing" id="toc-presenting-descriptive-statistics-in-writing" class="nav-link" data-scroll-target="#presenting-descriptive-statistics-in-writing">Presenting Descriptive Statistics in Writing</a></li>
+  <li><a href="#presenting-descriptive-statistics-in-graphs" id="toc-presenting-descriptive-statistics-in-graphs" class="nav-link" data-scroll-target="#presenting-descriptive-statistics-in-graphs">Presenting Descriptive Statistics in Graphs</a></li>
+  <li><a href="#expressing-descriptive-statistics-in-tables" id="toc-expressing-descriptive-statistics-in-tables" class="nav-link" data-scroll-target="#expressing-descriptive-statistics-in-tables">Expressing Descriptive Statistics in Tables</a></li>
+  </ul></li>
+  <li><a href="#conducting-your-analyses" id="toc-conducting-your-analyses" class="nav-link" data-scroll-target="#conducting-your-analyses">Conducting Your Analyses</a>
+  <ul class="collapse">
+  <li><a href="#prepare-your-data-for-analysis" id="toc-prepare-your-data-for-analysis" class="nav-link" data-scroll-target="#prepare-your-data-for-analysis">Prepare Your Data for Analysis</a></li>
+  <li><a href="#preliminary-analyses" id="toc-preliminary-analyses" class="nav-link" data-scroll-target="#preliminary-analyses">Preliminary Analyses</a></li>
+  <li><a href="#answer-your-research-questions" id="toc-answer-your-research-questions" class="nav-link" data-scroll-target="#answer-your-research-questions">Answer Your Research Questions</a></li>
+  <li><a href="#understand-your-descriptive-statistics" id="toc-understand-your-descriptive-statistics" class="nav-link" data-scroll-target="#understand-your-descriptive-statistics">Understand Your Descriptive Statistics</a></li>
+  </ul></li>
+  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary">Glossary</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">(PART*) Analyzing Data</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="descriptive-statistics" class="level1">
+<h1>Descriptive Statistics</h1>
+<p>At this point, we need to consider the basics of data analysis in psychological research in more detail. In this chapter, we focus on descriptive statistics—a set of techniques for summarizing and displaying the data from your sample. We look first at some of the most common techniques for describing single variables, followed by some of the most common techniques for describing statistical relationships between variables. We then look at how to present descriptive statistics in writing and also in the form of tables and graphs that would be appropriate for an American Psychological Association (APA)-style research report. We end with some practical advice for organizing and carrying out your analyses.</p>
+<section id="describing-single-variables" class="level2">
+<h2 class="anchored" data-anchor-id="describing-single-variables">Describing Single Variables</h2>
+<section id="learning-objectives" class="level5 unnumbered learningobjectives">
+<h5 class="unnumbered anchored" data-anchor-id="learning-objectives">LEARNING OBJECTIVES</h5>
+<ol type="1">
+<li>Use frequency tables and histograms to display and interpret the distribution of a variable.</li>
+<li>Compute and interpret the mean, median, and mode of a distribution and identify situations in which the mean, median, or mode is the most appropriate measure of central tendency.</li>
+<li>Compute and interpret the range and standard deviation of a distribution.</li>
+<li>Compute and interpret percentile ranks and <em>z</em> scores.</li>
+</ol>
+</section>
+<p><a href="#descriptive-statistics">Descriptive statistics</a> refers to a set of techniques for summarizing and displaying data. Let us assume here that the data are quantitative and consist of scores on one or more variables for each of several study participants. Although in most cases the primary research question will be about one or more statistical relationships between variables, it is also important to describe each variable individually. For this reason, we begin by looking at some of the most common techniques for describing single variables.</p>
+<section id="the-distribution-of-a-variable" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="the-distribution-of-a-variable">The Distribution of a Variable</h3>
+<p>Every variable has a <a href="#distribution">distribution</a>, which is the way the scores are distributed across the levels of that variable. For example, in a sample of 100 college students, the distribution of the variable “number of siblings” might be such that 10 of them have no siblings, 30 have one sibling, 40 have two siblings, and so on. In the same sample, the distribution of the variable “sex” might be such that 44 have a score of “male” and 56 have a score of “female.”</p>
+<section id="frequency-tables" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="frequency-tables">Frequency Tables</h4>
+<p>One way to display the distribution of a variable is in a <a href="#frequency-table">frequency table</a>. Table @ref(tab:frequency), for example, is a frequency table showing a hypothetical distribution of scores on the Rosenberg Self-Esteem Scale for a sample of 40 college students. The first column lists the values of the variable—the possible scores on the Rosenberg scale—and the second column lists the frequency of each score. This table shows that there were three students who had self-esteem scores of 24, five who had self-esteem scores of 23, and so on. From a frequency table like this, one can quickly see several important aspects of a distribution, including the range of scores (from 15 to 24), the most and least common scores (22 and 17, respectively), and any extreme scores that stand out from the rest.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<caption>Frequency table showing a hypothetical distribution of scores on the Rosenberg Self-Esteem Scale.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Self-esteem</th>
+<th style="text-align: center;">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">22</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">21</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>There are a few other points worth noting about frequency tables. First, the levels listed in the first column usually go from the highest at the top to the lowest at the bottom, and they usually do not extend beyond the highest and lowest scores in the data. For example, although scores on the Rosenberg scale can vary from a high of 30 to a low of 0, Table @ref(tab:frequency) only includes levels from 24 to 15 because that range includes all the scores in this particular data set. Second, when there are many different scores across a wide range of values, it is often better to create a grouped frequency table, in which the first column lists ranges of values and the second column lists the frequency of scores in each range. Table @ref(tab:frequencybin), for example, is a grouped frequency table showing a hypothetical distribution of simple reaction times for a sample of 20 participants. In a grouped frequency table, the ranges must all be of equal width, and there are usually between five and 15 of them. Finally, frequency tables can also be used for categorical variables, in which case the levels are category labels. The order of the category labels is somewhat arbitrary, but they are often listed from the most frequent at the top to the least frequent at the bottom.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<caption>A grouped frequency table showing a hypothetical distribution of reaction times.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Reaction time (ms)</th>
+<th style="text-align: center;">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">241–260</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">221–240</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">201–220</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">181–200</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">161–180</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">141–160</td>
+<td style="text-align: center;">2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="histograms" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="histograms">Histograms</h4>
+<p>A histogram is a graphical display of a distribution. It presents the same information as a frequency table but in a way that is even quicker and easier to grasp. The histogram in Figure @ref(fig:hist) presents the distribution of self-esteem scores in Table @ref(tab:frequency). The x-axis of the histogram represents the variable and the y-axis represents frequency. Above each level of the variable on the x-axis is a vertical bar that represents the number of individuals with that score. When the variable is quantitative, as in this example, there is usually no gap between the bars. When the variable is categorical, however, there is usually a small gap between them. (The gap at 17 in this histogram reflects the fact that there were no scores of 17 in this data set.)</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="13-descriptives_files/figure-html/hist-1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Histogram showing the distribution of self-esteem scores presented in the frequency table above.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="distribution-shapes" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="distribution-shapes">Distribution Shapes</h4>
+<p>When the distribution of a quantitative variable is displayed in a histogram, it has a shape. The shape of the distribution of self-esteem scores in Figure @ref(fig:hist) is typical. There is a peak somewhere near the middle of the distribution and “tails” that taper in either direction from the peak. The distribution of Figure @ref(fig:hist) is unimodal, meaning it has one distinct peak, but distributions can also be bimodal, meaning they have two distinct peaks. Figure @ref(fig:bimodal), for example, shows a hypothetical bimodal distribution of scores on the Beck Depression Inventory. Distributions can also have more than two distinct peaks, but these are relatively rare in psychological research.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="13-descriptives_files/figure-html/bimodal-1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Histogram showing a hypothetical bimodal distribution of scores on the Beck Depression Inventory.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Another characteristic of the shape of a distribution is whether it is symmetrical or skewed. The distribution in the center of Figure @ref(fig:skew) is symmetrical. Its left and right halves are mirror images of each other. The distribution on the left is negatively skewed, with its peak shifted toward the upper end of its range and a relatively long negative tail. The distribution on the right is positively skewed, with its peak toward the lower end of its range and a relatively long positive tail.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="13-descriptives_files/figure-html/skew-1.png" class="img-fluid figure-img" style="width:33.0%"></p>
+<figcaption class="figure-caption">Histograms showing negatively skewed, symmetrical, and positively skewed distributions.</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="13-descriptives_files/figure-html/skew-2.png" class="img-fluid figure-img" style="width:33.0%"></p>
+<figcaption class="figure-caption">Histograms showing negatively skewed, symmetrical, and positively skewed distributions.</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="13-descriptives_files/figure-html/skew-3.png" class="img-fluid figure-img" style="width:33.0%"></p>
+<figcaption class="figure-caption">Histograms showing negatively skewed, symmetrical, and positively skewed distributions.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>An <a href="#outlier">outlier</a> is an extreme score that is much higher or lower than the rest of the scores in the distribution. Sometimes outliers represent truly extreme scores on the variable of interest. For example, on the Beck Depression Inventory, a single clinically depressed person might be an outlier in a sample of otherwise happy and high-functioning peers. However, outliers can also represent errors or misunderstandings on the part of the researcher or participant, equipment malfunctions, or similar problems. We will say more about how to interpret outliers and what to do about them later in this chapter.</p>
+</section>
+</section>
+<section id="measures-of-central-tendency-and-variability" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="measures-of-central-tendency-and-variability">Measures of Central Tendency and Variability</h3>
+<p>It is also useful to be able to describe the characteristics of a distribution more precisely. Here we look at how to do this in terms of two important characteristics: their central tendency and their variability.</p>
+<section id="central-tendency" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="central-tendency">Central Tendency</h4>
+<p>The <a href="#central-tendency">central tendency</a> of a distribution is its middle—the point around which the scores in the distribution tend to cluster. (Another term for central tendency is average.) Looking back at Figure @ref(fig:hist), for example, we can see that the self-esteem scores tend to cluster around the values of 20 to 22. Here we will consider the three most common measures of central tendency: the mean, the median, and the mode.</p>
+<p>The mean of a distribution (symbolized <span class="math inline">\(M\)</span>) is the sum of the scores divided by the number of scores. As a formula, it looks like this:</p>
+<p><span class="math inline">\(M = \frac{\sum X}{N}\)</span></p>
+<p>In this formula, the symbol <span class="math inline">\(Σ\)</span> (the Greek letter sigma) is the summation sign and means to sum across the values of the variable <span class="math inline">\(X\)</span>. <span class="math inline">\(N\)</span> represents the number of scores. The mean is by far the most common measure of central tendency, and there are some good reasons for this. It usually provides a good indication of the central tendency of a distribution, and it is easily understood by most people. In addition, the mean has statistical properties that make it especially useful in doing inferential statistics.</p>
+<p>An alternative to the mean is the median. The <a href="#median">median</a> is the middle score in the sense that half the scores in the distribution are less than it and half are greater than it. The simplest way to find the median is to organize the scores from lowest to highest and locate the score in the middle. Consider, for example, the following set of seven scores:</p>
+<blockquote class="blockquote">
+<p>8 &nbsp; 4 &nbsp; 12 &nbsp; 14 &nbsp; 3 &nbsp; 2 &nbsp; 3</p>
+</blockquote>
+<p>To find the median, simply rearrange the scores from lowest to highest and locate the one in the middle.</p>
+<blockquote class="blockquote">
+<p>2 &nbsp; 3 &nbsp; 3 &nbsp; <strong>4</strong> &nbsp; 8 &nbsp; 12 &nbsp; 14</p>
+</blockquote>
+<p>In this case, the median is 4 because there are three scores lower than 4 and three scores higher than 4. When there is an even number of scores, there are two scores in the middle of the distribution, in which case the median is the value halfway between them. For example, if we were to add a score of 15 to the preceding data set, there would be two scores (both 4 and 8) in the middle of the distribution, and the median would be halfway between them (6).</p>
+<p>One final measure of central tendency is the <a href="#mode">mode</a>. The mode is the most frequent score in a distribution. In the self-esteem distribution presented in Table @ref(tab:frequency) and Figure @ref(fig:hist), for example, the mode is 22. More students had that score than any other. The mode is the only measure of central tendency that can also be used for categorical variables.</p>
+<p>In a distribution that is both unimodal and symmetrical, the mean, median, and mode will be very close to each other at the peak of the distribution. In a bimodal or asymmetrical distribution, the mean, median, and mode can be quite different. In a bimodal distribution, the mean and median will tend to be between the peaks, while the mode will be at the tallest peak. In a skewed distribution, the mean will differ from the median in the direction of the skew (i.e., the direction of the longer tail). For highly skewed distributions, the mean can be pulled so far in the direction of the skew that it is no longer a good measure of the central tendency of that distribution. Imagine, for example, a set of four simple reaction times of 200, 250, 280, and 250 milliseconds (ms). The mean is 245 ms. But the addition of one more score of 5,000 ms—perhaps because the participant was not paying attention—would raise the mean to 1,445 ms. Not only is this measure of central tendency greater than 80% of the scores in the distribution, but it also does not seem to represent the behavior of anyone in the distribution very well. This is why researchers often prefer the median for highly skewed distributions (such as distributions of reaction times).</p>
+<p>Keep in mind, though, that you are not required to choose a single measure of central tendency in analyzing your data. Each one provides slightly different information, and all of them can be useful.</p>
+</section>
+<section id="measures-of-variability" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="measures-of-variability">Measures of Variability</h4>
+<p>The variability of a distribution is the extent to which the scores vary around their central tendency. Consider the two distributions in Figure @ref(fig:variability), both of which have the same central tendency. The mean, median, and mode of each distribution are 10. Notice, however, that the two distributions differ in terms of their variability. The top one has relatively low variability, with all the scores relatively close to the center. The bottom one has relatively high variability, with the scores are spread across a greater range.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="13-descriptives_files/figure-html/variability-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Histograms showing hypothetical distributions of 1,000 observations with the same mean, median, and mode (10) but with low variability (top) and high variability (bottom).</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="13-descriptives_files/figure-html/variability-2.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Histograms showing hypothetical distributions of 1,000 observations with the same mean, median, and mode (10) but with low variability (top) and high variability (bottom).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>One simple measure of variability is the <a href="#range">range</a>, which is simply the difference between the highest and lowest scores in the distribution. The range of the self-esteem scores in Table @ref(tab:frequency), for example, is the difference between the highest score (24) and the lowest score (15). That is, the range is 24 − 15 = 9. Although the range is easy to compute and understand, it can be misleading when there are outliers. Imagine, for example, an exam on which all the students scored between 90 and 100. It has a range of 10. But if there was a single student who scored 20, the range would increase to 80—giving the impression that the scores were quite variable when in fact only one student differed substantially from the rest.</p>
+<p>By far the most common measure of variability is the standard deviation. The <a href="#standard-deviation">standard deviation</a> of a distribution is, roughly speaking, the average distance between the scores and the mean. For example, the standard deviations of the distributions in Figure @ref(fig:variability) are 1.3 for the top distribution and 3.0 for the bottom one. That is, while the scores in the top distribution differ from the mean by about 1.3 units on average, the scores in the bottom distribution differ from the mean by about 3.0 units on average.</p>
+<p>Computing the standard deviation involves a slight complication. Specifically, it involves finding the difference between each score and the mean, squaring each difference, finding the mean of these squared differences, and finally finding the square root of that mean. The formula looks like this:</p>
+<p><span class="math inline">\(SD=\sqrt{\frac{\sum(X-M)^2}{N}}\)</span></p>
+<p>The computations for the standard deviation are illustrated for a small set of data in Table @ref(tab:sd). The first column is a set of eight scores that has a mean of 5. The second column is the difference between each score and the mean. The third column is the square of each of these differences. Notice that although the differences can be negative, the squared differences are always positive—meaning that the standard deviation is always positive. At the bottom of the third column is the mean of the squared differences, which is also called the <a href="#variance">variance</a> (symbolized <span class="math inline">\(SD^2\)</span>). Although the variance is itself a measure of variability, it generally plays a larger role in inferential statistics than in descriptive statistics. Finally, below the variance is the square root of the variance, which is the standard deviation.</p>
+<table class="table">
+<caption>(#tab:sd) Computations for the standard deviation.</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(X\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(X-M\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(X-M^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-2</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-3</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(M\)</span> = 5</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(SD^2=28/8=3.5\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td style="text-align: center;"><span class="math inline">\(SD=\sqrt{3.50}=1.87\)</span></td>
+</tr>
+</tbody>
+</table>
+<section id="n-or-n-1" class="level5 unnumbered fyi">
+<h5 class="unnumbered anchored" data-anchor-id="n-or-n-1"><em>N</em> or <em>N</em>-1?</h5>
+<p>If you have already taken a statistics course, you may have learned to divide the sum of the squared differences by <em>N</em> − 1 rather than by <em>N</em> when you compute the variance and standard deviation. Why is this?</p>
+<p>By definition, the standard deviation is the square root of the mean of the squared differences. This implies dividing the sum of squared differences by <em>N</em>, as in the formula just presented. Computing the standard deviation this way is appropriate when your goal is simply to describe the variability in a sample. And learning it this way emphasizes that the variance is in fact the <em>mean</em> of the squared differences—and the standard deviation is the square root of this <em>mean.</em></p>
+<p>However, most calculators and software packages divide the sum of squared differences by <em>N</em> − 1. This is because the standard deviation of a sample tends to be a bit lower than the standard deviation of the population the sample was selected from. Dividing the sum of squares by <em>N</em> − 1 corrects for this tendency and results in a better estimate of the population standard deviation. Because researchers generally think of their data as representing a sample selected from a larger population—and because they are generally interested in drawing conclusions about the population—it makes sense to routinely apply this correction.</p>
+</section>
+</section>
+<section id="percentile-ranks-and-z-scores" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="percentile-ranks-and-z-scores">Percentile Ranks and <em>z</em> Scores</h4>
+<p>In many situations, it is useful to have a way to describe the location of an individual score within its distribution. One approach is the <a href="#percentile-rank">percentile rank</a>. The percentile rank of a score is the percentage of scores in the distribution that are lower than that score. Consider, for example, the distribution in Table @ref(tab:frequency). For any score in the distribution, we can find its percentile rank by counting the number of scores in the distribution that are lower than that score and converting that number to a percentage of the total number of scores. Notice, for example, that five of the students represented by the data in Table @ref(tab:frequency) had self-esteem scores of 23. In this distribution, 32 of the 40 scores (80%) are lower than 23. Thus each of these students has a percentile rank of 80. (It can also be said that they scored “at the 80th percentile.”) Percentile ranks are often used to report the results of standardized tests of ability or achievement. If your percentile rank on a test of verbal ability were 40, for example, this would mean that you scored higher than 40% of the people who took the test.</p>
+<p>Another approach is the <em>z</em> score. The <a href="#z-score"><em>z</em> score</a> for a particular individual is the difference between that individual’s score and the mean of the distribution, divided by the standard deviation of the distribution:</p>
+<p><span class="math inline">\(z=\frac{(X-M)}{SD}\)</span></p>
+<p>A <em>z</em> score indicates how far above or below the mean a raw score is, but it expresses this in terms of the standard deviation. For example, in a distribution of intelligence quotient (IQ) scores with a mean of 100 and a standard deviation of 15, an IQ score of 110 would have a <em>z</em> score of (110 − 100) / 15 = +0.67. In other words, a score of 110 is 0.67 standard deviations (approximately two thirds of a standard deviation) above the mean. Similarly, a raw score of 85 would have a <em>z</em> score of (85 − 100) / 15 = −1.00. In other words, a score of 85 is one standard deviation below the mean.</p>
+<p>There are several reasons that <em>z</em> scores are important. Again, they provide a way of describing where an individual’s score is located within a distribution and are sometimes used to report the results of standardized tests. They also provide one way of defining outliers. For example, outliers are sometimes defined as scores that have <em>z</em> scores less than −3.00 or greater than +3.00. In other words, they are defined as scores that are more than three standard deviations from the mean. Finally, <em>z</em> scores play an important role in understanding and computing other statistics, as we will see shortly.</p>
+<section id="online-descriptive-statistics" class="level5 unnumbered fyi">
+<h5 class="unnumbered anchored" data-anchor-id="online-descriptive-statistics">Online Descriptive Statistics</h5>
+<p>Although many researchers use commercially available software such as SPSS and Excel to analyze their data, there are several free online analysis tools that can also be extremely useful. Many allow you to enter or upload your data and then make one click to conduct several descriptive statistical analyses. Among them are the following.</p>
+<p>jamovi: https://cloud.jamovi.org/</p>
+<p>VassarStats: http://vassarstats.net/</p>
+<p>Bright Stat: https://secure.brightstat.com/</p>
+<p>For a list, see https://statpages.info/index.html.</p>
+</section>
+<section id="key-takeaways" class="level5 unnumbered takeaways">
+<h5 class="unnumbered anchored" data-anchor-id="key-takeaways">KEY TAKEAWAYS</h5>
+<ul>
+<li>Every variable has a distribution—a way that the scores are distributed across the levels. The distribution can be described using a frequency table and histogram. It can also be described in words in terms of its shape, including whether it is unimodal or bimodal, and whether it is symmetrical or skewed.</li>
+<li>The central tendency, or middle, of a distribution can be described precisely using three statistics—the mean, median, and mode. The mean is the sum of the scores divided by the number of scores, the median is the middle score, and the mode is the most common score.</li>
+<li>The variability, or spread, of a distribution can be described precisely using the range and standard deviation. The range is the difference between the highest and lowest scores, and the standard deviation is roughly the average amount by which the scores differ from the mean.</li>
+<li>The location of a score within its distribution can be described using percentile ranks or <em>z</em> scores. The percentile rank of a score is the percentage of scores below that score, and the <em>z</em> score is the difference between the score and the mean divided by the standard deviation.</li>
+</ul>
+</section>
+<section id="exercises" class="level5 unnumbered exercises">
+<h5 class="unnumbered anchored" data-anchor-id="exercises">EXERCISES</h5>
+<ol type="1">
+<li>Practice: Make a frequency table and histogram for the following data. Then write a short description of the shape of the distribution in words.<br>
+11, 8, 9, 12, 9, 10, 12, 13, 11, 13, 12, 6, 10, 17, 13, 11, 12, 12, 14, 14</li>
+<li>Practice: For the data in Exercise 1, compute the mean, median, mode, standard deviation, and range.</li>
+<li>Practice: Using the data in Exercises 1 and 2, find (a) the percentile ranks for scores of 9 and 14 and (b) the <em>z</em> scores for scores of 8 and 12.</li>
+</ol>
+</section>
+</section>
+</section>
+</section>
+<section id="describing-statistical-relationships" class="level2">
+<h2 class="anchored" data-anchor-id="describing-statistical-relationships">Describing Statistical Relationships</h2>
+<section id="learning-objectives-1" class="level5 unnumbered learningobjectives">
+<h5 class="unnumbered anchored" data-anchor-id="learning-objectives-1">LEARNING OBJECTIVES</h5>
+<ol type="1">
+<li>Describe differences between groups in terms of their means and standard deviations, and in terms of Cohen’s <em>d</em>.</li>
+<li>Describe correlations between quantitative variables in terms of Pearson’s <em>r</em>.</li>
+</ol>
+</section>
+<p>As we have seen throughout this book, most interesting research questions in psychology are about statistical relationships between variables. Recall that there is a statistical relationship between two variables when the average score on one differs systematically across the levels of the other. In this section, we revisit the two basic forms of statistical relationship introduced earlier in the book—differences between groups or conditions and relationships between quantitative variables—and we consider how to describe them in more detail.</p>
+<section id="differences-between-groups-or-conditions" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="differences-between-groups-or-conditions">Differences Between Groups or Conditions</h3>
+<p>Differences between groups or conditions are usually described in terms of the mean and standard deviation of each group or condition. For example, Thomas Ollendick and his colleagues conducted a study in which they evaluated two one-session treatments for simple phobias in children <span class="citation" data-cites="ollendick2009one">(<a href="references.html#ref-ollendick2009one" role="doc-biblioref"><strong>ollendick2009one?</strong></a>)</span>. They randomly assigned children with an intense fear (e.g., to dogs) to one of three conditions. In the exposure condition, the children actually confronted the object of their fear under the guidance of a trained therapist. In the education condition, they learned about phobias and some strategies for coping with them. In the waitlist control condition, they were waiting to receive a treatment after the study was over. The severity of each child’s phobia was then rated on a 1-to-8 scale by a clinician who did not know which treatment the child had received. (This was one of several dependent variables.) The mean fear rating in the education condition was 4.83 with a standard deviation of 1.52, while the mean fear rating in the exposure condition was 3.47 with a standard deviation of 1.77. The mean fear rating in the control condition was 5.56 with a standard deviation of 1.21. In other words, both treatments worked, but the exposure treatment worked better than the education treatment. As we have seen, differences between group or condition means can be presented in a bar graph like that in Figure @ref(fig:phobia), where the heights of the bars represent the group or condition means. We will look more closely at creating American Psychological Association (APA)-style bar graphs shortly.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="13-descriptives_files/figure-html/phobia-1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Bar graph showing mean clinician phobia ratings for children in two treatment conditions.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>It is also important to be able to describe the strength of a statistical relationship, which is often referred to as the <a href="#effect-size">effect size</a>. The most widely used measure of effect size for differences between group or condition means is called <a href="#cohens-d">Cohen’s <em>d</em></a>, which is the difference between the two means divided by the standard deviation:</p>
+<p><span class="math inline">\(d=\frac{(M_1-M_2)}{SD}\)</span></p>
+<p>In this formula, it does not really matter which mean is <span class="math inline">\(M_1\)</span> and which is <span class="math inline">\(M_2\)</span>. If there is a treatment group and a control group, the treatment group mean is usually <span class="math inline">\(M_1\)</span> and the control group mean is <span class="math inline">\(M_2\)</span>. Otherwise, the larger mean is usually <span class="math inline">\(M_1\)</span> and the smaller mean <span class="math inline">\(M_2\)</span> so that Cohen’s <em>d</em> turns out to be positive. The standard deviation in this formula is usually a kind of average of the two group standard deviations called the pooled-within groups standard deviation. To compute the pooled within-groups standard deviation, add the sum of the squared differences for Group 1 to the sum of squared differences for Group 2, divide this by the sum of the two sample sizes, and then take the square root of that. Informally, however, the standard deviation of either group can be used instead.</p>
+<p>Conceptually, Cohen’s <em>d</em> is the difference between the two means expressed in standard deviation units. (Notice its similarity to a <em>z</em> score, which expresses the difference between an individual score and a mean in standard deviation units.) A Cohen’s <em>d</em> of 0.50 means that the two group means differ by 0.50 standard deviations (half a standard deviation). A Cohen’s <em>d</em> of 1.20 means that they differ by 1.20 standard deviations. But how should we interpret these values in terms of the strength of the relationship or the size of the difference between the means? Table @ref(tab:guidelines) presents some guidelines for interpreting Cohen’s <em>d</em> values in psychological research <span class="citation" data-cites="cohen1992power">(<a href="references.html#ref-cohen1992power" role="doc-biblioref"><strong>cohen1992power?</strong></a>)</span>. Values near 0.20 are considered small, values near 0.50 are considered medium, and values near 0.80 are considered large. Thus a Cohen’s <em>d</em> value of 0.50 represents a medium-sized difference between two means, and a Cohen’s <em>d</em> value of 1.20 represents a very large difference in the context of psychological research. In the research by Ollendick and his colleagues, there was a large difference (<em>d</em> = 0.82) between the exposure and education conditions.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<caption>Guidelines for referring to Cohen’s <em>d</em> and Pearson’s <em>r</em> values as “strong,” “medium,” or “weak”.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Relationship strength</th>
+<th style="text-align: center;">Cohen’s <em>d</em></th>
+<th style="text-align: center;">Pearson’s <em>r</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Strong/large</td>
+<td style="text-align: center;">± 0.80</td>
+<td style="text-align: center;">± 0.50</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Medium</td>
+<td style="text-align: center;">± 0.50</td>
+<td style="text-align: center;">± 0.30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Weak/small</td>
+<td style="text-align: center;">± 0.20</td>
+<td style="text-align: center;">± 0.10</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Cohen’s <em>d</em> is useful because it has the same meaning regardless of the variable being compared or the scale it was measured on. A Cohen’s <em>d</em> of 0.20 means that the two group means differ by 0.20 standard deviations whether we are talking about scores on the Rosenberg Self-Esteem scale, reaction time measured in milliseconds, number of siblings, or diastolic blood pressure measured in millimeters of mercury. Not only does this make it easier for researchers to communicate with each other about their results, it also makes it possible to combine and compare results across different studies using different measures.</p>
+<p>Be aware that the term <em>effect size</em> can be misleading because it suggests a causal relationship—that the difference between the two means is an “effect” of being in one group or condition as opposed to another. Imagine, for example, a study showing that a group of exercisers is happier on average than a group of nonexercisers, with an “effect size” of <em>d</em> = 0.35. If the study was an experiment—with participants randomly assigned to exercise and no-exercise conditions—then one could conclude that exercising caused a small to medium-sized increase in happiness. If the study was correlational, however, then one could conclude only that the exercisers were happier than the nonexercisers by a small to medium-sized amount. In other words, simply calling the difference an “effect size” does not make the relationship a causal one.</p>
+<section id="sex-differences-expressed-as-cohens-d" class="level5 unnumbered fyi">
+<h5 class="unnumbered anchored" data-anchor-id="sex-differences-expressed-as-cohens-d">Sex Differences Expressed as Cohen’s <em>d</em></h5>
+<p>Researcher Janet Shibley Hyde has looked at the results of numerous studies on psychological sex differences and expressed the results in terms of Cohen’s <em>d</em> <span class="citation" data-cites="hyde2007new">(<a href="references.html#ref-hyde2007new" role="doc-biblioref"><strong>hyde2007new?</strong></a>)</span>. Following are a few of the values she has found, averaging across several studies in each case. (Note that because she always treats the mean for men as <span class="math inline">\(M_1\)</span> and the mean for women as <span class="math inline">\(M_2\)</span>, positive values indicate that men score higher and negative values indicate that women score higher.)</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: center;"><em>d</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mathematical problem solving</td>
+<td style="text-align: center;">+0.08</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Reading comprehension</td>
+<td style="text-align: center;">−0.09</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Smiling</td>
+<td style="text-align: center;">−0.40</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Aggression</td>
+<td style="text-align: center;">+0.50</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Attitudes toward casual sex</td>
+<td style="text-align: center;">+0.81</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Leadership effectiveness</td>
+<td style="text-align: center;">−0.02</td>
+</tr>
+</tbody>
+</table>
+<p>Hyde points out that although men and women differ by a large amount on some variables (e.g., attitudes toward casual sex), they differ by only a small amount on the vast majority. In many cases, Cohen’s <em>d</em> is less than 0.10, which she terms a “trivial” difference. (The difference in talkativeness discussed in the <span class="citation" data-cites="mehl2007women">(<a href="references.html#ref-mehl2007women" role="doc-biblioref"><strong>mehl2007women?</strong></a>)</span> paper was also trivial: <em>d</em> = 0.06.) Although researchers and nonresearchers alike often emphasize sex differences, Hyde has argued that it makes at least as much sense to think of men and women as fundamentally similar. She refers to this as the “gender similarities hypothesis.”</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ch12/leader.jpeg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Research on psychological sex differences has shown that there is essentially no difference in the leadership effectiveness of women and men. <em>Photo by Jason Goodman on Unsplash.</em></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="correlations-between-quantitative-variables" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="correlations-between-quantitative-variables">Correlations Between Quantitative Variables</h3>
+<p>As we have seen throughout the book, many interesting statistical relationships take the form of correlations between quantitative variables. For example, researchers Kurt Carlson and Jacqueline Conard conducted a study on the relationship between the alphabetical position of the first letter of people’s last names (from A = 1 to Z = 26) and how quickly those people responded to consumer appeals <span class="citation" data-cites="carlson2011last">(<a href="references.html#ref-carlson2011last" role="doc-biblioref"><strong>carlson2011last?</strong></a>)</span>. In one study, they sent e-mails to a large group of MBA students, offering free basketball tickets from a limited supply. The result was that the further toward the end of the alphabet students’ last names were, the faster they tended to respond. These results are summarized in Figure @ref(fig:line).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="13-descriptives_files/figure-html/line-1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Line graph showing the relationship between the alphabetical position of people’s last names and how quickly those people respond to offers of consumer goods.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Such relationships are often presented using line graphs or scatterplots, which show how the level of one variable differs across the range of the other. In the line graph in Figure @ref(fig:line), for example, each point represents the mean response time for participants with last names in the first, second, third, and fourth quartiles (or quarters) of the name distribution. It clearly shows how response time tends to decline as people’s last names get closer to the end of the alphabet. The scatterplot in Figure @ref(fig:scatter2), which is reproduced from the Measurement chapter, shows the relationship between 25 research methods students’ scores on the Rosenberg Self-Esteem Scale given on two occasions a week apart. Here the points represent individuals, and we can see that the higher students scored on the first occasion, the higher they tended to score on the second occasion. In general, line graphs are used when the variable on the x-axis has (or is organized into) a small number of distinct values, such as the four quartiles of the name distribution. Scatterplots are used when the variable on the x-axis has a large number of values, such as the different possible self-esteem scores.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="13-descriptives_files/figure-html/scatter2-1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Statistical relationship between several college students’ scores on the Rosenberg Self-Esteem Scale given on two occasions a week apart.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The data presented in Figure @ref(fig:scatter2) provide a good example of a positive relationship, in which higher scores on one variable tend to be associated with higher scores on the other (so that the points go from the lower left to the upper right of the graph). The data presented in Figure @ref(fig:line) provide a good example of a negative relationship, in which higher scores on one variable tend to be associated with lower scores on the other (so that the points go from the upper left to the lower right).</p>
+<p>Both of these examples are also linear relationships, in which the points are reasonably well fit by a single straight line. <a href="#nonlinear-relationship">Nonlinear relationships</a> are those in which the points are better fit by a curved line. Figure @ref(fig:nonlinear2), for example, shows a hypothetical relationship between the amount of sleep people get per night and their level of depression. In this example, the line that best fits the points is a curve—a kind of upside down “U”—because people who get about eight hours of sleep tend to be the least depressed, while those who get too little sleep and those who get too much sleep tend to be more depressed. Nonlinear relationships are not uncommon in psychology, but a detailed discussion of them is beyond the scope of this book.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="13-descriptives_files/figure-html/nonlinear2-1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Hypothetical nonlinear relationship between sleep and depression.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>As we saw earlier in the book, the strength of a correlation between quantitative variables is typically measured using a statistic called Pearson’s <em>r</em>. As Figure @ref(fig:pearson2) shows, its possible values range from −1.00, through zero, to +1.00. A value of 0 means there is no relationship between the two variables. In addition to his guidelines for interpreting Cohen’s <em>d</em>, Cohen offered guidelines for interpreting Pearson’s <em>r</em> in psychological research (see Table @ref(tab:guidelines)). Values near ±.10 are considered small, values near ± .30 are considered medium, and values near ±.50 are considered large. Notice that the sign of Pearson’s <em>r</em> is unrelated to its strength. Pearson’s <em>r</em> values of +.30 and −.30, for example, are equally strong; it is just that one represents a moderate positive relationship and the other a moderate negative relationship. Like Cohen’s <em>d</em>, Pearson’s <em>r</em> is also referred to as a measure of “effect size” even though the relationship may not be a causal one.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ch12/pearson.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Pearson’s <em>r</em> ranges from −1.00 (representing the strongest possible negative relationship), through 0 (representing no relationship), to +1.00 (representing the strongest possible positive relationship).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The computations for Pearson’s <em>r</em> are more complicated than those for Cohen’s <em>d</em>. Although you may never have to do them by hand, it is still instructive to see how. Computationally, Pearson’s <em>r</em> is the “mean cross-product of <em>z</em> scores.” To compute it, one starts by transforming all the scores to <em>z</em> scores. For the <em>X</em> variable, subtract the mean of <em>X</em> from each score and divide each difference by the standard deviation of <em>X</em>. For the <em>Y</em> variable, subtract the mean of <em>Y</em> from each score and divide each difference by the standard deviation of Y. Then, for each individual, multiply the two <em>z</em> scores together to form a cross-product. Finally, take the mean of the cross-products. The formula looks like this:</p>
+<p><span class="math inline">\(r=\frac{\sum(z_xz_y)}{N}\)</span></p>
+<p>Table @ref(tab:pearsonmath) illustrates these computations for a small set of data. The first column lists the scores for the <em>X</em> variable, which has a mean of 4.00 and a standard deviation of 1.90. The second column is the <em>z</em> score for each of these raw scores. The third and fourth columns list the raw scores for the <em>Y</em> variable, which has a mean of 40 and a standard deviation of 11.78, and the corresponding <em>z</em> scores. The fifth column lists the cross-products. For example, the first one is 0.00 multiplied by −0.85, which is equal to 0.00. The second is 1.58 multiplied by 1.19, which is equal to 1.88. The mean of these cross-products, shown at the bottom of that column, is Pearson’s <em>r</em>, which in this case is +.53. There are other formulas for computing Pearson’s <em>r</em> by hand that may be quicker. This approach, however, is much clearer in terms of communicating conceptually what Pearson’s <em>r</em> is.</p>
+<table class="table">
+<caption>(#tab:pearsonmath) Sample computations for Pearson’s <em>r</em>.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(X\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(z_X\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(Y\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(z_Y\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(z_Xz_Y\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">-0.85</td>
+<td style="text-align: center;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">1.58</td>
+<td style="text-align: center;">54</td>
+<td style="text-align: center;">1.19</td>
+<td style="text-align: center;">1.88</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-1.05</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">-1.44</td>
+<td style="text-align: center;">1.53</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0.53</td>
+<td style="text-align: center;">43</td>
+<td style="text-align: center;">0.26</td>
+<td style="text-align: center;">0.13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-1.05</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">0.85</td>
+<td style="text-align: center;">-0.89</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(M_X\)</span> = 4.00</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(M_Y\)</span> = 40.00</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(r\)</span> = 0.53</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(SD_X\)</span> = 1.90</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(SD_Y\)</span> = 11.78</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>There are two common situations in which the value of Pearson’s <em>r</em> can be misleading. One is when the relationship under study is nonlinear. Even though Figure @ref(fig:nonlinear2) shows a fairly strong relationship between depression and sleep, Pearson’s <em>r</em> would be close to zero because the points in the scatterplot are not well fit by a single straight line. This means that it is important to make a scatterplot and confirm that a relationship is approximately linear before using Pearson’s <em>r</em>. The other is when one or both of the variables have a limited range in the sample relative to the population. This is referred to as <a href="#restriction-of-range">restriction of range</a>. Assume, for example, that there is a strong negative correlation between people’s age and their enjoyment of hip hop music as shown by the scatterplot in Figure @ref(fig:range). Pearson’s <em>r</em> here is −.77. However, if we were to collect data only from 18- to 24-year-olds—represented by the shaded area of Figure @ref(fig:range)—then the relationship would seem to be quite weak. In fact, Pearson’s <em>r</em> for this restricted range of ages is 0. It is a good idea, therefore, to design studies to avoid restriction of range. For example, if age is one of your primary variables, then you can plan to collect data from people of a wide range of ages. Because restriction of range is not always anticipated or easily avoidable, however, it is good practice to examine your data for possible restriction of range and to interpret Pearson’s <em>r</em> in light of it. (There are also statistical methods to correct Pearson’s <em>r</em> for restriction of range, but they are beyond the scope of this book).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="13-descriptives_files/figure-html/range-1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Hypothetical data showing how a strong overall correlation can appear to be weak when one variable has a restricted range. The overall correlation here is −.77, but the correlation for the 18- to 24-year-olds (in the blue box) is 0.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="key-takeaways-1" class="level5 unnumbered takeaways">
+<h5 class="unnumbered anchored" data-anchor-id="key-takeaways-1">KEY TAKEAWAYS</h5>
+<ul>
+<li>Differences between groups or conditions are typically described in terms of the means and standard deviations of the groups or conditions or in terms of Cohen’s <em>d</em> and are presented in bar graphs.</li>
+<li>Cohen’s <em>d</em> is a measure of relationship strength (or effect size) for differences between two group or condition means. It is the difference of the means divided by the standard deviation. In general, values of ±0.20, ±0.50, and ±0.80 can be considered small, medium, and large, respectively.</li>
+<li>Correlations between quantitative variables are typically described in terms of Pearson’s <em>r</em> and presented in line graphs or scatterplots.</li>
+<li>Pearson’s <em>r</em> is a measure of relationship strength (or effect size) for relationships between quantitative variables. It is the mean cross-product of the two sets of <em>z</em> scores. In general, values of ±.10, ±.30, and ±.50 can be considered small, medium, and large, respectively.</li>
+</ul>
+</section>
+<section id="exercises-1" class="level5 unnumbered exercises">
+<h5 class="unnumbered anchored" data-anchor-id="exercises-1">EXERCISES</h5>
+<ol type="1">
+<li>Practice: The following data represent scores on the Rosenberg Self-Esteem Scale for a sample of 10 Japanese college students and 10 American college students. (Although hypothetical, these data are consistent with empirical findings <span class="citation" data-cites="schmitt2005simultaneous">(<a href="references.html#ref-schmitt2005simultaneous" role="doc-biblioref"><strong>schmitt2005simultaneous?</strong></a>)</span>). Compute the means and standard deviations of the two groups, make a bar graph, compute Cohen’s <em>d</em>, and describe the strength of the relationship in words.</li>
+</ol>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Japan</th>
+<th style="text-align: center;">United States</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">27</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">34</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">28</td>
+<td style="text-align: center;">37</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">26</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">24</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">21</td>
+<td style="text-align: center;">28</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">35</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">33</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">36</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li>Practice: The hypothetical data that follow are extroversion scores and the number of Facebook friends for 15 college students. Make a scatterplot for these data, compute Pearson’s <em>r</em>, and describe the relationship in words.</li>
+</ol>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Extroversion</th>
+<th style="text-align: center;">Facebook Friends</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">75</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">315</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">28</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">214</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">176</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">95</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">120</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">150</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">32</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">250</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">99</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">136</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">185</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">88</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">144</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="expressing-your-results" class="level2">
+<h2 class="anchored" data-anchor-id="expressing-your-results">Expressing Your Results</h2>
+<section id="learning-objectives-2" class="level5 unnumbered learningobjectives">
+<h5 class="unnumbered anchored" data-anchor-id="learning-objectives-2">LEARNING OBJECTIVES</h5>
+<ol type="1">
+<li>Write out simple descriptive statistics in American Psychological Association (APA) style.</li>
+<li>Interpret and create simple APA-style graphs—including bar graphs, line graphs, and scatterplots.</li>
+<li>Interpret and create simple APA-style tables—including tables of group or condition means and correlation matrixes.</li>
+</ol>
+</section>
+<p>Once you have conducted your descriptive statistical analyses, you will need to present them to others. In this section, we focus on presenting descriptive statistical results in writing, in graphs, and in tables—following American Psychological Association (APA) guidelines for written research reports. These principles can be adapted easily to other presentation formats such as posters and slide show presentations.</p>
+<section id="presenting-descriptive-statistics-in-writing" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="presenting-descriptive-statistics-in-writing">Presenting Descriptive Statistics in Writing</h3>
+<p>When you have a small number of results to report, it is often most efficient to write them out. There are a few important APA style guidelines here. First, statistical results are always presented in the form of numerals rather than words and are usually rounded to two decimal places (e.g., “2.00” rather than “two” or “2”). They can be presented either in the narrative description of the results or parenthetically—much like reference citations. Here are some examples:</p>
+<blockquote class="blockquote">
+<p>The mean age of the participants was 22.43 years with a standard deviation of 2.34.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Among the low self-esteem participants, those in a negative mood expressed stronger intentions to have unprotected sex (<em>M</em> = 4.05, <em>SD</em> = 2.32) than those in a positive mood (<em>M</em> = 2.15, <em>SD</em> = 2.27).</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>The treatment group had a mean of 23.40 (<em>SD</em> = 9.33), while the control group had a mean of 20.87 (<em>SD</em> = 8.45).</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>The test-retest correlation was .96.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>There was a moderate negative correlation between the alphabetical position of respondents’ last names and their response time (<em>r</em> = −.27).</p>
+</blockquote>
+<p>Notice that when presented in the narrative, the terms <em>mean</em> and <em>standard deviation</em> are written out, but when presented parenthetically, the symbols <em>M</em> and <em>SD</em> are used instead. Notice also that it is especially important to use parallel construction to express similar or comparable results in similar ways. The third example is <em>much</em> better than the following nonparallel alternative:</p>
+<blockquote class="blockquote">
+<p>The treatment group had a mean of 23.40 (<em>SD</em> = 9.33), while 20.87 was the mean of the control group, which had a standard deviation of 8.45.</p>
+</blockquote>
+</section>
+<section id="presenting-descriptive-statistics-in-graphs" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="presenting-descriptive-statistics-in-graphs">Presenting Descriptive Statistics in Graphs</h3>
+<p>When you have a large number of results to report, you can often do it more clearly and efficiently with a graph. When you prepare graphs for an APA-style research report, there are some general guidelines that you should keep in mind. First, the graph should always add important information rather than repeat information that already appears in the text or in a table. (If a graph presents information more clearly or efficiently, then you should keep the graph and eliminate the text or table.) Second, graphs should be as simple as possible. For example, the <em>Publication Manual</em> discourages the use of color in figures for print publication unless absolutely necessary (although color can still be an effective element in posters, slide show presentations, or textbooks.) Third, graphs should be interpretable on their own. A reader should be able to understand the basic result based only on the graph and its caption and should not have to refer to the text for an explanation.</p>
+<p>There are also several more technical guidelines for graphs that include the following:</p>
+<ul>
+<li>Layout
+<ul>
+<li>The graph should be slightly wider than it is tall.</li>
+<li>The independent variable should be plotted on the x-axis and the dependent variable on the y-axis.</li>
+<li>Values should increase from left to right on the x-axis and from bottom to top on the y-axis.</li>
+</ul></li>
+<li>Axis Labels and Legends
+<ul>
+<li>Axis labels should be clear and concise and include the units of measurement if they do not appear in the caption.</li>
+<li>Axis labels should be parallel to the axis.</li>
+<li>Legends should appear within the boundaries of the graph.</li>
+<li>Text should be in the same simple font throughout and differ by no more than four points.</li>
+</ul></li>
+<li>Captions
+<ul>
+<li>Captions should briefly describe the figure, explain any abbreviations, and include the units of measurement if they do not appear in the axis labels.</li>
+</ul></li>
+</ul>
+<section id="bar-graphs" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="bar-graphs">Bar Graphs</h4>
+<p>As we have seen throughout this book, <a href="#bar-graph">bar graphs</a> are generally used to present and compare the mean scores for two or more groups or conditions. The bar graph in Figure @ref(fig:apabar) is an APA-style version of Figure @ref(fig:phobia). Notice that it conforms to all the guidelines listed. A new element in Figure @ref(fig:apabar) is the smaller vertical bars that extend both upward and downward from the top of each main bar. These are <a href="#error-bars">error bars</a>, and they represent the variability in each group or condition. Although they sometimes extend one standard deviation in each direction, they are more likely to extend one standard error in each direction (as in Figure @ref(fig:apabar)). The <a href="#standard-error">standard error</a> is the standard deviation of the group divided by the square root of the sample size of the group. The standard error is used because, in general, a difference between the means of two group that is greater than two standard errors is statistically significant. Thus one can “see” whether a difference is statistically significant based on a bar graph with standard error bars. It is also common for error bars to represent the 95% confidence interval of the man. These error bars are interpreted differently: if there is any overlap between error bars that represent the 95% confidence interval when comparing a plot of two means, the difference is <em>not</em> statistically significant.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ch12/apabar.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Sample APA-style bar graph, with error bars representing the standard errors, based on research by Ollendick and colleagues.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="line-graphs" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="line-graphs">Line Graphs</h4>
+<p><a href="#line-graph">Line graphs</a> are used to present correlations between quantitative variables when the independent variable has, or is organized into, a relatively small number of distinct levels. Each point in a line graph represents the mean score on the dependent variable for participants at one level of the independent variable. Figure @ref(fig:apaline) is an APA-style version of the results of Carlson and Conard. Notice that it includes error bars representing the standard error and conforms to all the stated guidelines.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ch12/apaline.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Sample APA-style line graph based on research by Carlson and Conard.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>In most cases, the information in a line graph could just as easily be presented in a bar graph. In Figure @ref(fig:apabar), for example, one could replace each point with a bar that reaches up to the same level and leave the error bars right where they are. This emphasizes the fundamental similarity of the two types of statistical relationship. Both are differences in the average score on one variable across levels of another. The convention followed by most researchers, however, is to use a bar graph when the variable plotted on the x-axis is categorical and a line graph when it is quantitative.</p>
+</section>
+<section id="scatterplots" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="scatterplots">Scatterplots</h4>
+<p><a href="#scatterplot">Scatterplots</a> are used to present relationships between quantitative variables when the variable on the x-axis (typically the independent variable) has a large number of levels. Each point in a scatterplot represents an individual rather than the mean for a group of individuals, and there are no lines connecting the points. The graph in Figure @ref(fig:apascatter) is an APA-style version of Figure @ref(fig:scatter2), which illustrates a few additional points. First, when the variables on the x-axis and y-axis are conceptually similar and measured on the same scale—as here, where they are measures of the same variable on two different occasions—this can be emphasized by making the axes the same length. Second, when two or more individuals fall at exactly the same point on the graph, one way this can be indicated is by offsetting the points slightly along the x-axis. Other ways are by displaying the number of individuals in parentheses next to the point or by making the point larger or darker in proportion to the number of individuals. Finally, the straight line that best fits the points in the scatterplot, which is called the regression line, can also be included.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ch12/apascatter.png" class="img-fluid figure-img" style="width:55.0%"></p>
+<figcaption class="figure-caption">Sample APA-style scatterplot.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="jitter-plots" class="level5 unnumbered fyi">
+<h5 class="unnumbered anchored" data-anchor-id="jitter-plots">Jitter plots</h5>
+<p>Developments in data visualization software have led to new options for displaying results. One data visualization method that has increased in popularity is the <strong>jitter plot</strong>. Like scatterplots, jitter plots show individual data points. The data visualization software that generates the plots allows the points to shift slightly in a random direction in order to reduce data point overlap – hence the word <em>jitter</em> in the name. These plots can display the same data as bar and line graphs (i.e., means and error bars) while helping the viewer grasp the full variability in the data. Figure @ref(fig:apajitter) shows an example in APA format.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ch12/apajitter.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Sample APA-style jitter plot showing hypothetical data.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The jitter plot above was generated using the free online application <a href="https://www.showmydata.org/">ShowMyData</a>.</p>
+</section>
+</section>
+</section>
+<section id="expressing-descriptive-statistics-in-tables" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="expressing-descriptive-statistics-in-tables">Expressing Descriptive Statistics in Tables</h3>
+<p>Like graphs, tables can be used to present large amounts of information clearly and efficiently. The same general principles apply to tables as apply to graphs. They should add important information to the presentation of your results, be as simple as possible, and be interpretable on their own. Again, we focus here on tables for an APA-style manuscript.</p>
+<p>The most common use of tables is to present several means and standard deviations—usually for complex research designs with multiple independent and dependent variables. Figure @ref(fig:apatable), for example, shows the results of a hypothetical study similar to the one by <span class="citation" data-cites="macdonald2002self">(<a href="references.html#ref-macdonald2002self" role="doc-biblioref"><strong>macdonald2002self?</strong></a>)</span>. (The means in Figure @ref(fig:apatable) are the means reported by MacDonald and Martineau, but the standard errors are not). Recall that these researchers categorized participants as having low or high self-esteem, put them into a negative or positive mood, and measured their intentions to have unprotected sex. They also measured participants’ attitudes toward unprotected sex. Notice that the table includes horizontal lines spanning the entire table at the top and bottom, and just beneath the column headings. Furthermore, every column has a heading—including the leftmost column—and there are additional headings that span two or more columns that help to organize the information and present it more efficiently. Finally, notice that APA-style tables are numbered consecutively starting at 1 (Table 1, Table 2, and so on) and given a brief but clear and descriptive title.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ch12/apatable.png" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">Sample APA-style table presenting means and standard deviations.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Another common use of tables is to present correlations—usually measured by Pearson’s <em>r</em>—among several variables. This is called a <a href="#correlation-matrix">correlation matrix</a>. Figure @ref(fig:apamatrix) is a correlation matrix based on a study by David McCabe and colleagues <span class="citation" data-cites="mccabe2010relationship">(<a href="references.html#ref-mccabe2010relationship" role="doc-biblioref"><strong>mccabe2010relationship?</strong></a>)</span>. They were interested in the relationships between working memory and several other variables. We can see from the table that the correlation between working memory and executive function, for example, was an extremely strong .96, that the correlation between working memory and vocabulary was a medium .27, and that all the measures except vocabulary tend to decline with age. Notice here that only half the table is filled in because the other half would have identical values. For example, the Pearson’s <em>r</em> value in the upper right corner (working memory and age) would be the same as the one in the lower left corner (age and working memory). The correlation of a variable with itself is always 1.00, so these values are replaced by dashes to make the table easier to read.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ch12/apamatrix.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Sample APA-style table (correlation matrix) based on research by McCabe and colleagues.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>As with graphs, precise statistical results that appear in a table do not need to be repeated in the text. Instead, the writer can note major trends and alert the reader to details (e.g., specific correlations) that are of particular interest.</p>
+<section id="key-takeaways-2" class="level5 unnumbered takeaways">
+<h5 class="unnumbered anchored" data-anchor-id="key-takeaways-2">KEY TAKEAWAYS</h5>
+<ul>
+<li>In an APA-style article, simple results are most efficiently presented in the text, while more complex results are most efficiently presented in graphs or tables.</li>
+<li>APA style includes several rules for presenting numerical results in the text. These include using words only for numbers less than 10 that do not represent precise statistical results, and rounding results to two decimal places, using words (e.g., “mean”) in the text and symbols (e.g., “<em>M</em>”) in parentheses.</li>
+<li>APA style includes several rules for presenting results in graphs and tables. Graphs and tables should add information rather than repeating information, be as simple as possible, and be interpretable on their own with a descriptive title.</li>
+</ul>
+</section>
+<section id="exercise" class="level5 unnumbered exercises">
+<h5 class="unnumbered anchored" data-anchor-id="exercise">EXERCISE</h5>
+<ol type="1">
+<li>Practice: In a classic study, men and women rated the importance of physical attractiveness in both a short-term mate and a long-term mate (Buss &amp; Schmitt, 1993).Buss, D. M., &amp; Schmitt, D. P. (1993). Sexual strategies theory: A contextual evolutionary analysis of human mating. Psychological Review, 100, 204–232. The means and standard deviations are as follows. Men / Short Term: <em>M</em> = 5.67, <em>SD</em> = 2.34; Men / Long Term: <em>M</em> = 4.43, <em>SD</em> = 2.11; Women / Short Term: <em>M</em> = 5.67, <em>SD</em> = 2.48; Women / Long Term: <em>M</em> = 4.22, <em>SD</em> = 1.98. Present these results (a) in writing, (b) in a graph, and (c) in a table.</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="conducting-your-analyses" class="level2">
+<h2 class="anchored" data-anchor-id="conducting-your-analyses">Conducting Your Analyses</h2>
+<section id="learning-objective" class="level5 unnumbered learningobjectives">
+<h5 class="unnumbered anchored" data-anchor-id="learning-objective">LEARNING OBJECTIVE</h5>
+<ol type="1">
+<li>Describe the steps involved in preparing and analyzing a typical set of raw data.</li>
+</ol>
+</section>
+<p>Even when you understand the statistics involved, analyzing data can be a complicated process. It is likely that for each of several participants, there are data for several different variables: demographics such as sex and age, one or more independent variables, one or more dependent variables, and perhaps a manipulation check. Furthermore, the “raw” (unanalyzed) data might take several different forms—completed paper-and-pencil questionnaires, computer files filled with numbers or text, videos, or written notes—and these may have to be organized, coded, or combined in some way. There might even be missing, incorrect, or just “suspicious” responses that must be dealt with. In this section, we consider some practical advice to make this process as organized and efficient as possible.</p>
+<section id="prepare-your-data-for-analysis" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="prepare-your-data-for-analysis">Prepare Your Data for Analysis</h3>
+<p>Whether your raw data are on paper or in a computer file (or both), there are a few things you should do before you begin analyzing them. First, be sure they do not include any information that might identify individual participants and be sure that you have a secure location where you can store the data and a separate secure location where you can store any consent forms. Unless the data are highly sensitive, a locked room or password-protected computer is usually good enough. It is also a good idea to make photocopies or backup files of your data and store them in yet another secure location—at least until the project is complete. Professional researchers usually keep a copy of their raw data and consent forms for several years in case questions about the procedure, the data, or participant consent arise after the project is completed.</p>
+<p>Next, you should check your <a href="#raw-data">raw data</a> to make sure that they are complete and appear to have been accurately recorded (whether it was participants, yourself, or a computer program that did the recording). At this point, you might find that there are illegible or missing responses, or obvious misunderstandings (e.g., a response of “12” on a 1-to-10 rating scale). You will have to decide whether such problems are severe enough to make a participant’s data unusable. If information about the main independent or dependent variable is missing, or if several responses are missing or suspicious, you may have to exclude that participant’s data from the analyses. If you do decide to exclude any data, do not throw them away or delete them because you or another researcher might want to see them later. Instead, set them aside and keep notes about why you decided to exclude them because you will need to report this information.</p>
+<p>Now you are ready to enter your data in a spreadsheet program or, if it is already in a computer file, to format it for analysis. You can use a general spreadsheet program like Microsoft Excel or a statistical analysis program like SPSS to create your <a href="#data-file">data file</a>. (Data files created in one program can usually be converted to work with other programs.) The most common format is for each row to represent a participant and for each column to represent a variable (with the variable name at the top of each column). A sample data file is shown in Table @ref(tab:sampledata). The first column contains participant identification numbers. This is followed by columns containing demographic information (sex and age), independent variables (mood, four self-esteem items, and the total of the four self-esteem items), and finally dependent variables (intentions and attitudes). Categorical variables can usually be entered as category labels (e.g., “M” and “F” for male and female) or as numbers (e.g., “0” for negative mood and “1” for positive mood). Although category labels are often clearer, some analyses might require numbers. SPSS allows you to enter numbers but also attach a category label to each number.</p>
+<table class="table">
+<caption>(#tab:sampledata) Sample data file.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: right;">ID</th>
+<th style="text-align: left;">SEX</th>
+<th style="text-align: right;">AGE</th>
+<th style="text-align: right;">MOOD</th>
+<th style="text-align: right;">SE1</th>
+<th style="text-align: right;">SE2</th>
+<th style="text-align: right;">SE3</th>
+<th style="text-align: right;">SE4</th>
+<th style="text-align: right;">TOTAL</th>
+<th style="text-align: right;">INT</th>
+<th style="text-align: right;">ATT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+</tr>
+</tbody>
+</table>
+<p>If you have multiple-response measures—such the self-esteem measure in Table @ref(tab:sampledata)—you could combine the items by hand and then enter the total score in your spreadsheet. However, it is much better to enter each response as a separate variable in the spreadsheet—as with the self-esteem measure in Table @ref(tab:sampledata)—and use the software to combine them (e.g., using the “AVERAGE” function in Excel or the “Compute” function in SPSS). Not only is this approach more accurate, but it allows you to detect and correct errors, to assess internal consistency, and to analyze individual responses if you decide to do so later.</p>
+</section>
+<section id="preliminary-analyses" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="preliminary-analyses">Preliminary Analyses</h3>
+<p>Before turning to your primary research questions, there are often several preliminary analyses to conduct. For multiple-response measures, you should assess the internal consistency of the measure. Statistical programs like SPSS will allow you to compute Cronbach’s α or Cohen’s κ. If this is beyond your comfort level, you can still compute and evaluate a split-half correlation.</p>
+<p>Next, you should analyze each important variable separately. (This is not necessary for manipulated independent variables, of course, because you as the researcher determined what the distribution would be.) Make histograms for each one, note their shapes, and compute the common measures of central tendency and variability. Be sure you understand what these statistics <em>mean</em> in terms of the variables you are interested in. For example, a distribution of self-report happiness ratings on a 1-to-10-point scale might be unimodal and negatively skewed with a mean of 8.25 and a standard deviation of 1.14. But what this <em>means</em> is that most participants rated themselves fairly high on the happiness scale, with a small number rating themselves noticeably lower.</p>
+<p>Now is the time to identify outliers, examine them more closely, and decide what to do about them. You might discover that what at first appears to be an outlier is the result of a response being entered incorrectly in the data file, in which case you only need to correct the data file and move on. Alternatively, you might suspect that an outlier represents some other kind of error, misunderstanding, or lack of effort by a participant. For example, in a reaction time distribution in which most participants took only a few seconds to respond, a participant who took 3 minutes to respond would be an outlier. It seems likely that this participant did not understand the task (or at least was not paying very close attention). Also, including his or her reaction time would have a large impact on the mean and standard deviation for the sample. In situations like this, it can be justifiable to exclude the outlying response or participant from the analyses. If you do this, however, you should keep notes on which responses or participants you have excluded and why, and apply those same criteria consistently to every response and every participant. When you present your results, you should indicate how many responses or participants you excluded and the specific criteria that you used. And again, do not literally throw away or delete the data that you choose to exclude. Just set them aside because you or another researcher might want to see them later.</p>
+<p>Keep in mind that outliers do not <em>necessarily</em> represent an error, misunderstanding, or lack of effort. They might represent truly extreme responses or participants. For example, in one large college student sample, the vast majority of participants reported having had fewer than 15 sexual partners, but there were also a few extreme scores of 60 or 70 <span class="citation" data-cites="brown1999estimating">(<a href="references.html#ref-brown1999estimating" role="doc-biblioref"><strong>brown1999estimating?</strong></a>)</span>. Although these scores might represent errors, misunderstandings, or even intentional exaggerations, it is also plausible that they represent honest and even accurate estimates. One strategy here would be to use the median and other statistics that are not strongly affected by the outliers. Another would be to analyze the data both including and excluding any outliers. If the results are essentially the same, which they often are, then it makes sense to leave the outliers. If the results differ depending on whether the outliers are included or excluded them, then both analyses can be reported and the differences between them discussed.</p>
+</section>
+<section id="answer-your-research-questions" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="answer-your-research-questions">Answer Your Research Questions</h3>
+<p>Finally, you are ready to answer your primary research questions. If you are interested in a difference between group or condition means, you can compute the relevant group or condition means and standard deviations, make a bar graph to display the results, and compute Cohen’s <em>d</em>. If you are interested in a correlation between quantitative variables, you can make a line graph or scatterplot (be sure to check for nonlinearity and restriction of range) and compute Pearson’s <em>r</em>.</p>
+<p>At this point, you may want to conduct exploratory analyses that might provide the basis for future research (and material for the discussion section of your paper). It is important to be cautious, however, because complex sets of data are likely to include “patterns” that occurred entirely by chance. Thus results discovered while “fishing” should be replicated in at least one new study before being presented as new phenomena in their own right.</p>
+</section>
+<section id="understand-your-descriptive-statistics" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="understand-your-descriptive-statistics">Understand Your Descriptive Statistics</h3>
+<p>In the next chapter, we will consider inferential statistics—a set of techniques for deciding whether the results for your sample are likely to apply to the population. Although inferential statistics are important for reasons that will be explained shortly, beginning researchers sometimes forget that their descriptive statistics really tell “what happened” in their study. For example, imagine that a treatment group of 50 participants has a mean score of 34.32 (<em>SD</em> = 10.45), a control group of 50 participants has a mean score of 21.45 (<em>SD</em> = 9.22), and Cohen’s <em>d</em> is an extremely strong 1.31. Although conducting and reporting inferential statistics (like a <em>t</em> test) would certainly be a required part of any formal report on this study, it should be clear from the descriptive statistics alone that the treatment worked. Or imagine that a scatterplot shows an indistinct “cloud” of points and Pearson’s <em>r</em> is a trivial −.02. Again, although conducting and reporting inferential statistics would be a required part of any formal report on this study, it should be clear from the descriptive statistics alone that the variables are essentially unrelated. The point is that you should always be sure that you thoroughly understand your results at a descriptive level first, and then move on to the inferential statistics.</p>
+<section id="key-takeaways-3" class="level5 unnumbered takeaways">
+<h5 class="unnumbered anchored" data-anchor-id="key-takeaways-3">KEY TAKEAWAYS</h5>
+<ul>
+<li>Raw data must be prepared for analysis by examining them for possible errors, organizing them, and entering them into a spreadsheet program.</li>
+<li>Preliminary analyses on any data set include checking the reliability of measures, evaluating the effectiveness of any manipulations, examining the distributions of individual variables, and identifying outliers.</li>
+<li>Outliers that appear to be the result of an error, a misunderstanding, or a lack of effort can be excluded from the analyses. The criteria for excluded responses or participants should be applied in the same way to all the data and described when you present your results. Excluded data should be set aside rather than destroyed or deleted in case they are needed later.</li>
+<li>Descriptive statistics tell the story of what happened in a study. Although inferential statistics are also important, it is essential to understand the descriptive statistics first.</li>
+</ul>
+</section>
+<section id="exercise-1" class="level5 unnumbered exercises">
+<h5 class="unnumbered anchored" data-anchor-id="exercise-1">EXERCISE</h5>
+<ol type="1">
+<li>Discussion: What are at least two reasonable ways to deal with each of the following outliers based on the discussion in this chapter? (a) A participant estimating ordinary people’s heights estimates one woman’s height to be “84 inches” tall. (b) In a study of memory for ordinary objects, one participant scores 0 out of 15. (c) In response to a question about how many “close friends” she has, one participant writes “32.”</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="glossary" class="level2">
+<h2 class="anchored" data-anchor-id="glossary">Glossary</h2>
+<section id="bar-graph" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="bar-graph">bar graph</h5>
+<p>A graph used to show differences between the mean scores of two or more groups or conditions.</p>
+</section>
+<section id="central-tendency-1" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="central-tendency-1">central tendency</h5>
+<p>The middle of a distribution. The mean, median, and mode are measures of central tendency.</p>
+</section>
+<section id="cohens-d" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="cohens-d">Cohen’s <em>d</em></h5>
+<p>A measure of relationship strength or “effect size” for a difference between two groups or conditions.</p>
+</section>
+<section id="correlation-matrix" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="correlation-matrix">correlation matrix</h5>
+<p>A table that shows the correlations among several variables.</p>
+</section>
+<section id="data-file" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="data-file">data file</h5>
+<p>A computer file that contains data formatted for statistical analysis.</p>
+</section>
+<section id="descriptive-statistics-1" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="descriptive-statistics-1">descriptive statistics</h5>
+<p>A set of techniques for summarizing and displaying data.</p>
+</section>
+<section id="distribution" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="distribution">distribution</h5>
+<p>The way the scores on a variable are distributed across the levels of that variable.</p>
+</section>
+<section id="effect-size" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="effect-size">effect size</h5>
+<p>Another name for measures of relationship strength, including Cohen’s <em>d</em> and Pearson’s <em>r</em>.</p>
+</section>
+<section id="error-bars" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="error-bars">error bars</h5>
+<p>In bar graphs and line graphs, vertical lines that show the amount of variability around the mean in each group or condition. They typically extend upward and downward one standard error from the top of each bar or point.</p>
+</section>
+<section id="frequency-table" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="frequency-table">frequency table</h5>
+<p>A table for displaying the distribution of a variable. The first column lists the values of the variable, and the second column lists the frequency of each score.</p>
+</section>
+<section id="histogram" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="histogram">histogram</h5>
+<p>A graph for displaying the distribution of a variable. The <em>x</em>-axis represents the values of the variable, and the <em>y</em>-axis represents the frequency of each score.</p>
+</section>
+<section id="line-graph" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="line-graph">line graph</h5>
+<p>A graph used to show the relationship between two quantitative variables. For each level of the <em>X</em> variable, there is a point representing the mean of the <em>Y</em> variable. The points are connected by lines.</p>
+</section>
+<section id="mean" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="mean">mean</h5>
+<p>The most common measure of central tendency. The sum of the scores divided by the number of scores.</p>
+</section>
+<section id="median" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="median">median</h5>
+<p>A measure of central tendency. The value such that half the scores in the distribution are lower than it and half are higher than it.</p>
+</section>
+<section id="mode" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="mode">mode</h5>
+<p>A measure of central tendency. The most frequently occurring score in the distribution.</p>
+</section>
+<section id="nonlinear-relationship" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="nonlinear-relationship">nonlinear relationship</h5>
+<p>A statistical relationship in which as the <em>X</em> variable increases, the <em>Y</em> variable does not increase or decrease at a constant rate. Such relationships are best described by a curved line.</p>
+</section>
+<section id="outlier" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="outlier">outlier</h5>
+<p>An extreme score that is far removed from the rest of the scores in the distribution.</p>
+</section>
+<section id="percentile-rank" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="percentile-rank">percentile rank</h5>
+<p>A measure of the location of a score within its distribution. The percentage of scores below a particular score.</p>
+</section>
+<section id="range" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="range">range</h5>
+<p>A measure of variability. The difference between the highest and lowest scores in the distribution.</p>
+</section>
+<section id="raw-data" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="raw-data">raw data</h5>
+<p>Data in the form in which they were originally collected (e.g., completed questionnaires).</p>
+</section>
+<section id="restriction-of-range" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="restriction-of-range">restriction of range</h5>
+<p>When the data used to assess a statistical relationship include a limited range of scores on either the <em>X</em> or <em>Y</em> variable, relative to the range of scores in the population. This makes the statistical relationships appear weaker than it actually is.</p>
+</section>
+<section id="scatterplot" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="scatterplot">scatterplot</h5>
+<p>A graph used to show the correlation between two quantitative variables. For each individual, there is a point representing that individual’s score on both the <em>X</em> and <em>Y</em> variables.</p>
+</section>
+<section id="skewed" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="skewed">skewed</h5>
+<p>Refers to an asymmetrical distribution. A positively skewed distribution has a relatively long positive tail, and a negatively skewed distribution has a relatively long negative tail.</p>
+</section>
+<section id="standard-deviation" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="standard-deviation">standard deviation</h5>
+<p>The most common measure of variability. The square root of the mean of the squared differences between the scores and the mean. Also the square root of the variance.</p>
+</section>
+<section id="standard-error" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="standard-error">standard error</h5>
+<p>The standard deviation divided by the square root of the sample size. Often used for error bars in graphs.</p>
+</section>
+<section id="symmetrical" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="symmetrical">symmetrical</h5>
+<p>Refers to a distribution in which the left and right sides are near mirror images of each other.</p>
+</section>
+<section id="variability" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="variability">variability</h5>
+<p>The extent to which the scores in a distribution vary around their central tendency.</p>
+</section>
+<section id="variance" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="variance">variance</h5>
+<p>A measure of variability. The mean of the squared differences between the scores and the mean. Also the square of the standard deviation.</p>
+</section>
+<section id="z-score" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="z-score"><em>z</em> score</h5>
+<p>A measure of the location of a score within its distribution. The score minus the mean, divided by the standard deviation.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  update_total_correct();
+}
+
+</script>
+<script>
+// open rdrr links externally ----
+
+var exlinks = document.querySelectorAll("a[href^='https://rdrr.io']");
+var exlink_func = function(){
+  window.open(this.href);
+  return false;
+};
+for (var i = 0; i < exlinks.length; i++) {
+    exlinks[i].addEventListener('click', exlink_func, false);
+}
+
+// visible second sidebar in mobile ----
+
+function move_sidebar() {
+  var toc = document.getElementById("TOC");
+  var small_sidebar = document.querySelector("#quarto-sidebar .sidebar-menu-container");
+  var right_sidebar = document.getElementById("quarto-margin-sidebar");
+
+  if (window.innerWidth < 768) {
+    small_sidebar.append(toc);
+  } else {
+    right_sidebar.append(toc);
+  }
+}
+move_sidebar();
+window.onresize = move_sidebar;
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./12-presenting.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./14-inferentials.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Made by Monkeys</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>With love and Quarto</p>
+</div>
+  </div>
+</footer>
+
+
+
+</body></html>

@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.80">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Research Methods in Psychology">
+
+<title>Monkey Methods - 2&nbsp; Getting Started in Research</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./03-theory.html" rel="next">
+<link href="./01-science-of-psych.html" rel="prev">
+<link href="./images/logos/LMLLOGO.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<link rel="stylesheet" href="include/booktem.css">
+<link rel="stylesheet" href="include/webex.css">
+<link rel="stylesheet" href="include/glossary.css">
+<link rel="stylesheet" href="include/style.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02-getting-started.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/logos/LMLLOGO.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">MONKEY METHODS draft</a> 
+        <div class="sidebar-tools-main">
+    <a href="./Monkey-Methods.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Research 🐵 Methods in Psychology</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles of Research in Psychology</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-getting-started.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Experimental Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-measurement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-sampling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sampling</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-complex-designs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Complex Research Designs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-nonexperiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-single-N.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Single-Subject Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-ideas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">(PART*) Conducting Your Own Study</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-presenting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-descriptives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">(PART*) Analyzing Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-inferentials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./15-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./webexercises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#basic-concepts" id="toc-basic-concepts" class="nav-link active" data-scroll-target="#basic-concepts"><span class="header-section-number">2.1</span> Basic Concepts</a>
+  <ul class="collapse">
+  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables">Variables</a></li>
+  <li><a href="#sampling-and-measurement" id="toc-sampling-and-measurement" class="nav-link" data-scroll-target="#sampling-and-measurement">Sampling and Measurement</a></li>
+  <li><a href="#statistical-relationships-between-variables" id="toc-statistical-relationships-between-variables" class="nav-link" data-scroll-target="#statistical-relationships-between-variables">Statistical Relationships Between Variables</a></li>
+  </ul></li>
+  <li><a href="#quantitative-and-qualitative-research" id="toc-quantitative-and-qualitative-research" class="nav-link" data-scroll-target="#quantitative-and-qualitative-research"><span class="header-section-number">2.2</span> Quantitative and Qualitative Research</a>
+  <ul class="collapse">
+  <li><a href="#what-is-qualitative-research" id="toc-what-is-qualitative-research" class="nav-link" data-scroll-target="#what-is-qualitative-research">What Is Qualitative Research?</a></li>
+  <li><a href="#the-purpose-of-qualitative-research" id="toc-the-purpose-of-qualitative-research" class="nav-link" data-scroll-target="#the-purpose-of-qualitative-research">The Purpose of Qualitative Research</a></li>
+  <li><a href="#data-collection-and-analysis-in-qualitative-research" id="toc-data-collection-and-analysis-in-qualitative-research" class="nav-link" data-scroll-target="#data-collection-and-analysis-in-qualitative-research">Data Collection and Analysis in Qualitative Research</a></li>
+  <li><a href="#the-quantitative-qualitative-debate" id="toc-the-quantitative-qualitative-debate" class="nav-link" data-scroll-target="#the-quantitative-qualitative-debate">The Quantitative-Qualitative “Debate”</a></li>
+  </ul></li>
+  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary"><span class="header-section-number">2.3</span> Glossary</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Here is the first paragraph of a 2009 article in the <em>Journal of Experimental Psychology: Applied</em>.</p>
+<blockquote class="blockquote">
+<p>Human figure drawings (HFDs) are commonly used by professionals who interview children about suspected sexual abuse. It is assumed that these drawings will decrease children’s linguistic and emotional or motivational limitations, as well as memory problems, and thus will result in the elicitation of more complete and accurate details of abuse. There is, however, little scientific information to support claims of their benefits. This article presents the results of two studies that examined young children’s ability to use HFDs to report body touches. <span class="citation" data-cites="bruck2009human">(<a href="references.html#ref-bruck2009human" role="doc-biblioref"><strong>bruck2009human?</strong></a>)</span>.</p>
+</blockquote>
+<p>In this paragraph, the researcher has identified a research question—about the effect of using human figure drawings on the accuracy of children’s memories of being touched—and begun to make an argument for why it is interesting. In terms of the general model of scientific research in psychology presented in Figure @ref(fig:scientificmethod) “A Simple Model of Scientific Research in Psychology”, these are activities at the “top” of the cycle. In this chapter, we begin with some more basic concepts that are necessary to understand how research questions in psychology are conceptualized.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/getting-started/bruck.jpeg" class="img-fluid figure-img" style="width:25.0%"></p>
+<figcaption class="figure-caption">Do human figure drawings like this one help children recall information about being touched—for example, in sexual abuse cases? Unfortunately, initial research suggests that they do not. Copyright © 2004 by the American Psychological Association. Reproduced with permission. The official citation that should be used in referencing this material is Aldridge, J., Lamb, M. W., Sternberg, K. J., Orbach, Y., Esplin, P. W., &amp; Bowler, L. (2004). Journal of Consulting and Clinical Psychology, 72, 304–316. The use of APA information does not imply endorsement by the APA.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="basic-concepts" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="basic-concepts"><span class="header-section-number">2.1</span> Basic Concepts</h2>
+<section id="learning-objectives" class="level5 unnumbered learningobjectives">
+<h5 class="unnumbered anchored" data-anchor-id="learning-objectives">LEARNING OBJECTIVES</h5>
+<ol type="1">
+<li>Define the concept of a variable, distinguish quantitative from categorical variables, and give examples of variables that might be of interest to psychologists.</li>
+<li>Explain the difference between a population and a sample.</li>
+<li>Describe two basic forms of statistical relationship and give examples of each.</li>
+<li>Interpret basic statistics and graphs used to describe statistical relationships.</li>
+<li>Explain why correlation does not imply causation.</li>
+</ol>
+</section>
+<section id="variables" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="variables">Variables</h3>
+<p>Research questions in psychology are about <a href="#variable">variables</a>. A variable is a quantity or quality that varies across people or situations. For example, the height of the students in a psychology class is a variable because it varies from student to student. The sex of the students is also a variable as long as there are both male and female students in the class. A <a href="#quantitative-variable">quantitative variable</a> is a quantity, such as height, that is typically measured by assigning a number to each individual. Other examples of quantitative variables include people’s level of talkativeness, how depressed they are, and the number of siblings they have. A <a href="#categorical-variable">categorical variable</a> is a quality, such as sex, and is typically measured by assigning a category label to each individual. Other examples include people’s nationality, their occupation, and whether they are receiving psychotherapy.</p>
+</section>
+<section id="sampling-and-measurement" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sampling-and-measurement">Sampling and Measurement</h3>
+<p>Researchers in psychology are usually interested in drawing conclusions about some very large group of people. This is called the <a href="#population">population</a>. It could be American teenagers, children with autism, professional athletes, or even just human beings—depending on the interests and goals of the researcher. But they usually study only a small subset or <a href="#sample">sample</a> of the population. For example, a researcher might measure the talkativeness of a few hundred college students with the intention of drawing conclusions about the talkativeness of men and women in general. It is important, therefore, for researchers to use a representative sample—one that is similar to the population in important respects.</p>
+<p>One method of obtaining a sample is simple random sampling, in which every member of the population has an equal chance of being selected for the sample. For example, a pollster could start with a list of all the registered voters in a city (the population), randomly select 100 of them from the list (the sample), and ask those 100 whom they intended to vote for. Unfortunately, random sampling is difficult or impossible in most psychological research because the populations are less clearly defined than the registered voters in a city. How could a researcher give all American teenagers or all children with autism an equal chance of being selected for a sample? The most common alternative to random sampling is convenience sampling, in which the sample consists of individuals who happen to be nearby and willing to participate (such as introductory psychology students). The obvious problem with convenience sampling is that the sample might not be representative of the population.</p>
+<p>Once the sample is selected, researchers need to measure the variables they are interested in. This requires an <a href="#operational-definition">operational definition</a>—a definition of the variable in terms of precisely how it is to be measured. Most variables can be operationally defined in many different ways. For example, depression can be operationally defined as people’s scores on a paper-and-pencil depression scale, the number of depressive symptoms they are experiencing, or whether they have been diagnosed with major depressive disorder. When a variable has been measured for a particular individual, the result is called a score, and a set of scores is called data. Note that data is plural—the singular datum is rarely used—so it is grammatically correct to say, “Those are interesting data” (and incorrect to say, “That is interesting data”).</p>
+</section>
+<section id="statistical-relationships-between-variables" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="statistical-relationships-between-variables">Statistical Relationships Between Variables</h3>
+<p>Some research questions in psychology are about one variable. How accurate are children’s memories for being touched? How talkative are American college students? How common is it for people to be diagnosed with major depressive disorder? Answering such questions requires operationally defining the variable, measuring it for a sample, analyzing the results, and drawing conclusions about the population. For a quantitative variable, this would typically involve computing the mean and standard deviation of the scores. For a categorical variable, it would typically involve computing the percentage of scores at each level of the variable.</p>
+<p>However, research questions in psychology are more likely to be about statistical relationships between variables. There is a <a href="#statistical-relationship">statistical relationship</a> between two variables when the average score on one differs systematically across the levels of the other. Studying statistical relationships is important because instead of telling us about behaviors and psychological characteristics in isolation, it tells us about the causes, consequences, development, and organization of those behaviors and characteristics.</p>
+<p>There are two basic forms of statistical relationship: differences between groups and correlations between quantitative variables. Although both are consistent with the general definition of a statistical relationship—the average score on one variable differs across levels of the other—they are usually described and analyzed somewhat differently. For this reason it is important to distinguish them clearly.</p>
+<section id="differences-between-groups" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="differences-between-groups">Differences Between Groups</h4>
+<p>One basic form of statistical relationship is a difference between the mean scores of two groups on some variable of interest. A wide variety of research questions in psychology take this form. Are women more talkative than men? Do children using human figure drawings recall more touch information than children not using human figure drawings? Do people talking on a cell phone have poorer driving abilities than people not talking on a cell phone? Do people receiving Psychotherapy A tend to have fewer depressive symptoms than people receiving Psychotherapy B? Later we will also see that such relationships can involve more than two groups and that the groups can consist of the very same individuals tested at different times or under different conditions. For now, however, it is easiest to think in terms of two distinct groups.</p>
+<p>Differences between groups are usually described by giving the mean score and standard deviation for each group. This information can also be presented in a bar graph like that in Figure @ref(fig:bargraph), where the heights of the bars represent the group means.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="02-getting-started_files/figure-html/bargraph-1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Bar graph showing the very small difference in the mean number of words spoken per day by women and men in a large sample. Based on data from <span class="citation" data-cites="mehl2007women">(<a href="references.html#ref-mehl2007women" role="doc-biblioref"><strong>mehl2007women?</strong></a>)</span></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="correlations-between-quantitative-variables" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="correlations-between-quantitative-variables">Correlations Between Quantitative Variables</h4>
+<p>A second basic form of statistical relationship is a correlation between two quantitative variables, where the average score on one variable differs systematically across the levels of the other. Again, a wide variety of research questions in psychology take this form. Is being a happier person associated with being more talkative? Do children’s memories for touch information improve as they get older? Does the effectiveness of psychotherapy depend on how much the patient likes the therapist?</p>
+<p>Correlations between quantitative variables are often presented using <a href="#scatterplot">scatterplots</a>. Figure @ref(fig:scatter) shows some hypothetical data on the relationship between the amount of stress people are under and the number of physical symptoms they have. Each point in the scatterplot represents one person’s score on both variables. For example, the circled point in Figure @ref(fig:scatter) represents a person whose stress score was 10 and who had three physical symptoms. Taking all the points into account, one can see that people under more stress tend to have more physical symptoms. This is a good example of a positive relationship, in which higher scores on one variable tend to be associated with higher scores on the other. A negative relationship is one in which higher scores on one variable tend to be associated with lower scores on the other. There is a negative relationship between stress and immune system functioning, for example, because higher stress is associated with lower immune system functioning.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="02-getting-started_files/figure-html/scatter-1.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption class="figure-caption">Scatterplot showing a hypothetical positive relationship between stress and number of physical symptoms. The point highlighted in the blue box represents a person whose stress score was 10 and who had three physical symptoms. Pearson’s <em>r</em> for these data is +.51.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The strength of a correlation between quantitative variables is typically measured using a statistic called <a href="#pearsons-r">Pearson’s <em>r</em></a>. As Figure @ref(fig:pearson) shows, Pearson’s <em>r</em> ranges from −1.00 (the strongest possible negative relationship) to +1.00 (the strongest possible positive relationship). A value of 0 means there is no relationship between the two variables. When Pearson’s <em>r</em> is 0, the points on a scatterplot form a shapeless “cloud.” As its value moves toward −1.00 or +1.00, the points come closer and closer to falling on a single straight line.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/getting-started/pearson.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption class="figure-caption">Range of Pearson’s <em>r</em>, from −1.00 (strongest possible negative relationship), through 0 (no relationship), to +1.00 (strongest possible positive relationship)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Pearson’s <em>r</em> is a good measure only for linear relationships, in which the points are best approximated by a straight line. It is not a good measure for nonlinear relationships, in which the points are better approximated by a curved line. Figure @ref(fig:nonlinear), for example, shows a hypothetical relationship between the amount of sleep people get per night and their level of depression. In this example, the line that best approximates the points is a U-shaped curve, because people who get about eight hours of sleep tend to be the least depressed. Those who get too little sleep and those who get too much sleep tend to be more depressed. Nonlinear relationships are fairly common in psychology, but measuring their strength is beyond the scope of this book.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="02-getting-started_files/figure-html/nonlinear-1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Hypothetical nonlinear relationship between sleep and depression.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="correlation-does-not-imply-causation" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="correlation-does-not-imply-causation">Correlation Does Not Imply Causation</h4>
+<p>Researchers are often interested in a statistical relationship between two variables because they think that one of the variables causes the other. That is, the statistical relationship reflects a causal relationship. In these situations, the variable that is thought to be the cause is called the <a href="#independent-variable">independent variable</a> (often referred to as <em>X</em> for short), and the variable that is thought to be the effect is called the <a href="#dependent-variable">dependent variable</a> (often referred to as <em>Y</em>). For example, the statistical relationship between whether or not a depressed person receives psychotherapy and the number of depressive symptoms he or she has reflects the fact that the psychotherapy (the independent variable) <em>causes</em> the reduction in symptoms (the dependent variable). Understanding causal relationships is important in part because it allows us to change people’s behavior in predictable ways. If we know that psychotherapy causes a reduction in depressive symptoms—and we want people to have fewer depressive symptoms—then we can use psychotherapy to achieve this goal.</p>
+<p>But not all statistical relationships reflect causal relationships. This is what psychologists mean when they say, “Correlation does not imply causation.” An obvious example comes from a study in Taiwan showing a positive relationship between the number of electrical appliances that people use and the extent to which they use birth control <span class="citation" data-cites="stanovich2013think">(<a href="references.html#ref-stanovich2013think" role="doc-biblioref"><strong>stanovich2013think?</strong></a>)</span>. It seems clear, however, that this does not mean that owning electrical appliances causes people to use birth control, and it would not make sense to try to increase the use of birth control by giving people toasters and hair dryers.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/getting-started/correlationdoesnotimplycausation.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption class="figure-caption">A Public Service Announcement.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>There are two reasons that correlation does not imply causation. The first is called the <a href="#directionality-problem">directionality problem</a>. Two variables, <em>X</em> and <em>Y</em>, can be statistically related because <em>X</em> causes <em>Y</em> or because <em>Y</em> causes <em>X.</em> Consider, for example, a study showing that whether or not people exercise is statistically related to how happy they are—such that people who exercise are happier on average than people who do not. This statistical relationship is consistent with the idea that exercising causes happiness, but it is also consistent with the idea that happiness causes exercise. Perhaps being happy gives people more energy or leads them to seek opportunities to socialize with others by going to the gym. The second reason that correlation does not imply causation is called the <a href="#third-variable-problem">third-variable problem</a>. Two variables, <em>X</em> and <em>Y</em>, can be statistically related not because <em>X</em> causes <em>Y</em>, or because <em>Y</em> causes <em>X</em>, but because some third variable, <em>Z</em>, causes both <em>X</em> and <em>Y.</em> For example, the fact that people with more electrical appliances are more likely to use birth control probably reflects the fact that having more education or income causes people to own more appliances and causes them to use birth control. Similarly, the statistical relationship between exercise and happiness could mean that some third variable, such as physical health, causes both of the others. Being physically healthy could cause people to exercise and cause them to be happier.</p>
+<section id="lots-of-candy-could-lead-to-violence" class="level5 unnumbered fyi">
+<h5 class="unnumbered anchored" data-anchor-id="lots-of-candy-could-lead-to-violence">“Lots of Candy Could Lead to Violence”</h5>
+<p>Although researchers in psychology know that correlation does not imply causation, many journalists do not. One website about correlation and causation, http://jonathan.mueller.faculty.noctrl.edu/100/correlation_or_causation.htm, links to dozens of media reports about real biomedical and psychological research. Many of the headlines suggest that a causal relationship has been demonstrated, when a careful reading of the articles shows that it has not because of the directionality and third-variable problems.</p>
+<p>One article is about a study showing that children who ate candy every day were more likely than other children to be arrested for a violent offense later in life. But could candy really “lead to” violence, as the headline suggests? What alternative explanations can you think of for this statistical relationship? How could the headline be rewritten so that it is not misleading?</p>
+</section>
+<p>As we will see later in the book, there are various ways that researchers address the directionality and third-variable problems. The most effective, however, is to conduct an <a href="#experiment">experiment</a>. An experiment is a study in which the researcher manipulates the independent variable. For example, instead of simply measuring how much people exercise, a researcher could bring people into a laboratory and randomly assign half of them to run on a treadmill for 15 minutes and the rest to sit on a couch for 15 minutes. Although this seems like a minor addition to the research design, it is extremely important. Now if the exercisers end up in more positive moods than those who did not exercise, it cannot be because their moods affected how much they exercised (because it was the researcher who determined how much they exercised). Likewise, it cannot be because some third variable (e.g., physical health) affected both how much they exercised and what mood they were in (because, again, it was the researcher who determined how much they exercised). Thus experiments eliminate the directionality and third-variable problems and allow researchers to draw firm conclusions about causal relationships. We will have much more to say about experimental and nonexperimental research later in the book.</p>
+<section id="key-takeaways" class="level5 unnumbered takeaways">
+<h5 class="unnumbered anchored" data-anchor-id="key-takeaways">KEY TAKEAWAYS</h5>
+<ul>
+<li>Research questions in psychology are about variables and relationships between variables.</li>
+<li>Two basic forms of statistical relationship are differences between group means and correlations between quantitative variables, each of which can be described using a few simple statistical techniques.</li>
+<li>Correlation does not imply causation. A statistical relationship between two variables, <em>X</em> and <em>Y</em>, does not necessarily mean that <em>X</em> causes <em>Y.</em> It is also possible that <em>Y</em> causes <em>X</em>, or that a third variable, <em>Z</em>, causes both <em>X</em> and <em>Y.</em></li>
+</ul>
+</section>
+<section id="exercises" class="level5 unnumbered exercises">
+<h5 class="unnumbered anchored" data-anchor-id="exercises">EXERCISES</h5>
+<ol type="1">
+<li>Practice: List 10 variables that might be of interest to a researcher in psychology. For each, specify whether it is quantitative or categorical.</li>
+<li>Practice: Imagine that you categorize people as either introverts (quieter, shyer, more inward looking) or extroverts (louder, more outgoing, more outward looking). Sketch a bar graph showing a hypothetical statistical relationship between this variable and the number of words people speak per day.</li>
+<li>Practice: Now imagine that you measure people’s levels of extroversion as a quantitative variable, with values ranging from 0 (extreme introversion) to 30 (extreme extroversion). Sketch a scatterplot showing a hypothetical statistical relationship between this variable and the number of words people speak per day.</li>
+<li>Practice: For each of the following statistical relationships, decide whether the directionality problem is present and think of at least one plausible third variable:
+<ul>
+<li>People who eat more lobster tend to live longer.</li>
+<li>People who exercise more tend to weigh less.</li>
+<li>College students who drink more alcohol tend to have poorer grades.</li>
+</ul></li>
+</ol>
+</section>
+</section>
+</section>
+</section>
+<section id="quantitative-and-qualitative-research" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="quantitative-and-qualitative-research"><span class="header-section-number">2.2</span> Quantitative and Qualitative Research</h2>
+<section id="learning-objectives-1" class="level5 unnumbered learningobjectives">
+<h5 class="unnumbered anchored" data-anchor-id="learning-objectives-1">LEARNING OBJECTIVES</h5>
+<ol type="1">
+<li>List several ways in which qualitative research differs from quantitative research in psychology.</li>
+<li>Describe the strengths and weaknesses of qualitative research in psychology compared with quantitative research.</li>
+<li>Give examples of qualitative research in psychology.</li>
+</ol>
+</section>
+<section id="what-is-qualitative-research" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="what-is-qualitative-research">What Is Qualitative Research?</h3>
+<p>This book is primarily about <a href="#quantitative-research">quantitative research</a>. Quantitative researchers typically start with a focused research question or hypothesis, collect a small amount of data from each of a large number of individuals, describe the resulting data using statistical techniques, and draw general conclusions about some large population. Although this is by far the most common approach to conducting empirical research in psychology, there is an important alternative called qualitative research. Qualitative research originated in the disciplines of anthropology and sociology but is now used to study many psychological topics as well. Qualitative researchers generally begin with a less focused research question, collect large amounts of relatively “unfiltered” data from a relatively small number of individuals, and describe their data using nonstatistical techniques. They are usually less concerned with drawing general conclusions about human behavior than with understanding in detail the experience of their research participants.</p>
+<p>Consider, for example, a study by researcher Per Lindqvist and his colleagues, who wanted to learn how the families of teenage suicide victims cope with their loss <span class="citation" data-cites="lindqvist2008aftermath">(<a href="references.html#ref-lindqvist2008aftermath" role="doc-biblioref"><strong>lindqvist2008aftermath?</strong></a>)</span>. They did not have a specific research question or hypothesis, such as, What percentage of family members join suicide support groups? Instead, they wanted to understand the variety of reactions that families had, with a focus on what it is like from <em>their</em> perspectives. To do this, they interviewed the families of 10 teenage suicide victims in their homes in rural Sweden. The interviews were relatively unstructured, beginning with a general request for the families to talk about the victim and ending with an invitation to talk about anything else that they wanted to tell the interviewer. One of the most important themes that emerged from these interviews was that even as life returned to “normal,” the families continued to struggle with the question of why their loved one committed suicide. This struggle appeared to be especially difficult for families in which the suicide was most unexpected.</p>
+</section>
+<section id="the-purpose-of-qualitative-research" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="the-purpose-of-qualitative-research">The Purpose of Qualitative Research</h3>
+<p>Again, this book is primarily about quantitative research in psychology. The strength of quantitative research is its ability to provide precise answers to specific research questions and to draw general conclusions about human behavior. This is how we know that people have a strong tendency to obey authority figures, for example, or that female college students are not substantially more talkative than male college students. But while quantitative research is good at providing precise answers to specific research questions, it is not nearly as good at <em>generating</em> novel and interesting research questions. Likewise, while quantitative research is good at drawing general conclusions about human behavior, it is not nearly as good at providing detailed descriptions of the behavior of particular groups in particular situations. And it is not very good at all at communicating what it is actually like to be a member of a particular group in a particular situation.</p>
+<p>But the relative weaknesses of quantitative research are the relative strengths of qualitative research. Qualitative research can help researchers to generate new and interesting research questions and hypotheses. The research of Lindqvist and colleagues, for example, suggests that there may be a general relationship between how unexpected a suicide is and how consumed the family is with trying to understand why the teen committed suicide. This relationship can now be explored using quantitative research. But it is unclear whether this question would have arisen at all without the researchers sitting down with the families and listening to what they themselves wanted to say about their experience. Qualitative research can also provide rich and detailed descriptions of human behavior in the real-world contexts in which it occurs. Among qualitative researchers, this is often referred to as “thick description” <span class="citation" data-cites="geertz1973interpretation">(<a href="references.html#ref-geertz1973interpretation" role="doc-biblioref"><strong>geertz1973interpretation?</strong></a>)</span>. Similarly, qualitative research can convey a sense of what it is actually like to be a member of a particular group or in a particular situation—what qualitative researchers often refer to as the “lived experience” of the research participants. Lindqvist and colleagues, for example, describe how all the families spontaneously offered to show the interviewer the victim’s bedroom or the place where the suicide occurred—revealing the importance of these physical locations to the families. It seems unlikely that a quantitative study would have discovered this.</p>
+</section>
+<section id="data-collection-and-analysis-in-qualitative-research" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="data-collection-and-analysis-in-qualitative-research">Data Collection and Analysis in Qualitative Research</h3>
+<p>As with correlational research, data collection approaches in qualitative research are quite varied and can involve naturalistic observation, archival data, artwork, and many other things. But one of the most common approaches, especially for psychological research, is to conduct <a href="#interviews">interviews</a>. Interviews in qualitative research tend to be unstructured—consisting of a small number of general questions or prompts that allow participants to talk about what is of interest to them. The researcher can follow up by asking more detailed questions about the topics that do come up. Such interviews can be lengthy and detailed, but they are usually conducted with a relatively small sample. This was essentially the approach used by Lindqvist and colleagues in their research on the families of suicide survivors. Small groups of people who participate together in interviews focused on a particular topic or issue are often referred to as <a href="#focus-groups">focus groups</a>. The interaction among participants in a focus group can sometimes bring out more information than can be learned in a one-on-one interview. The use of focus groups has become a standard technique in business and industry among those who want to understand consumer tastes and preferences. The content of all focus group interviews is usually recorded and transcribed to facilitate later analyses.</p>
+<p>Another approach to data collection in qualitative research is participant observation. In <a href="#participant-observation">participant observation</a>, researchers become active participants in the group or situation they are studying. The data they collect can include interviews (usually unstructured), their own notes based on their observations and interactions, documents, photographs, and other artifacts. The basic rationale for participant observation is that there may be important information that is only accessible to, or can be interpreted only by, someone who is an active participant in the group or situation. An example of participant observation comes from a study by sociologist Amy Wilkins (published in <em>Social Psychology Quarterly</em>) on a college-based religious organization that emphasized how happy its members were <span class="citation" data-cites="wilkins2008happier">(<a href="references.html#ref-wilkins2008happier" role="doc-biblioref"><strong>wilkins2008happier?</strong></a>)</span>. Wilkins spent 12 months attending and participating in the group’s meetings and social events, and she interviewed several group members. In her study, Wilkins identified several ways in which the group “enforced” happiness—for example, by continually talking about happiness, discouraging the expression of negative emotions, and using happiness as a way to distinguish themselves from other groups.</p>
+<section id="data-analysis-in-qualitative-research" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="data-analysis-in-qualitative-research">Data Analysis in Qualitative Research</h4>
+<p>Although quantitative and qualitative research generally differ along several important dimensions (e.g., the specificity of the research question, the type of data collected), it is the method of data <em>analysis</em> that distinguishes them more clearly than anything else. To illustrate this idea, imagine a team of researchers that conducts a series of unstructured interviews with recovering alcoholics to learn about the role of their religious faith in their recovery. Although this sounds like qualitative research, imagine further that once they collect the data, they code the data in terms of how often each participant mentions God (or a “higher power”), and they then use descriptive and inferential statistics to find out whether those who mention God more often are more successful in abstaining from alcohol. Now it sounds like quantitative research. In other words, the quantitative-qualitative distinction depends more on what researchers <em>do</em> with the data they have collected than with why or how they collected the data.</p>
+<p>But what does qualitative data analysis look like? Just as there are many ways to collect data in qualitative research, there are many ways to analyze data. Here we focus on one general approach called <a href="#grounded-theory">grounded theory</a> <span class="citation" data-cites="glaser2017discovery">(<a href="references.html#ref-glaser2017discovery" role="doc-biblioref"><strong>glaser2017discovery?</strong></a>)</span>. This approach was developed within the field of sociology in the 1960s and has gradually gained popularity in psychology. Remember that in quantitative research, it is typical for the researcher to start with a theory, derive a hypothesis from that theory, and then collect data to test that specific hypothesis. In qualitative research using grounded theory, researchers start with the data and develop a theory or an interpretation that is “grounded in” those data. They do this in stages. First, they identify ideas that are repeated throughout the data. Then they organize these ideas into a smaller number of broader themes. Finally, they write a <a href="#theoretical-narrative">theoretical narrative</a>—an interpretation—of the data in terms of the themes that they have identified. This theoretical narrative focuses on the subjective experience of the participants and is usually supported by many direct quotations from the participants themselves.</p>
+<p>As an example, consider a study by researchers Laura Abrams and Laura Curran, who used the grounded theory approach to study the experience of postpartum depression symptoms among low-income mothers <span class="citation" data-cites="abrams2009and">(<a href="references.html#ref-abrams2009and" role="doc-biblioref"><strong>abrams2009and?</strong></a>)</span>. Their data were the result of unstructured interviews with 19 participants. Table @ref(tab:themes) shows the five broad themes the researchers identified and the more specific repeating ideas that made up each of those themes. In their research report, they provide numerous quotations from their participants, such as this one from “Destiny:”</p>
+<blockquote class="blockquote">
+<p>Well, just recently my apartment was broken into and the fact that his Medicaid for some reason was cancelled so a lot of things was happening within the last two weeks all at one time. So that in itself I don’t want to say almost drove me mad but it put me in a funk….Like I really was depressed. (p.&nbsp;357)</p>
+</blockquote>
+<p>Their theoretical narrative focused on the participants’ experience of their symptoms not as an abstract “affective disorder” but as closely tied to the daily struggle of raising children alone under often difficult circumstances.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<caption>Themes and repeating ideas in a study of postpartum depression among low-income mothers.</caption>
+<colgroup>
+<col style="width: 20%">
+<col style="width: 79%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Theme</th>
+<th style="text-align: left;">Repeating ideas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Ambivalence</td>
+<td style="text-align: left;">“I wasn’t prepared for this baby,” “I didn’t want to have any more children.”</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Caregiving overload</td>
+<td style="text-align: left;">“Please stop crying,” “I need a break,” “I can’t do this anymore.”</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Juggling</td>
+<td style="text-align: left;">“No time to breathe,” “Everyone depends on me,” “Navigating the maze.”</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mothering alone</td>
+<td style="text-align: left;">“I really don’t have any help,” “My baby has no father.”</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Real-life worry</td>
+<td style="text-align: left;">“I don’t have any money,” “Will my baby be OK?” “It’s not safe here.”</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="the-quantitative-qualitative-debate" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="the-quantitative-qualitative-debate">The Quantitative-Qualitative “Debate”</h3>
+<p>Given their differences, it may come as no surprise that quantitative and qualitative research in psychology and related fields do not coexist in complete harmony. Some quantitative researchers criticize qualitative methods on the grounds that they lack objectivity, are difficult to evaluate in terms of reliability and validity, and do not allow generalization to people or situations other than those actually studied. At the same time, some qualitative researchers criticize quantitative methods on the grounds that they overlook the richness of human behavior and experience and instead answer simple questions about easily quantifiable variables.</p>
+<p>In general, however, qualitative researchers are well aware of the issues of objectivity, reliability, validity, and generalizability. In fact, they have developed a number of frameworks for addressing these issues (which are beyond the scope of our discussion). And in general, quantitative researchers are well aware of the issue of oversimplification. They do not believe that all human behavior and experience can be adequately described in terms of a small number of variables and the statistical relationships among them. Instead, they use simplification as a strategy for uncovering general principles of human behavior.</p>
+<p>Many researchers from both the quantitative and qualitative camps now agree that the two approaches can and should be combined into what has come to be called <a href="#mixed-methods-research">mixed-methods research</a> <span class="citation" data-cites="todd2004mixing">(<a href="references.html#ref-todd2004mixing" role="doc-biblioref"><strong>todd2004mixing?</strong></a>)</span>. (In fact, the studies by Lindqvist and colleagues and by Abrams and Curran both combined quantitative and qualitative approaches.) One approach to combining quantitative and qualitative research is to use qualitative research for hypothesis generation and quantitative research for hypothesis testing. Again, while a qualitative study might suggest that families who experience an unexpected suicide have more difficulty resolving the question of why, a well-designed quantitative study could test a hypothesis by measuring these specific variables for a large sample. A second approach to combining quantitative and qualitative research is referred to as <a href="#triangulation">triangulation</a>. The idea is to use both quantitative and qualitative methods simultaneously to study the same general questions and to compare the results. If the results of the quantitative and qualitative methods converge on the same general conclusion, they reinforce and enrich each other. If the results diverge, then they suggest an interesting new question: Why do the results diverge and how can they be reconciled?</p>
+<section id="key-takeaways-1" class="level5 unnumbered takeaways">
+<h5 class="unnumbered anchored" data-anchor-id="key-takeaways-1">KEY TAKEAWAYS</h5>
+<ul>
+<li>Qualitative research is an important alternative to quantitative research in psychology. It generally involves asking broader research questions, collecting more detailed data (e.g., interviews), and using nonstatistical analyses.</li>
+<li>Many researchers conceptualize quantitative and qualitative research as complementary and advocate combining them. For example, qualitative research can be used to generate hypotheses and quantitative research to test them.</li>
+</ul>
+</section>
+<section id="exercise" class="level5 unnumbered exercises">
+<h5 class="unnumbered anchored" data-anchor-id="exercise">EXERCISE</h5>
+<ol type="1">
+<li>Discussion: What are some ways in which a qualitative study of girls who play youth baseball would be likely to differ from a quantitative study on the same topic?</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="glossary" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="glossary"><span class="header-section-number">2.3</span> Glossary</h2>
+<section id="bar-graph" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="bar-graph">bar graph</h5>
+<p>A graph used to show differences between the mean scores of two or more groups.</p>
+</section>
+<section id="categorical-variable" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="categorical-variable">categorical variable</h5>
+<p>A quality that varies across individuals and is measured by assigning a category label to each individual.</p>
+</section>
+<section id="dependent-variable" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="dependent-variable">dependent variable</h5>
+<p>A variable that is thought to be the effect of another variable (called the independent variable).</p>
+</section>
+<section id="directionality-problem" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="directionality-problem">directionality problem</h5>
+<p>The problem of knowing whether two variables, <em>X</em> and <em>Y</em>, are statistically related because <em>X</em> causes <em>Y</em> or because <em>Y</em> causes <em>X</em>.</p>
+</section>
+<section id="experiment" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="experiment">experiment</h5>
+<p>A type of empirical study in which an independent variable is manipulated and a dependent variable is measured while extraneous variables are controlled.</p>
+</section>
+<section id="focus-groups" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="focus-groups">focus groups</h5>
+<p>A small group of people who participate together in an interview focused on a particular topic or issue.</p>
+</section>
+<section id="grounded-theory" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="grounded-theory">grounded theory</h5>
+<p>An approach to analyzing qualitative data in which repeating ideas are identified and grouped into broader themes. The themes are integrated in a theoretical narrative.##### interviews {-}</p>
+<p>A data collection method in qualitative research. Interviews can be structured, semistructured, or unstructured—depending on how well specified the sequence of questions or prompts is.</p>
+</section>
+<section id="independent-variable" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="independent-variable">independent variable</h5>
+<p>A variable that is thought to be the cause of another variable (called the dependent variable). In an experiment, the independent variable is manipulated by the researcher.</p>
+</section>
+<section id="interviews" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="interviews">interviews</h5>
+<p>A data collection method in qualitative research. Interviews can be structured, semistructured, or unstructured—depending on how well specified the sequence of questions or prompts is.</p>
+</section>
+<section id="mixed-methods-research" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="mixed-methods-research">mixed-methods research</h5>
+<p>Research that uses both quantitative and qualitative methods.</p>
+</section>
+<section id="operational-definition" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="operational-definition">operational definition</h5>
+<p>A definition of a variable or construct in terms of precisely how it will be measured.</p>
+</section>
+<section id="participant-observation" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="participant-observation">participant observation</h5>
+<p>An approach to data collection in qualitative research in which the researcher becomes an active participant in the group or situation under study.</p>
+</section>
+<section id="pearsons-r" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="pearsons-r">Pearson’s <em>r</em></h5>
+<p>A measure of the strength of the correlation between two quantitative variables.</p>
+</section>
+<section id="population" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="population">population</h5>
+<p>The entire group of individuals that the researcher wants to draw conclusions about.</p>
+</section>
+<section id="qualitative-research" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="qualitative-research">qualitative research</h5>
+<p>Research that typically involves formulating broad research questions, collecting large amounts of data from a small number of participants, and summarizing the data using nonstatistical techniques.</p>
+</section>
+<section id="quantitative-research" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="quantitative-research">quantitative research</h5>
+<p>Research that involves formulating focused research questions, collecting small amounts of data from a large number of participants, and summarizing the data using descriptive and inferential statistics.</p>
+</section>
+<section id="quantitative-variable" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="quantitative-variable">quantitative variable</h5>
+<p>A quantity that varies across individuals and is measured by assigning a number to each individual.</p>
+</section>
+<section id="sample" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="sample">sample</h5>
+<p>The subset of individuals that the researcher actually studies.</p>
+</section>
+<section id="scatterplot" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="scatterplot">scatterplot</h5>
+<p>A graph used to show the correlation between two quantitative variables.</p>
+</section>
+<section id="statistical-relationship" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="statistical-relationship">statistical relationship</h5>
+<p>A difference in the average score on one variable across levels of another variable.</p>
+</section>
+<section id="theoretical-narrative" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="theoretical-narrative">theoretical narrative</h5>
+<p>In grounded theory, a narrative interpretation of the broad themes that emerge from the data, usually supported by many direct quotations or examples from the data.</p>
+</section>
+<section id="third-variable-problem" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="third-variable-problem">third-variable problem</h5>
+<p>Two variables, <em>X</em> and <em>Y</em>, can be statistically related not because <em>X</em> causes <em>Y</em> or because <em>Y</em> causes <em>X</em>, but because some third variable, <em>Z</em>, causes both.</p>
+</section>
+<section id="triangulation" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="triangulation">triangulation</h5>
+<p>In mixed methods research, using multiple quantitative and qualitative methods to study the same topic, with the goal of converging on a single interpretation.</p>
+</section>
+<section id="variable" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="variable">variable</h5>
+<p>A quantity or quality that varies across individuals.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  update_total_correct();
+}
+
+</script>
+<script>
+// open rdrr links externally ----
+
+var exlinks = document.querySelectorAll("a[href^='https://rdrr.io']");
+var exlink_func = function(){
+  window.open(this.href);
+  return false;
+};
+for (var i = 0; i < exlinks.length; i++) {
+    exlinks[i].addEventListener('click', exlink_func, false);
+}
+
+// visible second sidebar in mobile ----
+
+function move_sidebar() {
+  var toc = document.getElementById("TOC");
+  var small_sidebar = document.querySelector("#quarto-sidebar .sidebar-menu-container");
+  var right_sidebar = document.getElementById("quarto-margin-sidebar");
+
+  if (window.innerWidth < 768) {
+    small_sidebar.append(toc);
+  } else {
+    right_sidebar.append(toc);
+  }
+}
+move_sidebar();
+window.onresize = move_sidebar;
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./01-science-of-psych.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Principles of Research in Psychology</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./03-theory.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Made by Monkeys</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>With love and Quarto</p>
+</div>
+  </div>
+</footer>
+
+
+
+</body></html>

@@ -1,0 +1,105 @@
+project:
+  type: book
+  output-dir: docs
+  resources: resources
+
+execute:
+  freeze: auto # re-render only changed chapters
+
+book:
+  title: Monkey Methods
+  subtitle: "Welcome to the Jungle"
+  author: "Dr. Gordon Wright"
+  doi: ""
+  license: CC-BY-NC-SA 4.0
+  description: "Research Methods in Psychology"
+  cover-image: images/logos/logo.png
+  image: images/logos/LMLLOGO.png
+  favicon: images/logos/LMLLOGO.png
+  cookie-consent: false
+  google-analytics: ""
+  page-navigation: true
+  search: true
+  comments:
+    hypothesis:
+      theme: clean
+      openSidebar: false
+  downloads: [pdf]
+  sharing: []
+  sidebar:
+    title: "MONKEY METHODS draft"
+    logo: images/logos/LMLLOGO.png
+    search: true
+    contents: ""
+    style: floating
+    background: light
+    foreground: dark
+    border: true
+    alignment: left
+    collapse-level: 3
+    pinned: true
+    header: ""
+    footer: ""
+  margin-header: ""
+  page-footer:
+    left: "Made by Monkeys"
+    right: "With love and Quarto"
+  chapters:
+  - "index.qmd"
+  - "01-science-of-psych.qmd"
+  - "02-getting-started.qmd"
+  - "03-theory.qmd"
+  - "04-ethics.qmd"
+  - "05-experiments.qmd"
+  - "06-measurement.qmd"
+  - "07-sampling.qmd"
+  - "08-complex-designs.qmd"
+  - "09-nonexperiments.qmd"
+  - "10-single-N.qmd"
+  - "11-ideas.qmd"
+  - "12-presenting.qmd"
+  - "13-descriptives.qmd"
+  - "14-inferentials.qmd"
+  - "15-references.qmd"
+
+  appendices:
+  - webexercises.qmd
+  - references.qmd
+
+
+bibliography: include/references.bib
+csl: include/apa.csl
+
+format:
+  html:
+    theme:
+      light:
+      - flatly
+      - include/light.scss
+      dark:
+      - darkly
+      - include/dark.scss
+    css:
+    - https://use.fontawesome.com/releases/v5.13.0/css/all.css
+    - include/booktem.css
+    - include/webex.css
+    - include/glossary.css
+    - include/style.css
+    df-print: kable
+    code-link: true
+    code-fold: false
+    code-line-numbers: true
+    code-overflow: wrap
+    code-copy: hover
+    highlight-style: a11y
+    mainfont: "Atkinson Hyperlegible"
+    monofont: "Fira Code"
+    include-after-body: [include/webex.js, include/script.js]
+  pdf:
+    # documentclass: scrbook
+    default-image-extension: png
+    keep-tex: false
+    number-sections: false
+    mainfont: "Atkinson Hyperlegible"
+    monofont: "Fira Code"
+    sansfont: "Atkinson Hyperlegible"
