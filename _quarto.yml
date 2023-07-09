@@ -12,7 +12,7 @@ book:
   author: 
     - name: Dr. Gordon Wright
       id: GW
-      orcid: 0000-0002-1825-0097
+      orcid: 0000-0001-9424-5743
       email: gordon@littlemonkeylab.com
       affiliation: 
         - name: Goldsmiths, University of London
@@ -72,9 +72,7 @@ book:
         - "12-presenting.qmd"
         - "13-descriptives.qmd"
         - "14-inferentials.qmd"
-    - part: "Statistics Text"
-      chapters:
-         - "01-science-of-psych.qmd"
+
    
     
   appendices:
