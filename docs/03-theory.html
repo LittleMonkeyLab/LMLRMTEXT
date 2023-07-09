@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Research Methods in Psychology">
+<meta name="description" content="This is a an OER textbook for introductory research methods in psychology.">
 
 <title>Monkey Methods - 3&nbsp; Theory in Psychology</title>
 <style>
@@ -21,7 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -43,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -65,8 +84,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script type="application/json" class="js-hypothesis-config">
 {
-  "theme": "clean",
-  "openSidebar": false
+  "theme": "clean"
 }
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
@@ -88,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-theory.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-science-of-psych.html">Research Methods Text</a></li><li class="breadcrumb-item"><a href="./03-theory.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -123,103 +141,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Research 🐵 Methods in Psychology</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Principles of Research in Psychology</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./02-getting-started.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./03-theory.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./04-ethics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./05-experiments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Experimental Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./06-measurement.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./07-sampling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sampling</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./08-complex-designs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Complex Research Designs</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./09-nonexperiments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./10-single-N.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Single-Subject Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./11-ideas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(PART*) Conducting Your Own Study</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./12-presenting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./13-descriptives.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(PART*) Analyzing Data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./14-inferentials.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./15-references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foreword</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">Research Methods Text</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -227,14 +155,120 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./webexercises.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span></a>
+  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles of Research in Psychology</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+  <a href="./02-getting-started.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-theory.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Experimental Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-measurement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-sampling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sampling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-complex-designs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Complex Research Designs</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-nonexperiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-single-N.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Single-Subject Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-ideas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conducting Your Own Study</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-presenting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-descriptives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analyzing Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-inferentials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Statistics Text</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles of Research in Psychology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./webexercises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span></a>
   </div>
 </li>
       </ul>
@@ -265,7 +299,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#theory-testing-and-revision" id="toc-theory-testing-and-revision" class="nav-link" data-scroll-target="#theory-testing-and-revision">Theory Testing and Revision</a></li>
   <li><a href="#incorporating-theory-into-your-research" id="toc-incorporating-theory-into-your-research" class="nav-link" data-scroll-target="#incorporating-theory-into-your-research">Incorporating Theory Into Your Research</a></li>
   </ul></li>
-  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary"><span class="header-section-number">3.4</span> Glossary</a></li>
+  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary"><span class="header-section-number">3.4</span> Glossary</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3.4.1</span> References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -291,9 +328,9 @@ ul.task-list li input[type="checkbox"] {
 
 <p>In the following paragraph, researchers Sherlock Campbell and James Pennebaker describe a remarkable statistical relationship.</p>
 <blockquote class="blockquote">
-<p>Multiple laboratories have demonstrated that people who are asked to write about traumatic experiences subsequently exhibit better physical health than people who are asked to write about superficial topics. In these studies, individuals are randomly assigned to write about either emotional or nonemotional topics for 15 to 20 min per day for 3 to 5 consecutive days. In the past 15 years, dozens of replications have demonstrated that emotional writing can influence frequency of physician visits, immune function, stress hormones, blood pressure, and a host of social, academic, and cognitive variables. These effects hold up across cultures, ages, and diverse samples. <span class="citation" data-cites="campbell2003secret">(<a href="references.html#ref-campbell2003secret" role="doc-biblioref"><strong>campbell2003secret?</strong></a>)</span>.</p>
+<p>Multiple laboratories have demonstrated that people who are asked to write about traumatic experiences subsequently exhibit better physical health than people who are asked to write about superficial topics. In these studies, individuals are randomly assigned to write about either emotional or nonemotional topics for 15 to 20 min per day for 3 to 5 consecutive days. In the past 15 years, dozens of replications have demonstrated that emotional writing can influence frequency of physician visits, immune function, stress hormones, blood pressure, and a host of social, academic, and cognitive variables. These effects hold up across cultures, ages, and diverse samples. <span class="citation" data-cites="campbell2003secret">(<a href="#ref-campbell2003secret" role="doc-biblioref">Campbell &amp; Pennebaker, 2003, p. 60</a>)</span>.</p>
 </blockquote>
-<p>In other words, researchers have answered the interesting and important question of whether engaging in what has come to be called “expressive writing” improves people’s health. It does. But there is a second question that is equally interesting and important: Why? What psychological and biological variables, structures, and processes are involved, and how do they connect the act of expressive writing to improved health? Several ideas have been proposed. For example, people who write about traumatic experiences might habituate to them. That is, the more they think about them, the less negatively they react both psychologically and physiologically—leading to improvements in mental and physical health <span class="citation" data-cites="lepore2002expressive">(<a href="references.html#ref-lepore2002expressive" role="doc-biblioref"><strong>lepore2002expressive?</strong></a>)</span>.</p>
+<p>In other words, researchers have answered the interesting and important question of whether engaging in what has come to be called “expressive writing” improves people’s health. It does. But there is a second question that is equally interesting and important: Why? What psychological and biological variables, structures, and processes are involved, and how do they connect the act of expressive writing to improved health? Several ideas have been proposed. For example, people who write about traumatic experiences might habituate to them. That is, the more they think about them, the less negatively they react both psychologically and physiologically—leading to improvements in mental and physical health <span class="citation" data-cites="lepore2002expressive">(<a href="#ref-lepore2002expressive" role="doc-biblioref">Lepore et al., 2002</a>)</span>.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -334,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 <p>Although an empirical result might be referred to as a phenomenon after being observed only once, this term is more likely to be used for results that have been replicated. <a href="#replication">Replication</a> means conducting a study again—either exactly as it was originally conducted or with modifications—to be sure that it produces the same results. Individual researchers usually replicate their own studies before publishing them. Many empirical research reports include an initial study and then one or more follow-up studies that replicate the initial study with minor modifications. Particularly interesting results come to the attention of other researchers who conduct their own replications. The positive effect of expressive writing on health and the negative effect of cell phone usage on driving ability are examples of phenomena that have been replicated many times by many different researchers.</p>
-<p>Sometimes a replication of a study produces results that differ from the results of the initial study. This could mean that the results of the initial study or the results of the replication were a fluke—they occurred by chance and do not reflect something that is generally true. In either case, additional replications would be likely to resolve this. A failure to produce the same results could also mean that the replication differed in some important way from the initial study. For example, early studies showed that people performed a variety of tasks better and faster when they were watched by others than when they were alone. Some later replications, however, showed that people performed worse when they were watched by others. Eventually researcher Robert Zajonc identified a key difference between the two types of studies. People seemed to perform better when being watched on highly practiced tasks but worse when being watched on relatively unpracticed tasks <span class="citation" data-cites="zajonc1965social">(<a href="references.html#ref-zajonc1965social" role="doc-biblioref"><strong>zajonc1965social?</strong></a>)</span>. These two phenomena have now come to be called social facilitation and social inhibition.</p>
+<p>Sometimes a replication of a study produces results that differ from the results of the initial study. This could mean that the results of the initial study or the results of the replication were a fluke—they occurred by chance and do not reflect something that is generally true. In either case, additional replications would be likely to resolve this. A failure to produce the same results could also mean that the replication differed in some important way from the initial study. For example, early studies showed that people performed a variety of tasks better and faster when they were watched by others than when they were alone. Some later replications, however, showed that people performed worse when they were watched by others. Eventually researcher Robert Zajonc identified a key difference between the two types of studies. People seemed to perform better when being watched on highly practiced tasks but worse when being watched on relatively unpracticed tasks <span class="citation" data-cites="zajonc1965social">(<a href="#ref-zajonc1965social" role="doc-biblioref">Zajonc, 1965</a>)</span>. These two phenomena have now come to be called social facilitation and social inhibition.</p>
 </section>
 <section id="theories" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="theories">Theories</h3>
@@ -346,7 +383,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="what-are-theories-for" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="what-are-theories-for">What Are Theories For?</h4>
-<p>Of course, scientific theories are meant to provide accurate explanations or interpretations of phenomena. But there must be more to it than this. Consider that a theory can be accurate without being very useful. To say that expressive writing helps people “deal with their emotions” might be accurate as far as it goes, but it seems too vague to be of much use. Consider also that a theory can be useful without being entirely accurate. Figure @ref(fig:memory) is a representation of the classic multistore model of human memory, which is still cited by researchers and discussed in textbooks despite the fact that it is now known to be inaccurate in a number of ways <span class="citation" data-cites="izawa1999human">(<a href="references.html#ref-izawa1999human" role="doc-biblioref"><strong>izawa1999human?</strong></a>)</span>. These two examples suggest that theories have purposes other than simply providing accurate explanations or interpretations. Here we look at three additional purposes of theories: the organization of known phenomena, the prediction of outcomes in new situations, and the generation of new research.</p>
+<p>Of course, scientific theories are meant to provide accurate explanations or interpretations of phenomena. But there must be more to it than this. Consider that a theory can be accurate without being very useful. To say that expressive writing helps people “deal with their emotions” might be accurate as far as it goes, but it seems too vague to be of much use. Consider also that a theory can be useful without being entirely accurate. Figure @ref(fig:memory) is a representation of the classic multistore model of human memory, which is still cited by researchers and discussed in textbooks despite the fact that it is now known to be inaccurate in a number of ways <span class="citation" data-cites="izawa1999human">(<a href="#ref-izawa1999human" role="doc-biblioref">Izawa, 1999</a>)</span>. These two examples suggest that theories have purposes other than simply providing accurate explanations or interpretations. Here we look at three additional purposes of theories: the organization of known phenomena, the prediction of outcomes in new situations, and the generation of new research.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -359,7 +396,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="organization" class="level5 unnumbered">
 <h5 class="unnumbered anchored" data-anchor-id="organization">Organization</h5>
-<p>One important purpose of scientific theories is to organize phenomena in ways that help people think about them clearly and efficiently. The drive theory of social facilitation and social inhibition, for example, helps to organize and make sense of a large number of seemingly contradictory results. The multistore model of human memory efficiently summarizes many important phenomena: the limited capacity and short retention time of information that is attended to but not rehearsed, the importance of rehearsing information for long-term retention, the serial-position effect, and so on. Or consider a classic theory of intelligence represented by Figure @ref(fig:g). According to this theory, intelligence consists of a general mental ability, <em>g</em>, plus a small number of more specific abilities that are influenced by <em>g</em> <span class="citation" data-cites="neisser1996intelligence">(<a href="references.html#ref-neisser1996intelligence" role="doc-biblioref"><strong>neisser1996intelligence?</strong></a>)</span>. Although there are other theories of intelligence, this one does a good job of summarizing a large number of statistical relationships between tests of various mental abilities. This includes the fact that tests of all basic mental abilities tend to be somewhat positively correlated and the fact that certain subsets of mental abilities (e.g., reading comprehension and analogy completion) are more positively correlated than others (e.g., reading comprehension and arithmetic).</p>
+<p>One important purpose of scientific theories is to organize phenomena in ways that help people think about them clearly and efficiently. The drive theory of social facilitation and social inhibition, for example, helps to organize and make sense of a large number of seemingly contradictory results. The multistore model of human memory efficiently summarizes many important phenomena: the limited capacity and short retention time of information that is attended to but not rehearsed, the importance of rehearsing information for long-term retention, the serial-position effect, and so on. Or consider a classic theory of intelligence represented by Figure @ref(fig:g). According to this theory, intelligence consists of a general mental ability, <em>g</em>, plus a small number of more specific abilities that are influenced by <em>g</em> <span class="citation" data-cites="neisser1996intelligence">(<a href="#ref-neisser1996intelligence" role="doc-biblioref">Neisser et al., 1996</a>)</span>. Although there are other theories of intelligence, this one does a good job of summarizing a large number of statistical relationships between tests of various mental abilities. This includes the fact that tests of all basic mental abilities tend to be somewhat positively correlated and the fact that certain subsets of mental abilities (e.g., reading comprehension and analogy completion) are more positively correlated than others (e.g., reading comprehension and arithmetic).</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -375,7 +412,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="prediction" class="level5 unnumbered">
 <h5 class="unnumbered anchored" data-anchor-id="prediction">Prediction</h5>
 <p>A second purpose of theories is to allow researchers and others to make predictions about what will happen in new situations. For example, a gymnastics coach might wonder whether a student’s performance is likely to be better or worse during a competition than when practicing alone. Even if this particular question has never been studied empirically, Zajonc’s drive theory suggests an answer. If the student generally performs with no mistakes, she is likely to perform better during competition. If she generally performs with many mistakes, she is likely to perform worse.</p>
-<p>In clinical psychology, treatment decisions are often guided by theories. Consider, for example, dissociative identity disorder (formerly called multiple personality disorder). The prevailing scientific theory of dissociative identity disorder is that people develop multiple personalities (also called alters) because they are familiar with this idea from popular portrayals (e.g., the movie <em>Sybil</em>) and because they are unintentionally encouraged to do so by their clinicians (e.g., by asking to “meet” an alter). This theory implies that rather than encouraging patients to act out multiple personalities, treatment should involve discouraging them from doing this <span class="citation" data-cites="lilienfeld2003dissociative">(<a href="references.html#ref-lilienfeld2003dissociative" role="doc-biblioref"><strong>lilienfeld2003dissociative?</strong></a>)</span>.</p>
+<p>In clinical psychology, treatment decisions are often guided by theories. Consider, for example, dissociative identity disorder (formerly called multiple personality disorder). The prevailing scientific theory of dissociative identity disorder is that people develop multiple personalities (also called alters) because they are familiar with this idea from popular portrayals (e.g., the movie <em>Sybil</em>) and because they are unintentionally encouraged to do so by their clinicians (e.g., by asking to “meet” an alter). This theory implies that rather than encouraging patients to act out multiple personalities, treatment should involve discouraging them from doing this <span class="citation" data-cites="lilienfeld2003dissociative">(<a href="#ref-lilienfeld2003dissociative" role="doc-biblioref">Lilienfeld &amp; Lynn, 2003</a>)</span>.</p>
 </section>
 <section id="generation-of-new-research" class="level5 unnumbered">
 <h5 class="unnumbered anchored" data-anchor-id="generation-of-new-research">Generation of New Research</h5>
@@ -390,7 +427,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The fact that there are multiple theories for any set of phenomena does not mean that any theory is as good as any other or that it is impossible to know whether a theory provides an accurate explanation or interpretation. On the contrary, scientists are continually comparing theories in terms of their ability to organize phenomena, predict outcomes in new situations, and generate research. Those that fare poorly are assumed to be less accurate and are abandoned, while those that fare well are assumed to be more accurate and are retained and compared with newer—and hopefully better—theories. Although scientists generally do not believe that their theories ever provide perfectly accurate descriptions of the world, they do assume that this process produces theories that come closer and closer to that ideal.</p>
 <section id="where-do-multiple-personalities-come-from" class="level5 unnumbered fyi">
 <h5 class="unnumbered anchored" data-anchor-id="where-do-multiple-personalities-come-from">Where Do Multiple Personalities Come From?</h5>
-<p>The literature on dissociative identity disorder (DID) features two competing theories. The sociocognitive theory is that DID comes about because patients are aware of the disorder, know its characteristic features, and are encouraged to take on multiple personalities by their therapists. The posttraumatic theory is that multiple personalities develop as a way of coping with sexual abuse or some other trauma. There are now several lines of evidence that support the sociocognitive model over the posttraumatic model <span class="citation" data-cites="lilienfeld2003dissociative">(<a href="references.html#ref-lilienfeld2003dissociative" role="doc-biblioref"><strong>lilienfeld2003dissociative?</strong></a>)</span>.</p>
+<p>The literature on dissociative identity disorder (DID) features two competing theories. The sociocognitive theory is that DID comes about because patients are aware of the disorder, know its characteristic features, and are encouraged to take on multiple personalities by their therapists. The posttraumatic theory is that multiple personalities develop as a way of coping with sexual abuse or some other trauma. There are now several lines of evidence that support the sociocognitive model over the posttraumatic model <span class="citation" data-cites="lilienfeld2003dissociative">(<a href="#ref-lilienfeld2003dissociative" role="doc-biblioref">Lilienfeld &amp; Lynn, 2003</a>)</span>.</p>
 <ul>
 <li>Diagnosis of DID greatly increased after the release of the book and film Sybil—about a woman with DID—in the 1970s.</li>
 <li>DID is extremely rare outside of North America.</li>
@@ -448,15 +485,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="scope" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="scope">Scope</h3>
-<p>Theories in psychology also vary widely in their <a href="#scope">scope</a>—the number and diversity of the phenomena they explain or interpret. Many early psychological theories were extremely broad in that they attempted to interpret essentially all human behavior. Freud and his followers, for example, applied his theory not only to understanding psychological disorders but also to slips of the tongue and other everyday errors, dreaming, sexuality, art, politics, and even civilization itself <span class="citation" data-cites="fine1990history">(<a href="references.html#ref-fine1990history" role="doc-biblioref"><strong>fine1990history?</strong></a>)</span>. Such theories have fallen out of favor in scientific psychology, however, because they tend to be imprecise and difficult to test. In addition, they have not been particularly successful at organizing or predicting the range and complexity of human behavior at the level of detail that scientific researchers usually seek.</p>
-<p>Still, contemporary theories in psychology can vary in their scope. At the broad end of this dimension are theories that apply to many diverse phenomena. Cognitive dissonance theory, for example, assumes that when people hold inconsistent beliefs, this creates mental discomfort that they are motivated to reduce by changing one or both of the beliefs. This theory has been applied to a wide variety of phenomena, including the persistence of irrational beliefs and behaviors (e.g., smoking), the effectiveness of certain persuasion and sales techniques (e.g., asking for a small favor before asking for a big one), and even placebo effects. At the narrow end of this dimension are theories that apply to a small number of closely related phenomena. Consider, for example, a very specific quantitative ability called subitizing. This refers to people’s ability to quickly and accurately perceive the number of objects in a scene without counting them—as long as the number is four or fewer. Several theories have been proposed to explain subitizing. Among them is the idea that small numbers of objects are associated with easily recognizable patterns. For example, people know immediately that there are three objects in a scene because the three objects tend to form a “triangle” and it is this pattern that is quickly perceived <span class="citation" data-cites="logan2003subitizing">(<a href="references.html#ref-logan2003subitizing" role="doc-biblioref"><strong>logan2003subitizing?</strong></a>)</span>.</p>
+<p>Theories in psychology also vary widely in their <a href="#scope">scope</a>—the number and diversity of the phenomena they explain or interpret. Many early psychological theories were extremely broad in that they attempted to interpret essentially all human behavior. Freud and his followers, for example, applied his theory not only to understanding psychological disorders but also to slips of the tongue and other everyday errors, dreaming, sexuality, art, politics, and even civilization itself <span class="citation" data-cites="fine1990history">(<a href="#ref-fine1990history" role="doc-biblioref">Fine, 1990</a>)</span>. Such theories have fallen out of favor in scientific psychology, however, because they tend to be imprecise and difficult to test. In addition, they have not been particularly successful at organizing or predicting the range and complexity of human behavior at the level of detail that scientific researchers usually seek.</p>
+<p>Still, contemporary theories in psychology can vary in their scope. At the broad end of this dimension are theories that apply to many diverse phenomena. Cognitive dissonance theory, for example, assumes that when people hold inconsistent beliefs, this creates mental discomfort that they are motivated to reduce by changing one or both of the beliefs. This theory has been applied to a wide variety of phenomena, including the persistence of irrational beliefs and behaviors (e.g., smoking), the effectiveness of certain persuasion and sales techniques (e.g., asking for a small favor before asking for a big one), and even placebo effects. At the narrow end of this dimension are theories that apply to a small number of closely related phenomena. Consider, for example, a very specific quantitative ability called subitizing. This refers to people’s ability to quickly and accurately perceive the number of objects in a scene without counting them—as long as the number is four or fewer. Several theories have been proposed to explain subitizing. Among them is the idea that small numbers of objects are associated with easily recognizable patterns. For example, people know immediately that there are three objects in a scene because the three objects tend to form a “triangle” and it is this pattern that is quickly perceived <span class="citation" data-cites="logan2003subitizing">(<a href="#ref-logan2003subitizing" role="doc-biblioref">Logan &amp; Zbrodoff, 2003</a>)</span>.</p>
 <p>As with informal and formal theories, both broad and narrow theories have their place in psychological research. Broad theories organize more phenomena but tend to be less formal and less precise in their predictions. Narrow theories organize fewer phenomena but tend to be more formal and more precise in their predictions.</p>
 </section>
 <section id="theoretical-approach" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="theoretical-approach">Theoretical Approach</h3>
 <p>In addition to varying in formality and scope, theories in psychology vary widely in the kinds of theoretical ideas they are constructed from. We will refer to this as the <a href="#theoretical-approach">theoretical approach</a>.</p>
-<p><a href="#functional-theory">Functional theories</a> explain psychological phenomena in terms of their function or purpose. For example, one prominent theory of repeated self-injury (e.g., cutting) is that people do it because it produces a short-term reduction in the intensity of negative emotions that they are feeling <span class="citation" data-cites="huband2009understanding">(<a href="references.html#ref-huband2009understanding" role="doc-biblioref"><strong>huband2009understanding?</strong></a>)</span>. Note that this theory does not focus on how this happens, but on the function of self-injury for the people who engage in it. Theories from the perspective of evolutionary psychology also tend to be functional—assuming that human behavior has evolved to solve specific adaptive problems faced by our distant ancestors. Consider the phenomenon of sex differences in human mating strategies <span class="citation" data-cites="buss1993sexual">(<a href="references.html#ref-buss1993sexual" role="doc-biblioref"><strong>buss1993sexual?</strong></a>)</span>. Men are somewhat more likely than women to seek short-term partners and to value physical attractiveness over material resources in a mate. Women are somewhat more likely than men to seek long-term partners and to value material resources over physical attractiveness in a mate. But why? The standard evolutionary theory holds that because the male investment in becoming a parent is relatively small, men reproduce more successfully by seeking several short-term partners who are young and healthy (which is signaled by physical attractiveness). But because the female investment in becoming a parent is quite large, women reproduce more successfully by seeking a long-term partner who has resources to contribute to raising the child.</p>
-<p><a href="#mechanistic-theory">Mechanistic theories</a>, on the other hand, focus on specific variables, structures, and processes, and how they interact to produce the phenomena. The drive theory of social facilitation and inhibition and the multistore model of human memory are mechanistic theories in this sense. Figure 4.4 “Simplified Representation of One Contemporary Theory of Hypochondriasis” represents another example—a contemporary cognitive theory of hypochondriasis—an extreme form of health anxiety in which people misinterpret ordinary bodily symptoms (e.g., headaches) as signs of a serious illness (e.g., a brain tumor; <span class="citation" data-cites="williams2004psychopathology">(<a href="references.html#ref-williams2004psychopathology" role="doc-biblioref"><strong>williams2004psychopathology?</strong></a>)</span>). This theory specifies several key variables and the relationships among them. Specifically, people who are high in the personality trait of neuroticism (also called negative emotionality) start to pay excessive attention to negative health information—especially if they have had a significant illness experience as a child (e.g., a seriously ill parent). This attention to negative health information then leads to health anxiety and hypochondriasis, especially among people who are low in effortful control, which is the ability to shift attention away from negative thoughts and feelings.</p>
+<p><a href="#functional-theory">Functional theories</a> explain psychological phenomena in terms of their function or purpose. For example, one prominent theory of repeated self-injury (e.g., cutting) is that people do it because it produces a short-term reduction in the intensity of negative emotions that they are feeling <span class="citation" data-cites="huband2009understanding">(<a href="#ref-huband2009understanding" role="doc-biblioref">Huband &amp; Tantam, 2009</a>)</span>. Note that this theory does not focus on how this happens, but on the function of self-injury for the people who engage in it. Theories from the perspective of evolutionary psychology also tend to be functional—assuming that human behavior has evolved to solve specific adaptive problems faced by our distant ancestors. Consider the phenomenon of sex differences in human mating strategies <span class="citation" data-cites="buss1993sexual">(<a href="#ref-buss1993sexual" role="doc-biblioref">Buss &amp; Schmitt, 1993</a>)</span>. Men are somewhat more likely than women to seek short-term partners and to value physical attractiveness over material resources in a mate. Women are somewhat more likely than men to seek long-term partners and to value material resources over physical attractiveness in a mate. But why? The standard evolutionary theory holds that because the male investment in becoming a parent is relatively small, men reproduce more successfully by seeking several short-term partners who are young and healthy (which is signaled by physical attractiveness). But because the female investment in becoming a parent is quite large, women reproduce more successfully by seeking a long-term partner who has resources to contribute to raising the child.</p>
+<p><a href="#mechanistic-theory">Mechanistic theories</a>, on the other hand, focus on specific variables, structures, and processes, and how they interact to produce the phenomena. The drive theory of social facilitation and inhibition and the multistore model of human memory are mechanistic theories in this sense. Figure 4.4 “Simplified Representation of One Contemporary Theory of Hypochondriasis” represents another example—a contemporary cognitive theory of hypochondriasis—an extreme form of health anxiety in which people misinterpret ordinary bodily symptoms (e.g., headaches) as signs of a serious illness (e.g., a brain tumor; <span class="citation" data-cites="williams2004psychopathology">Williams (<a href="#ref-williams2004psychopathology" role="doc-biblioref">2004</a>)</span>). This theory specifies several key variables and the relationships among them. Specifically, people who are high in the personality trait of neuroticism (also called negative emotionality) start to pay excessive attention to negative health information—especially if they have had a significant illness experience as a child (e.g., a seriously ill parent). This attention to negative health information then leads to health anxiety and hypochondriasis, especially among people who are low in effortful control, which is the ability to shift attention away from negative thoughts and feelings.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -468,7 +505,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>Mechanistic theories can also be expressed in terms of biological structures and processes. With advances in genetics and neuroscience, such theories are becoming increasingly common in psychology. For example, researchers are currently constructing and testing theories that specify the brain structures associated with the storage and rehearsal of information in the short-term store, the transfer of information to the long-term store, and so on. Theories of psychological disorders are also increasingly likely to focus on biological mechanisms. Schizophrenia, for example, has been explained in terms of several biological theories, including theories that focus on genetics, neurotransmitters, brain structures, and even prenatal exposure to infections.</p>
-<p>Finally, there are also theoretical approaches that provide organization without necessarily providing a functional or mechanistic explanation. These include <a href="#stage-theory">stage theories</a>, which specify a series of stages that people pass through as they develop or adapt to their environment. Famous stage theories include Abraham Maslow’s hierarchy of needs and Jean Piaget’s theory of cognitive development. <a href="#typology">Typologies</a> provide organization by categorizing people or behavior into distinct types. These include theories that identify several basic emotions (e.g., happiness, sadness, fear, surprise, anger, and disgust), several distinct types of intelligence (e.g., spatial, linguistic, mathematical, kinesthetic, musical, interpersonal, and intrapersonal), and distinct types of personalities (e.g., Type A vs.&nbsp;Type B).</p>
+<p>Finally, there are also theoretical approaches that provide organization without necessarily providing a functional or mechanistic explanation. These include <a href="#stage-theory">stage theories</a>, which specify a series of stages that people pass through as they develop or adapt to their environment. Famous stage theories include Abraham Maslow’s hierarchy of needs and Jean Piaget’s theory of cognitive development. <a href="#typology">Typologies</a> provide organization by categorizing people or behavior into distinct types. These include theories that identify several basic emotions (e.g., happiness, sadness, fear, surprise, anger, and disgust), several distinct types of intelligence (e.g., spatial, linguistic, mathematical, kinesthetic, musical, interpersonal, and intrapersonal), and distinct types of personalities (e.g., Type A vs. Type B).</p>
 <p>Researchers in psychology have found that there is a place for all these theoretical approaches. In fact, multiple approaches are probably necessary to provide a complete understanding of any set of phenomena. A complete understanding of emotions, for example, is likely to require identifying the basic emotions that people experience, explaining why we have those emotions, and describing how those emotions work in terms of underlying psychological and biological variables, structures, and processes.</p>
 <section id="key-takeaway" class="level5 unnumbered takeaways">
 <h5 class="unnumbered anchored" data-anchor-id="key-takeaway">KEY TAKEAWAY</h5>
@@ -511,7 +548,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>As an example, let us return to Zajonc’s research on social facilitation and inhibition. He started with a somewhat contradictory pattern of results from the research literature. He then constructed his drive theory, according to which being watched by others while performing a task causes physiological arousal, which increases an organism’s tendency to make the dominant response. This leads to social facilitation for well-learned tasks and social inhibition for poorly learned tasks. He now had a theory that organized previous results in a meaningful way—but he still needed to test it. He hypothesized that if his theory was correct, he should observe that the presence of others improves performance in a simple laboratory task but inhibits performance in a difficult version of the very same laboratory task. To test this hypothesis, one of the studies he conducted used cockroaches as subjects <span class="citation" data-cites="zajonc1969social">(<a href="references.html#ref-zajonc1969social" role="doc-biblioref"><strong>zajonc1969social?</strong></a>)</span>. The cockroaches ran either down a straight runway (an easy task for a cockroach) or through a cross-shaped maze (a difficult task for a cockroach) to escape into a dark chamber when a light was shined on them. They did this either while alone or in the presence of other cockroaches in clear plastic “audience boxes.” Zajonc found that cockroaches in the straight runway reached their goal more quickly in the presence of other cockroaches, but cockroaches in the cross-shaped maze reached their goal more slowly when they were in the presence of other cockroaches. Thus he confirmed his hypothesis and provided support for his drive theory.</p>
+<p>As an example, let us return to Zajonc’s research on social facilitation and inhibition. He started with a somewhat contradictory pattern of results from the research literature. He then constructed his drive theory, according to which being watched by others while performing a task causes physiological arousal, which increases an organism’s tendency to make the dominant response. This leads to social facilitation for well-learned tasks and social inhibition for poorly learned tasks. He now had a theory that organized previous results in a meaningful way—but he still needed to test it. He hypothesized that if his theory was correct, he should observe that the presence of others improves performance in a simple laboratory task but inhibits performance in a difficult version of the very same laboratory task. To test this hypothesis, one of the studies he conducted used cockroaches as subjects <span class="citation" data-cites="zajonc1969social">(<a href="#ref-zajonc1969social" role="doc-biblioref">Zajonc et al., 1969</a>)</span>. The cockroaches ran either down a straight runway (an easy task for a cockroach) or through a cross-shaped maze (a difficult task for a cockroach) to escape into a dark chamber when a light was shined on them. They did this either while alone or in the presence of other cockroaches in clear plastic “audience boxes.” Zajonc found that cockroaches in the straight runway reached their goal more quickly in the presence of other cockroaches, but cockroaches in the cross-shaped maze reached their goal more slowly when they were in the presence of other cockroaches. Thus he confirmed his hypothesis and provided support for his drive theory.</p>
 </section>
 <section id="constructing-or-choosing-a-theory" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="constructing-or-choosing-a-theory">Constructing or Choosing a Theory</h4>
@@ -523,7 +560,7 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="unnumbered anchored" data-anchor-id="deriving-hypotheses">Deriving Hypotheses</h4>
 <p>Again, a hypothesis is a prediction about a new phenomenon that should be observed if a particular theory is accurate. Theories and hypotheses always have this <em>if-then</em> relationship. “<em>If</em> drive theory is correct, <em>then</em> cockroaches should run through a straight runway faster, and a branching runway more slowly, when other cockroaches are present.” Although hypotheses are usually expressed as statements, they can always be rephrased as questions. “Do cockroaches run through a straight runway faster when other cockroaches are present?” Thus deriving hypotheses from theories is an excellent way of generating interesting research questions.</p>
 <p>But how do researchers derive hypotheses from theories? One way is to generate a research question using the techniques discussed in the chapter “Getting Started in Research” and then ask whether any theory implies an answer to that question. For example, you might wonder whether expressive writing about positive experiences improves health as much as expressive writing about traumatic experiences. Although this is an interesting question on its own, you might then ask whether the habituation theory—the idea that expressive writing causes people to habituate to negative thoughts and feelings—implies an answer. In this case, it seems clear that if the habituation theory is correct, then expressive writing about positive experiences should not be effective because it would not cause people to habituate to negative thoughts and feelings. A second way to derive hypotheses from theories is to focus on some component of the theory that has not yet been directly observed. For example, a researcher could focus on the process of habituation—perhaps hypothesizing that people should show fewer signs of emotional distress with each new writing session.</p>
-<p>Among the very best hypotheses are those that distinguish between competing theories. For example, Norbert Schwarz and his colleagues considered two theories of how people make judgments about themselves, such as how assertive they are <span class="citation" data-cites="schwarz1991ease">(<a href="references.html#ref-schwarz1991ease" role="doc-biblioref"><strong>schwarz1991ease?</strong></a>)</span>. Both theories held that such judgments are based on relevant examples that people bring to mind. However, one theory was that people base their judgments on the number of examples they bring to mind and the other was that people base their judgments on how easily they bring those examples to mind. To test these theories, the researchers asked people to recall either six times when they were assertive (which is easy for most people) or 12 times (which is difficult for most people). Then they asked them to judge their own assertiveness. Note that the number-of-examples theory implies that people who recalled 12 examples should judge themselves to be more assertive because they recalled more examples, but the ease-of-examples theory implies that participants who recalled six examples should judge themselves as more assertive because recalling the examples was easier. Thus the two theories made opposite predictions so that only one of the predictions could be confirmed. The surprising result was that participants who recalled fewer examples judged themselves to be more assertive—providing particularly convincing evidence in favor of the ease-of-retrieval theory over the number-of-examples theory.</p>
+<p>Among the very best hypotheses are those that distinguish between competing theories. For example, Norbert Schwarz and his colleagues considered two theories of how people make judgments about themselves, such as how assertive they are <span class="citation" data-cites="schwarz1991ease">(<a href="#ref-schwarz1991ease" role="doc-biblioref">Schwarz et al., 1991</a>)</span>. Both theories held that such judgments are based on relevant examples that people bring to mind. However, one theory was that people base their judgments on the number of examples they bring to mind and the other was that people base their judgments on how easily they bring those examples to mind. To test these theories, the researchers asked people to recall either six times when they were assertive (which is easy for most people) or 12 times (which is difficult for most people). Then they asked them to judge their own assertiveness. Note that the number-of-examples theory implies that people who recalled 12 examples should judge themselves to be more assertive because they recalled more examples, but the ease-of-examples theory implies that participants who recalled six examples should judge themselves as more assertive because recalling the examples was easier. Thus the two theories made opposite predictions so that only one of the predictions could be confirmed. The surprising result was that participants who recalled fewer examples judged themselves to be more assertive—providing particularly convincing evidence in favor of the ease-of-retrieval theory over the number-of-examples theory.</p>
 </section>
 <section id="evaluating-and-revising-theories" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="evaluating-and-revising-theories">Evaluating and Revising Theories</h4>
@@ -537,7 +574,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="unnumbered anchored" data-anchor-id="incorporating-theory-into-your-research">Incorporating Theory Into Your Research</h3>
 <p>It should be clear from this chapter that theories are not just “icing on the cake” of scientific research; they are a basic ingredient. If you can understand and use them, you will be much more successful at reading and understanding the research literature, generating interesting research questions, and writing and conversing about research. Of course, your ability to understand and use theories will improve with practice. But there are several things that you can do to incorporate theory into your research right from the start.</p>
 <p>The first thing is to distinguish the phenomena you are interested in from any theories of those phenomena. Beware especially of the tendency to “fuse” a phenomenon to a commonsense theory of it. For example, it might be tempting to describe the negative effect of cell phone usage on driving ability by saying, “Cell phone usage distracts people from driving.” Or it might be tempting to describe the positive effect of expressive writing on health by saying, “Dealing with your emotions through writing makes you healthier.” In both of these examples, however, a vague commonsense explanation (distraction, “dealing with” emotions) has been fused to the phenomenon itself. The problem is that this gives the impression that the phenomenon has already been adequately explained and closes off further inquiry into precisely why or how it happens.</p>
-<p>As another example, researcher Jerry Burger and his colleagues were interested in the phenomenon that people are more willing to comply with a simple request from someone with whom they are familiar <span class="citation" data-cites="burger2001effect">(<a href="references.html#ref-burger2001effect" role="doc-biblioref"><strong>burger2001effect?</strong></a>)</span>. A beginning researcher who is asked to explain why this is the case might be at a complete loss or say something like, “Well, because they are <em>familiar</em> with them.” But digging just a bit deeper, Burger and his colleagues realized that there are several possible explanations. Among them are that complying with people we know creates positive feelings, that we anticipate needing something from them in the future, and that we like them more and follow an automatic rule that says to help people we like.</p>
+<p>As another example, researcher Jerry Burger and his colleagues were interested in the phenomenon that people are more willing to comply with a simple request from someone with whom they are familiar <span class="citation" data-cites="burger2001effect">(<a href="#ref-burger2001effect" role="doc-biblioref">Burger et al., 2001</a>)</span>. A beginning researcher who is asked to explain why this is the case might be at a complete loss or say something like, “Well, because they are <em>familiar</em> with them.” But digging just a bit deeper, Burger and his colleagues realized that there are several possible explanations. Among them are that complying with people we know creates positive feelings, that we anticipate needing something from them in the future, and that we like them more and follow an automatic rule that says to help people we like.</p>
 <p>The next thing to do is turn to the research literature to identify existing theories of the phenomena you are interested in. Remember that there will usually be more than one plausible theory. Existing theories may be complementary or competing, but it is essential to know what they are. If there are no existing theories, you should come up with two or three of your own—even if they are informal and limited in scope. Then get in the habit of describing the phenomena you are interested in, followed by the two or three best theories of it. Do this whether you are speaking or writing about your research. When asked what their research was about, for example, Burger and his colleagues could have said something like the following:</p>
 <p>It’s about the fact that we’re more likely to comply with requests from people we know [the phenomenon]. This is interesting because it could be because it makes us feel good [Theory 1], because we think we might get something in return [Theory 2], or because we like them more and have an automatic tendency to comply with people we like [Theory 3].</p>
 <p>At this point, you may be able to derive a hypothesis from one of the theories. At the very least, for each research question you generate, you should ask what each plausible theory implies about the answer to that question. If one of them implies a particular answer, then you may have an interesting hypothesis to test. Burger and colleagues, for example, asked what would happen if a request came from a stranger whom participants had sat next to only briefly, did not interact with, and had no expectation of interacting with in the future. They reasoned that if familiarity created liking, and liking increased people’s tendency to comply (Theory 3), then this situation should still result in increased rates of compliance (which it did). If the question is interesting but no theory implies an answer to it, this might suggest that a new theory needs to be constructed or that existing theories need to be modified in some way. These would make excellent points of discussion in the introduction or discussion of an American Psychological Association (APA) style research report or research presentation.</p>
@@ -619,6 +656,53 @@ ul.task-list li input[type="checkbox"] {
 <section id="typology" class="level5 unnumbered">
 <h5 class="unnumbered anchored" data-anchor-id="typology">typology</h5>
 <p>A theory that categorizes people or behavior into distinct types.</p>
+</section>
+<section id="references" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="references"><span class="header-section-number">3.4.1</span> References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-burger2001effect" class="csl-entry" role="listitem">
+Burger, J. M., Soroka, S., Gonzago, K., Murphy, E., &amp; Somervell, E. (2001). The effect of fleeting attraction on compliance to requests. <em>Personality and Social Psychology Bulletin</em>, <em>27</em>(12), 1578–1586.
+</div>
+<div id="ref-buss1993sexual" class="csl-entry" role="listitem">
+Buss, D. M., &amp; Schmitt, D. P. (1993). Sexual strategies theory: A contextual evolutionary analysis of human mating. <em>Psychological Review</em>, <em>100</em>, 204–232.
+</div>
+<div id="ref-campbell2003secret" class="csl-entry" role="listitem">
+Campbell, R. S., &amp; Pennebaker, J. W. (2003). The secret life of pronouns: Flexibility in writing style and physical health. <em>Psychological Science</em>, <em>14</em>(1), 60–65.
+</div>
+<div id="ref-fine1990history" class="csl-entry" role="listitem">
+Fine, R. (1990). <em>The history of psychoanalysis, new exp</em>. Jason Aronson.
+</div>
+<div id="ref-huband2009understanding" class="csl-entry" role="listitem">
+Huband, N., &amp; Tantam, D. (2009). <em>Understanding repeated self-injury: A multidisciplinary approach</em>. Macmillan International Higher Education.
+</div>
+<div id="ref-izawa1999human" class="csl-entry" role="listitem">
+Izawa, C. (1999). <em>On human memory: Evolution, progress, and reflections on the 30th anniversary of the atkinson-shiffrin model</em>. Psychology Press.
+</div>
+<div id="ref-lepore2002expressive" class="csl-entry" role="listitem">
+Lepore, S. J., Greenberg, M. A., Bruno, M., &amp; Smyth, J. M. (2002). <em>Expressive writing and health: Self-regulation of emotion-related experience, physiology, and behavior.</em>
+</div>
+<div id="ref-lilienfeld2003dissociative" class="csl-entry" role="listitem">
+Lilienfeld, S. O., &amp; Lynn, S. J. (2003). <em>Dissociative identity disorder: Multiple personalities, multiple controversies.</em>
+</div>
+<div id="ref-logan2003subitizing" class="csl-entry" role="listitem">
+Logan, G. D., &amp; Zbrodoff, N. J. (2003). Subitizing and similarity: Toward a pattern-matching theory of enumeration. <em>Psychonomic Bulletin &amp; Review</em>, <em>10</em>(3), 676–682.
+</div>
+<div id="ref-neisser1996intelligence" class="csl-entry" role="listitem">
+Neisser, U., Boodoo, G., Bouchard Jr, T. J., Boykin, A. W., Brody, N., Ceci, S. J., Halpern, D. F., Loehlin, J. C., Perloff, R., Sternberg, R. J., et al. (1996). Intelligence: Knowns and unknowns. <em>American Psychologist</em>, <em>51</em>(2), 77.
+</div>
+<div id="ref-schwarz1991ease" class="csl-entry" role="listitem">
+Schwarz, N., Bless, H., Strack, F., Klumpp, G., Rittenauer-Schatka, H., &amp; Simons, A. (1991). Ease of retrieval as information: Another look at the availability heuristic. <em>Journal of Personality and Social Psychology</em>, <em>61</em>(2), 195.
+</div>
+<div id="ref-williams2004psychopathology" class="csl-entry" role="listitem">
+Williams, P. G. (2004). The psychopathology of self-assessed health: A cognitive approach to health anxiety and hypochondriasis. <em>Cognitive Therapy and Research</em>, <em>28</em>(5), 629–644.
+</div>
+<div id="ref-zajonc1965social" class="csl-entry" role="listitem">
+Zajonc, R. B. (1965). Social facilitation: A solution is suggested for an old unresolved social psychological problem. <em>Science</em>, <em>149</em>(3681), 269–274.
+</div>
+<div id="ref-zajonc1969social" class="csl-entry" role="listitem">
+Zajonc, R. B., Heingartner, A., &amp; Herman, E. M. (1969). Social enhancement and impairment of performance in the cockroach. <em>Journal of Personality and Social Psychology</em>, <em>13</em>(2), 83.
+</div>
+</div>
 
 
 </section>

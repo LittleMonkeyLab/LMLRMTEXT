@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Research Methods in Psychology">
+<meta name="description" content="This is a an OER textbook for introductory research methods in psychology.">
 
 <title>Monkey Methods - 4&nbsp; Research Ethics</title>
 <style>
@@ -21,7 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -43,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -65,8 +84,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script type="application/json" class="js-hypothesis-config">
 {
-  "theme": "clean",
-  "openSidebar": false
+  "theme": "clean"
 }
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
@@ -88,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04-ethics.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-science-of-psych.html">Research Methods Text</a></li><li class="breadcrumb-item"><a href="./04-ethics.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -123,103 +141,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Research 🐵 Methods in Psychology</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Principles of Research in Psychology</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./02-getting-started.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./03-theory.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./04-ethics.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./05-experiments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Experimental Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./06-measurement.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./07-sampling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sampling</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./08-complex-designs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Complex Research Designs</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./09-nonexperiments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./10-single-N.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Single-Subject Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./11-ideas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(PART*) Conducting Your Own Study</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./12-presenting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./13-descriptives.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(PART*) Analyzing Data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./14-inferentials.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./15-references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foreword</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">Research Methods Text</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -227,14 +155,120 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./webexercises.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span></a>
+  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles of Research in Psychology</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+  <a href="./02-getting-started.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-ethics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Experimental Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-measurement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-sampling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sampling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-complex-designs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Complex Research Designs</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-nonexperiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-single-N.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Single-Subject Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-ideas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conducting Your Own Study</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-presenting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-descriptives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analyzing Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-inferentials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Statistics Text</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles of Research in Psychology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./webexercises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span></a>
   </div>
 </li>
       </ul>
@@ -270,7 +304,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#get-approval" id="toc-get-approval" class="nav-link" data-scroll-target="#get-approval">Get Approval</a></li>
   <li><a href="#follow-through" id="toc-follow-through" class="nav-link" data-scroll-target="#follow-through">Follow Through</a></li>
   </ul></li>
-  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary"><span class="header-section-number">4.4</span> Glossary</a></li>
+  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary"><span class="header-section-number">4.4</span> Glossary</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.4.1</span> References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -294,7 +331,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>In 1998 a medical journal called <em>The Lancet</em> published an article of interest to many psychologists. The researchers claimed to have shown a statistical relationship between receiving the combined measles, mumps, and rubella (MMR) vaccine and the development of autism—suggesting furthermore that the vaccine might even cause autism. One result of this report was that many parents decided not to have their children vaccinated, which of course put them at higher risk for measles, mumps, and rubella. However, follow-up studies by other researchers consistently failed to find a statistical relationship between the MMR vaccine and autism—and it is generally accepted now that there is no relationship. In addition, several more serious problems with the original research were uncovered. Among them were that the lead researcher stood to gain financially from his conclusions because he had patented a competing measles vaccine. He had also used biased methods to select and test his research participants and had used unapproved and medically unnecessary procedures on them. In 2010 The Lancet retracted the article, and the lead researcher’s right to practice medicine was revoked <span class="citation" data-cites="burns2010british">(<a href="references.html#ref-burns2010british" role="doc-biblioref"><strong>burns2010british?</strong></a>)</span>.</p>
+<p>In 1998 a medical journal called <em>The Lancet</em> published an article of interest to many psychologists. The researchers claimed to have shown a statistical relationship between receiving the combined measles, mumps, and rubella (MMR) vaccine and the development of autism—suggesting furthermore that the vaccine might even cause autism. One result of this report was that many parents decided not to have their children vaccinated, which of course put them at higher risk for measles, mumps, and rubella. However, follow-up studies by other researchers consistently failed to find a statistical relationship between the MMR vaccine and autism—and it is generally accepted now that there is no relationship. In addition, several more serious problems with the original research were uncovered. Among them were that the lead researcher stood to gain financially from his conclusions because he had patented a competing measles vaccine. He had also used biased methods to select and test his research participants and had used unapproved and medically unnecessary procedures on them. In 2010 The Lancet retracted the article, and the lead researcher’s right to practice medicine was revoked <span class="citation" data-cites="burns2010british">(<a href="#ref-burns2010british" role="doc-biblioref">Burns, 2010</a>)</span>.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -372,13 +409,13 @@ ul.task-list li input[type="checkbox"] {
 <p>Let us look more closely at each of the moral principles and how they can be applied to each of the three groups.</p>
 <section id="weighing-risks-against-benefits" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="weighing-risks-against-benefits">Weighing Risks Against Benefits</h4>
-<p>Scientific research in psychology can be ethical only if its risks are outweighed by its benefits. Among the risks to research participants are that a treatment might fail to help or even be harmful, a procedure might result in physical or psychological harm, and their right to privacy might be violated. Among the potential benefits are receiving a helpful treatment, learning about psychology, experiencing the satisfaction of contributing to scientific knowledge, and receiving money or course credit for participating. Scientific research can have risks and benefits to the scientific community and to society too <span class="citation" data-cites="rosenthal1994science">(<a href="references.html#ref-rosenthal1994science" role="doc-biblioref"><strong>rosenthal1994science?</strong></a>)</span>. A risk to science is that if a research question is uninteresting or a study is poorly designed, then the time, money, and effort spent on that research could have been spent on more productive research. A risk to society is that research results could be misunderstood or misapplied with harmful consequences. The research that mistakenly linked the measles, mumps, and rubella (MMR) vaccine to autism resulted in both of these kinds of harm. Of course, the benefits of scientific research to science and society are that it advances scientific knowledge and can contribute to the welfare of society.</p>
-<p>It is not necessarily easy to weigh the risks of research against its benefits because the risks and benefits may not be directly comparable. For example, it is common for the risks of a study to be primarily to the research participants but the benefits primarily for science or society. Consider, for example, Stanley Milgram’s original study on obedience to authority <span class="citation" data-cites="milgram1963behavioral">(<a href="references.html#ref-milgram1963behavioral" role="doc-biblioref"><strong>milgram1963behavioral?</strong></a>)</span>. The participants were told that they were taking part in a study on the effects of punishment on learning and were instructed to give electric shocks to another participant each time that participant responded incorrectly on a learning task. With each incorrect response, the shock became stronger—eventually causing the other participant (who was in the next room) to protest, complain about his heart, scream in pain, and finally fall silent and stop responding. If the first participant hesitated or expressed concern, the researcher said that he must continue. In reality, the other participant was a <a href="#confederate">confederate</a> of the researcher—a helper who pretended to be a real participant—and the protests, complaints, and screams that the real participant heard were an audio recording that was activated when he flipped the switch to administer the “shocks.” The surprising result of this study was that most of the real participants continued to administer the shocks right through the confederate’s protests, complaints, and screams. Although this is considered one of the most important results in psychology—with implications for understanding events like the Holocaust or the mistreatment of prisoners by US soldiers at Abu Ghraib—it came at the cost of producing severe psychological stress in the research participants.</p>
+<p>Scientific research in psychology can be ethical only if its risks are outweighed by its benefits. Among the risks to research participants are that a treatment might fail to help or even be harmful, a procedure might result in physical or psychological harm, and their right to privacy might be violated. Among the potential benefits are receiving a helpful treatment, learning about psychology, experiencing the satisfaction of contributing to scientific knowledge, and receiving money or course credit for participating. Scientific research can have risks and benefits to the scientific community and to society too <span class="citation" data-cites="rosenthal1994science">(<a href="#ref-rosenthal1994science" role="doc-biblioref">Rosenthal, 1994</a>)</span>. A risk to science is that if a research question is uninteresting or a study is poorly designed, then the time, money, and effort spent on that research could have been spent on more productive research. A risk to society is that research results could be misunderstood or misapplied with harmful consequences. The research that mistakenly linked the measles, mumps, and rubella (MMR) vaccine to autism resulted in both of these kinds of harm. Of course, the benefits of scientific research to science and society are that it advances scientific knowledge and can contribute to the welfare of society.</p>
+<p>It is not necessarily easy to weigh the risks of research against its benefits because the risks and benefits may not be directly comparable. For example, it is common for the risks of a study to be primarily to the research participants but the benefits primarily for science or society. Consider, for example, Stanley Milgram’s original study on obedience to authority <span class="citation" data-cites="milgram1963behavioral">(<a href="#ref-milgram1963behavioral" role="doc-biblioref">Milgram, 1963</a>)</span>. The participants were told that they were taking part in a study on the effects of punishment on learning and were instructed to give electric shocks to another participant each time that participant responded incorrectly on a learning task. With each incorrect response, the shock became stronger—eventually causing the other participant (who was in the next room) to protest, complain about his heart, scream in pain, and finally fall silent and stop responding. If the first participant hesitated or expressed concern, the researcher said that he must continue. In reality, the other participant was a <a href="#confederate">confederate</a> of the researcher—a helper who pretended to be a real participant—and the protests, complaints, and screams that the real participant heard were an audio recording that was activated when he flipped the switch to administer the “shocks.” The surprising result of this study was that most of the real participants continued to administer the shocks right through the confederate’s protests, complaints, and screams. Although this is considered one of the most important results in psychology—with implications for understanding events like the Holocaust or the mistreatment of prisoners by US soldiers at Abu Ghraib—it came at the cost of producing severe psychological stress in the research participants.</p>
 <section id="was-it-worth-it" class="level5 unnumbered fyi">
 <h5 class="unnumbered anchored" data-anchor-id="was-it-worth-it">Was It Worth It?</h5>
 <p>Much of the debate over the ethics of Milgram’s obedience study concerns the question of whether the resulting scientific knowledge was worth the harm caused to the research participants. To get a better sense of the harm, consider Milgram’s own description of it.</p>
 <blockquote class="blockquote">
-<p>In a large number of cases, the degree of tension reached extremes that are rarely seen in sociopsychological laboratory studies. Subjects were observed to sweat, tremble, stutter, bite their lips, groan, and dig their fingernails into their flesh.…Fourteen of the 40 subjects showed definite signs of nervous laughter and smiling. The laughter seemed entirely out of place, even bizarre. Full blown uncontrollable seizures [of laughter] were observed for three subjects. On one occasion we observed a seizure so violently convulsive that it was necessary to call a halt to the experiment (p.&nbsp;375).</p>
+<p>In a large number of cases, the degree of tension reached extremes that are rarely seen in sociopsychological laboratory studies. Subjects were observed to sweat, tremble, stutter, bite their lips, groan, and dig their fingernails into their flesh….Fourteen of the 40 subjects showed definite signs of nervous laughter and smiling. The laughter seemed entirely out of place, even bizarre. Full blown uncontrollable seizures [of laughter] were observed for three subjects. On one occasion we observed a seizure so violently convulsive that it was necessary to call a halt to the experiment (p. 375).</p>
 </blockquote>
 <p>Milgram also noted that another observer reported that within 20 minutes one participant “was reduced to a twitching, stuttering wreck, who was rapidly approaching the point of nervous collapse” (p.&nbsp;377)</p>
 <p>To Milgram’s credit, he went to great lengths to debrief his participants—including returning their mental states to normal—and to show that most of them thought the research was valuable and were glad to have participated. Still, this research would be considered unethical by today’s standards.</p>
@@ -392,7 +429,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="seeking-justice" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="seeking-justice">Seeking Justice</h4>
 <p>Researchers must conduct their research in a just manner. They should treat their participants fairly, for example, by giving them adequate compensation for their participation and making sure that benefits and risks are distributed across all participants. For example, in a study of a new and potentially beneficial psychotherapy, some participants might receive the psychotherapy while others serve as a control group that receives no treatment. If the psychotherapy turns out to be effective, it would be fair to offer it to participants in the control group when the study ends.</p>
-<p>At a broader societal level, members of some groups have historically faced more than their fair share of the risks of scientific research, including people who are institutionalized, are disabled, or belong to racial or ethnic minorities. A particularly tragic example is the Tuskegee syphilis study conducted by the US Public Health Service from 1932 to 1972 <span class="citation" data-cites="reverby2009examining">(<a href="references.html#ref-reverby2009examining" role="doc-biblioref"><strong>reverby2009examining?</strong></a>)</span>. The participants in this study were poor African American men in the vicinity of Tuskegee, Alabama, who were told that they were being treated for “bad blood.” Although they were given some free medical care, they were not treated for their syphilis. Instead, they were observed to see how the disease developed in untreated patients. Even after the use of penicillin became the standard treatment for syphilis in the 1940s, these men continued to be denied treatment without being given an opportunity to leave the study. The study was eventually discontinued only after details were made known to the general public by journalists and activists. It is now widely recognized that researchers need to consider issues of justice and fairness at the societal level.</p>
+<p>At a broader societal level, members of some groups have historically faced more than their fair share of the risks of scientific research, including people who are institutionalized, are disabled, or belong to racial or ethnic minorities. A particularly tragic example is the Tuskegee syphilis study conducted by the US Public Health Service from 1932 to 1972 <span class="citation" data-cites="reverby2009examining">(<a href="#ref-reverby2009examining" role="doc-biblioref">Reverby, 2009</a>)</span>. The participants in this study were poor African American men in the vicinity of Tuskegee, Alabama, who were told that they were being treated for “bad blood.” Although they were given some free medical care, they were not treated for their syphilis. Instead, they were observed to see how the disease developed in untreated patients. Even after the use of penicillin became the standard treatment for syphilis in the 1940s, these men continued to be denied treatment without being given an opportunity to leave the study. The study was eventually discontinued only after details were made known to the general public by journalists and activists. It is now widely recognized that researchers need to consider issues of justice and fairness at the societal level.</p>
 <section id="they-were-betrayed" class="level5 unnumbered fyi">
 <h5 class="unnumbered anchored" data-anchor-id="they-were-betrayed">“They Were Betrayed”</h5>
 <p>In 1997—65 years after the Tuskegee Syphilis Study began and 25 years after it ended—President Bill Clinton formally apologized on behalf of the US government to those who were affected. Here is an excerpt from the apology:</p>
@@ -411,7 +448,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="unavoidable-ethical-conflict" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="unavoidable-ethical-conflict">Unavoidable Ethical Conflict</h3>
 <p>It may already be clear that ethical conflict in psychological research is unavoidable. Because there is little, if any, psychological research that is completely risk free, there will almost always be conflict between risks and benefits. Research that is beneficial to one group (e.g., the scientific community) can be harmful to another (e.g., the research participants), creating especially difficult tradeoffs. We have also seen that being completely truthful with research participants can make it difficult or impossible to conduct scientifically valid studies on important questions.</p>
-<p>Of course, many ethical conflicts are fairly easy to resolve. Nearly everyone would agree that deceiving research participants and then subjecting them to physical harm would not be justified by filling a small gap in the research literature. But many ethical conflicts are not easy to resolve, and competent and well-meaning researchers can disagree about how to resolve them. Consider, for example, an actual study on “personal space” conducted in a public men’s room <span class="citation" data-cites="middlemist1976personal">(<a href="references.html#ref-middlemist1976personal" role="doc-biblioref"><strong>middlemist1976personal?</strong></a>)</span>. The researchers secretly observed their participants to see whether it took them longer to begin urinating when there was another man (a confederate of the researchers) at a nearby urinal. While some critics found this to be an unjustified assault on human dignity <span class="citation" data-cites="koocher1977bathroom">(<a href="references.html#ref-koocher1977bathroom" role="doc-biblioref"><strong>koocher1977bathroom?</strong></a>)</span>, the researchers had carefully considered the ethical conflicts, resolved them as best they could, and concluded that the benefits of the research outweighed the risks <span class="citation" data-cites="middlemist1977and">(<a href="references.html#ref-middlemist1977and" role="doc-biblioref"><strong>middlemist1977and?</strong></a>)</span>. For example, they had interviewed some preliminary participants and found that none of them was bothered by the fact that they had been observed.</p>
+<p>Of course, many ethical conflicts are fairly easy to resolve. Nearly everyone would agree that deceiving research participants and then subjecting them to physical harm would not be justified by filling a small gap in the research literature. But many ethical conflicts are not easy to resolve, and competent and well-meaning researchers can disagree about how to resolve them. Consider, for example, an actual study on “personal space” conducted in a public men’s room <span class="citation" data-cites="middlemist1976personal">(<a href="#ref-middlemist1976personal" role="doc-biblioref">Middlemist et al., 1976</a>)</span>. The researchers secretly observed their participants to see whether it took them longer to begin urinating when there was another man (a confederate of the researchers) at a nearby urinal. While some critics found this to be an unjustified assault on human dignity <span class="citation" data-cites="koocher1977bathroom">(<a href="#ref-koocher1977bathroom" role="doc-biblioref">Koocher, 1977</a>)</span>, the researchers had carefully considered the ethical conflicts, resolved them as best they could, and concluded that the benefits of the research outweighed the risks <span class="citation" data-cites="middlemist1977and">(<a href="#ref-middlemist1977and" role="doc-biblioref">Middlemist et al., 1977</a>)</span>. For example, they had interviewed some preliminary participants and found that none of them was bothered by the fact that they had been observed.</p>
 <p>The point here is that although it may not be possible to eliminate ethical conflict completely, it is possible to deal with it in responsible and constructive ways. In general, this means thoroughly and carefully thinking through the ethical issues that are raised, minimizing the risks, and weighing the risks against the benefits. It also means being able to explain one’s ethical decisions to others, seeking feedback on them, and ultimately taking responsibility for them.</p>
 <section id="key-takeaways" class="level5 unnumbered takeaways">
 <h5 class="unnumbered anchored" data-anchor-id="key-takeaways">KEY TAKEAWAYS</h5>
@@ -531,13 +568,13 @@ ul.task-list li input[type="checkbox"] {
 <section id="informed-consent" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="informed-consent">Informed Consent</h4>
 <p>Standards 8.02 to 8.05 are about informed consent. Again, informed consent means obtaining and documenting people’s agreement to participate in a study, having informed them of everything that might reasonably be expected to affect their decision. This includes details of the procedure, the risks and benefits of the research, the fact that they have the right to decline to participate or to withdraw from the study, the consequences of doing so, and any legal limits to confidentiality. For example, some states require researchers who learn of child abuse or other crimes to report this information to authorities.</p>
-<p>Although the process of obtaining informed consent often involves having participants read and sign a <a href="#consent-form">consent form</a>, it is important to understand that this is not all it is. Although having participants read and sign a consent form might be enough when they are competent adults with the necessary ability and motivation, many participants do not actually read consent forms or read them but do not understand them. For example, participants often mistake consent forms for legal documents and mistakenly believe that by signing them they give up their right to sue the researcher <span class="citation" data-cites="mann1994informed">(<a href="references.html#ref-mann1994informed" role="doc-biblioref"><strong>mann1994informed?</strong></a>)</span>. Even with competent adults, therefore, it is good practice to tell participants about the risks and benefits, demonstrate the procedure, ask them if they have questions, and remind them of their right to withdraw at any time—in addition to having them read and sign a consent form.</p>
+<p>Although the process of obtaining informed consent often involves having participants read and sign a <a href="#consent-form">consent form</a>, it is important to understand that this is not all it is. Although having participants read and sign a consent form might be enough when they are competent adults with the necessary ability and motivation, many participants do not actually read consent forms or read them but do not understand them. For example, participants often mistake consent forms for legal documents and mistakenly believe that by signing them they give up their right to sue the researcher <span class="citation" data-cites="mann1994informed">(<a href="#ref-mann1994informed" role="doc-biblioref">Mann, 1994</a>)</span>. Even with competent adults, therefore, it is good practice to tell participants about the risks and benefits, demonstrate the procedure, ask them if they have questions, and remind them of their right to withdraw at any time—in addition to having them read and sign a consent form.</p>
 <p>Note also that there are situations in which informed consent is not necessary. These include situations in which the research is not expected to cause any harm and the procedure is straightforward or the study is conducted in the context of people’s ordinary activities. For example, if you wanted to sit outside a public building and observe whether people hold the door open for people behind them, you would not need to obtain their informed consent. Similarly, if a college instructor wanted to compare two legitimate teaching methods across two sections of his research methods course, he would not need to obtain informed consent from his students.</p>
 </section>
 <section id="deception" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="deception">Deception</h4>
-<p><a href="#deception">Deception</a> of participants in psychological research can take a variety of forms: misinforming participants about the purpose of a study, using confederates, using phony equipment like Milgram’s shock generator, and presenting participants with false feedback about their performance (e.g., telling them they did poorly on a test when they actually did well). Deception also includes not informing participants of the full design or true purpose of the research even if they are not actively misinformed <span class="citation" data-cites="sieber1995deception">(<a href="references.html#ref-sieber1995deception" role="doc-biblioref"><strong>sieber1995deception?</strong></a>)</span>. For example, a study on incidental learning—learning without conscious effort—might involve having participants read through a list of words in preparation for a “memory test” later. Although participants are likely to assume that the memory test will require them to recall the words, it might instead require them to recall the contents of the room or the appearance of the research assistant.</p>
-<p>Some researchers have argued that deception of research participants is rarely if ever ethically justified. Among their arguments are that it prevents participants from giving truly informed consent, fails to respect their dignity as human beings, has the potential to upset them, makes them distrustful and therefore less honest in their responding, and damages the reputation of researchers in the field <span class="citation" data-cites="baumrind1985research">(<a href="references.html#ref-baumrind1985research" role="doc-biblioref"><strong>baumrind1985research?</strong></a>)</span>.</p>
+<p><a href="#deception">Deception</a> of participants in psychological research can take a variety of forms: misinforming participants about the purpose of a study, using confederates, using phony equipment like Milgram’s shock generator, and presenting participants with false feedback about their performance (e.g., telling them they did poorly on a test when they actually did well). Deception also includes not informing participants of the full design or true purpose of the research even if they are not actively misinformed <span class="citation" data-cites="sieber1995deception">(<a href="#ref-sieber1995deception" role="doc-biblioref">Sieber et al., 1995</a>)</span>. For example, a study on incidental learning—learning without conscious effort—might involve having participants read through a list of words in preparation for a “memory test” later. Although participants are likely to assume that the memory test will require them to recall the words, it might instead require them to recall the contents of the room or the appearance of the research assistant.</p>
+<p>Some researchers have argued that deception of research participants is rarely if ever ethically justified. Among their arguments are that it prevents participants from giving truly informed consent, fails to respect their dignity as human beings, has the potential to upset them, makes them distrustful and therefore less honest in their responding, and damages the reputation of researchers in the field <span class="citation" data-cites="baumrind1985research">(<a href="#ref-baumrind1985research" role="doc-biblioref">Baumrind, 1985</a>)</span>.</p>
 <p>Note, however, that the APA Ethics Code takes a more moderate approach—allowing deception when the benefits of the study outweigh the risks, participants cannot reasonably be expected to be harmed, the research question cannot be answered without the use of deception, and participants are informed about the deception as soon as possible. This approach acknowledges that not all forms of deception are equally bad. Compare, for example, Milgram’s study in which he deceived his participants in several significant ways that resulted in their experiencing severe psychological stress with an incidental learning study in which a “memory test” turns out to be slightly different from what participants were expecting. It also acknowledges that some scientifically and socially important research questions can be difficult or impossible to answer without deceiving participants. Knowing that a study concerns the extent to which they obey authority, act aggressively toward a peer, or help a stranger is likely to change the way people behave so that the results no longer generalize to the real world.</p>
 </section>
 <section id="debriefing" class="level4 unnumbered">
@@ -547,7 +584,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="nonhuman-animal-subjects" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="nonhuman-animal-subjects">Nonhuman Animal Subjects</h4>
 <p>Standard 8.09 is about the humane treatment and care of nonhuman animal subjects. Although most contemporary research in psychology does not involve nonhuman animal subjects, a significant minority of it does—especially in the study of learning and conditioning, behavioral neuroscience, and the development of drug and surgical therapies for psychological disorders.</p>
-<p>The use of nonhuman animal subjects in psychological research is like the use of deception in that there are those who argue that it is rarely, if ever, ethically acceptable <span class="citation" data-cites="bowd1993case">(<a href="references.html#ref-bowd1993case" role="doc-biblioref"><strong>bowd1993case?</strong></a>)</span>. Clearly, nonhuman animals are incapable of giving informed consent. Yet they can be subjected to numerous procedures that are likely to cause them suffering. They can be confined, deprived of food and water, subjected to pain, operated on, and ultimately euthanized. (Of course, they can also be observed benignly in natural or zoolike settings.) Others point out that psychological research on nonhuman animals has resulted in many important benefits to humans, including the development of behavioral therapies for many disorders, more effective pain control methods, and antipsychotic drugs <span class="citation" data-cites="miller1985value">(<a href="references.html#ref-miller1985value" role="doc-biblioref"><strong>miller1985value?</strong></a>)</span>. It has also resulted in benefits to nonhuman animals, including alternatives to shooting and poisoning as means of controlling them.</p>
+<p>The use of nonhuman animal subjects in psychological research is like the use of deception in that there are those who argue that it is rarely, if ever, ethically acceptable <span class="citation" data-cites="bowd1993case">(<a href="#ref-bowd1993case" role="doc-biblioref">Bowd &amp; Shapiro, 1993</a>)</span>. Clearly, nonhuman animals are incapable of giving informed consent. Yet they can be subjected to numerous procedures that are likely to cause them suffering. They can be confined, deprived of food and water, subjected to pain, operated on, and ultimately euthanized. (Of course, they can also be observed benignly in natural or zoolike settings.) Others point out that psychological research on nonhuman animals has resulted in many important benefits to humans, including the development of behavioral therapies for many disorders, more effective pain control methods, and antipsychotic drugs <span class="citation" data-cites="miller1985value">(<a href="#ref-miller1985value" role="doc-biblioref">Miller, 1985</a>)</span>. It has also resulted in benefits to nonhuman animals, including alternatives to shooting and poisoning as means of controlling them.</p>
 <p>As with deception, the APA acknowledges that the benefits of research on nonhuman animals can outweigh the costs, in which case it is ethically acceptable. However, researchers must use alternative methods when they can. When they cannot, they must acquire and care for their subjects humanely and minimize the harm to them. For more information on the APA’s position on nonhuman animal subjects, see the website of the APA’s Committee on Animal Research and Ethics (http://www.apa.org/science/leadership/care/index.aspx).</p>
 </section>
 <section id="scholarly-integrity" class="level4 unnumbered">
@@ -578,7 +615,7 @@ ul.task-list li input[type="checkbox"] {
 <h5 class="unnumbered anchored" data-anchor-id="exercises-1">EXERCISES</h5>
 <ol type="1">
 <li>Practice: Read the Nuremberg Code, the Belmont Report, and Standard 8 of the APA Ethics Code. List five specific similarities and five specific differences among them.</li>
-<li>Discussion: In a study on the effects of disgust on moral judgment, participants were asked to judge the morality of disgusting acts, including people eating a dead pet and passionate kissing between a brother and sister <span class="citation" data-cites="haidt1993affect">(<a href="references.html#ref-haidt1993affect" role="doc-biblioref"><strong>haidt1993affect?</strong></a>)</span>. If you were on the IRB that reviewed this protocol, what concerns would you have with it? Refer to the appropriate sections of the APA Ethics Code.</li>
+<li>Discussion: In a study on the effects of disgust on moral judgment, participants were asked to judge the morality of disgusting acts, including people eating a dead pet and passionate kissing between a brother and sister <span class="citation" data-cites="haidt1993affect">(<a href="#ref-haidt1993affect" role="doc-biblioref">Haidt et al., 1993</a>)</span>. If you were on the IRB that reviewed this protocol, what concerns would you have with it? Refer to the appropriate sections of the APA Ethics Code.</li>
 </ol>
 </section>
 </section>
@@ -601,7 +638,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="identify-and-minimize-risks" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="identify-and-minimize-risks">Identify and Minimize Risks</h3>
 <p>As you design your study, you must identify and minimize risks to participants. Start by listing all the risks, including risks of physical and psychological harm and violations of confidentiality. Remember that it is easy for researchers to see risks as less serious than participants do or even to overlook them completely. For example, one student researcher wanted to test people’s sensitivity to violent images by showing them gruesome photographs of crime and accident scenes. Because she was an emergency medical technician, however, she greatly underestimated how disturbing these images were to most people. Remember too that some risks might apply only to some participants. For example, while most people would have no problem completing a survey about their fear of various crimes, those who have been a victim of one of those crimes might become upset. This is why you should seek input from a variety of people, including your research collaborators, more experienced researchers, and even from nonresearchers who might be better able to take the perspective of a participant.</p>
-<p>Once you have identified the risks, you can often reduce or eliminate many of them. One way is to modify the research design. For example, you might be able to shorten or simplify the procedure to prevent boredom and frustration. You might be able to replace upsetting or offensive stimulus materials (e.g., graphic accident scene photos) with less upsetting or offensive ones (e.g., milder photos of the sort people are likely to see in the newspaper). A good example of modifying a research design is a 2009 replication of Milgram’s study conducted by Jerry Burger. Instead of allowing his participants to continue administering shocks up to the 450-V maximum, the researcher always stopped the procedure when they were about to administer the 150-V shock <span class="citation" data-cites="burger2009replicating">(<a href="references.html#ref-burger2009replicating" role="doc-biblioref"><strong>burger2009replicating?</strong></a>)</span>. This made sense because in Milgram’s study (a) participants’ severe negative reactions occurred after this point and (b) most participants who administered the 150-V shock continued all the way to the 450-V maximum. Thus the researcher was able to compare his results directly with Milgram’s at every point up to the 150-V shock and also was able to estimate how many of his participants would have continued to the maximum—but without subjecting them to the severe stress that Milgram did. (The results, by the way, were that these contemporary participants were just as obedient as Milgram’s were.)</p>
+<p>Once you have identified the risks, you can often reduce or eliminate many of them. One way is to modify the research design. For example, you might be able to shorten or simplify the procedure to prevent boredom and frustration. You might be able to replace upsetting or offensive stimulus materials (e.g., graphic accident scene photos) with less upsetting or offensive ones (e.g., milder photos of the sort people are likely to see in the newspaper). A good example of modifying a research design is a 2009 replication of Milgram’s study conducted by Jerry Burger. Instead of allowing his participants to continue administering shocks up to the 450-V maximum, the researcher always stopped the procedure when they were about to administer the 150-V shock <span class="citation" data-cites="burger2009replicating">(<a href="#ref-burger2009replicating" role="doc-biblioref">Burger, 2009</a>)</span>. This made sense because in Milgram’s study (a) participants’ severe negative reactions occurred after this point and (b) most participants who administered the 150-V shock continued all the way to the 450-V maximum. Thus the researcher was able to compare his results directly with Milgram’s at every point up to the 150-V shock and also was able to estimate how many of his participants would have continued to the maximum—but without subjecting them to the severe stress that Milgram did. (The results, by the way, were that these contemporary participants were just as obedient as Milgram’s were.)</p>
 <p>A second way to minimize risks is to use a <a href="#prescreening">prescreening</a> procedure to identify and eliminate participants who are at high risk. You can do this in part through the informed consent process. For example, you can warn participants that a survey includes questions about their fear of crime and remind them that they are free to withdraw if they think this might upset them. Prescreening can also involve collecting data to identify and eliminate participants. For example, Burger used an extensive prescreening procedure involving multiple questionnaires and an interview with a clinical psychologist to identify and eliminate participants with physical or psychological problems that put them at high risk.</p>
 <p>A third way to minimize risks is to take active steps to maintain confidentiality. You should keep signed consent forms separately from any data that you collect and in such a way that no individual’s name can be linked to his or her data. In addition, beyond people’s sex and age, you should only collect personal information that you actually need to answer your research question. If people’s sexual orientation or ethnicity is not clearly relevant to your research question, for example, then do not ask them about it. Be aware also that certain data collection procedures can lead to unintentional violations of confidentiality. When participants respond to an oral survey in a shopping mall or complete a questionnaire in a classroom setting, it is possible that their responses will be overheard or seen by others. If the responses are personal, it is better to administer the survey or questionnaire individually in private or to use other techniques to prevent the unintentional sharing of personal information.</p>
 </section>
@@ -628,7 +665,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="follow-through" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="follow-through">Follow Through</h3>
-<p>Your concern with ethics should not end when your study receives institutional approval. It now becomes important to stick to the protocol you submitted or to seek additional approval for anything other than a minor change. During the research, you should monitor your participants for unanticipated reactions and seek feedback from them during debriefing. One criticism of Milgram’s study is that although he did not know ahead of time that his participants would have such severe negative reactions, he certainly knew after he had tested the first several participants and should have made adjustments at that point <span class="citation" data-cites="baumrind1985research">(<a href="references.html#ref-baumrind1985research" role="doc-biblioref"><strong>baumrind1985research?</strong></a>)</span>. Be alert also for potential violations of confidentiality. Keep the consent forms and the data safe and separate from each other and make sure that no one, intentionally or unintentionally, has access to any participant’s personal information.</p>
+<p>Your concern with ethics should not end when your study receives institutional approval. It now becomes important to stick to the protocol you submitted or to seek additional approval for anything other than a minor change. During the research, you should monitor your participants for unanticipated reactions and seek feedback from them during debriefing. One criticism of Milgram’s study is that although he did not know ahead of time that his participants would have such severe negative reactions, he certainly knew after he had tested the first several participants and should have made adjustments at that point <span class="citation" data-cites="baumrind1985research">(<a href="#ref-baumrind1985research" role="doc-biblioref">Baumrind, 1985</a>)</span>. Be alert also for potential violations of confidentiality. Keep the consent forms and the data safe and separate from each other and make sure that no one, intentionally or unintentionally, has access to any participant’s personal information.</p>
 <p>Finally, you must maintain your integrity through the publication process and beyond. Address publication credit—who will be authors on the research and the order of authors—with your collaborators early and avoid plagiarism in your writing. Remember that your scientific goal is to learn about the way the world actually is and that your scientific duty is to report on your results honestly and accurately. So do not be tempted to fabricate data or alter your results in any way. Besides, unexpected results are often as interesting, or more so, than expected ones.</p>
 <section id="key-takeaways-2" class="level5 unnumbered takeaways">
 <h5 class="unnumbered anchored" data-anchor-id="key-takeaways-2">KEY TAKEAWAYS</h5>
@@ -728,6 +765,53 @@ ul.task-list li input[type="checkbox"] {
 <section id="protocol" class="level5 unnumbered">
 <h5 class="unnumbered anchored" data-anchor-id="protocol">protocol</h5>
 <p>A detailed written description of a research project that can be reviewed by an independent committee to evaluate its conformity to ethical standards.</p>
+</section>
+<section id="references" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="references"><span class="header-section-number">4.4.1</span> References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-baumrind1985research" class="csl-entry" role="listitem">
+Baumrind, D. (1985). Research using intentional deception: Ethical issues revisited. <em>American Psychologist</em>, <em>40</em>(2), 165.
+</div>
+<div id="ref-bowd1993case" class="csl-entry" role="listitem">
+Bowd, A. D., &amp; Shapiro, K. J. (1993). The case against laboratory animal research in psychology. <em>Journal of Social Issues</em>, <em>49</em>(1), 133–142.
+</div>
+<div id="ref-burger2009replicating" class="csl-entry" role="listitem">
+Burger, J. M. (2009). Replicating milgram: Would people still obey today? <em>American Psychologist</em>, <em>64</em>(1), 1.
+</div>
+<div id="ref-burns2010british" class="csl-entry" role="listitem">
+Burns, J. F. (2010). British medical council bars doctor who linked vaccine with autism. <em>The New York Times A</em>, <em>4</em>.
+</div>
+<div id="ref-haidt1993affect" class="csl-entry" role="listitem">
+Haidt, J., Koller, S. H., &amp; Dias, M. G. (1993). Affect, culture, and morality, or is it wrong to eat your dog? <em>Journal of Personality and Social Psychology</em>, <em>65</em>(4), 613.
+</div>
+<div id="ref-koocher1977bathroom" class="csl-entry" role="listitem">
+Koocher, G. P. (1977). <em>Bathroom behavior and human dignity.</em>
+</div>
+<div id="ref-mann1994informed" class="csl-entry" role="listitem">
+Mann, T. (1994). Informed consent for psychological research: Do subjects comprehend consent forms and understand their legal rights? <em>Psychological Science</em>, <em>5</em>(3), 140–143.
+</div>
+<div id="ref-middlemist1976personal" class="csl-entry" role="listitem">
+Middlemist, R. D., Knowles, E. S., &amp; Matter, C. F. (1976). Personal space invasions in the lavatory: Suggestive evidence for arousal. <em>Journal of Personality and Social Psychology</em>, <em>33</em>(5), 541.
+</div>
+<div id="ref-middlemist1977and" class="csl-entry" role="listitem">
+Middlemist, R. D., Knowles, E. S., &amp; Matter, C. F. (1977). <em>What to do and what to report: A reply to koocher.</em>
+</div>
+<div id="ref-milgram1963behavioral" class="csl-entry" role="listitem">
+Milgram, S. (1963). Behavioral study of obedience. <em>The Journal of Abnormal and Social Psychology</em>, <em>67</em>(4), 371.
+</div>
+<div id="ref-miller1985value" class="csl-entry" role="listitem">
+Miller, N. E. (1985). The value of behavioral research on animals. <em>American Psychologist</em>, <em>40</em>(4), 423.
+</div>
+<div id="ref-reverby2009examining" class="csl-entry" role="listitem">
+Reverby, S. M. (2009). <em>Examining tuskegee: The infamous syphilis study and its legacy</em>. Univ of North Carolina Press.
+</div>
+<div id="ref-rosenthal1994science" class="csl-entry" role="listitem">
+Rosenthal, R. (1994). Science and ethics in conducting, analyzing, and reporting psychological research. <em>Psychological Science</em>, <em>5</em>(3), 127–134.
+</div>
+<div id="ref-sieber1995deception" class="csl-entry" role="listitem">
+Sieber, J. E., Iannuzzo, R., &amp; Rodriguez, B. (1995). Deception methods in psychology: Have they changed in 23 years? <em>Ethics &amp; Behavior</em>, <em>5</em>(1), 67–85.
+</div>
+</div>
 
 
 </section>

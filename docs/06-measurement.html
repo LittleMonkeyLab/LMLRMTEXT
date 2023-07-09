@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Research Methods in Psychology">
+<meta name="description" content="This is a an OER textbook for introductory research methods in psychology.">
 
 <title>Monkey Methods - 6&nbsp; Psychological Measurement</title>
 <style>
@@ -21,7 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -43,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -65,8 +84,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script type="application/json" class="js-hypothesis-config">
 {
-  "theme": "clean",
-  "openSidebar": false
+  "theme": "clean"
 }
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
@@ -88,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-measurement.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-science-of-psych.html">Research Methods Text</a></li><li class="breadcrumb-item"><a href="./06-measurement.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -123,103 +141,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Research 🐵 Methods in Psychology</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Principles of Research in Psychology</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./02-getting-started.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./03-theory.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./04-ethics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./05-experiments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Experimental Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./06-measurement.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./07-sampling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sampling</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./08-complex-designs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Complex Research Designs</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./09-nonexperiments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./10-single-N.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Single-Subject Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./11-ideas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(PART*) Conducting Your Own Study</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./12-presenting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./13-descriptives.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(PART*) Analyzing Data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./14-inferentials.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./15-references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foreword</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">Research Methods Text</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -227,14 +155,120 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./webexercises.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span></a>
+  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles of Research in Psychology</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+  <a href="./02-getting-started.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Experimental Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-measurement.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-sampling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sampling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-complex-designs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Complex Research Designs</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-nonexperiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-single-N.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Single-Subject Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-ideas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conducting Your Own Study</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-presenting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-descriptives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analyzing Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-inferentials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Statistics Text</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles of Research in Psychology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./webexercises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span></a>
   </div>
 </li>
       </ul>
@@ -266,7 +300,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#conceptually-defining-the-construct" id="toc-conceptually-defining-the-construct" class="nav-link" data-scroll-target="#conceptually-defining-the-construct">Conceptually Defining the Construct</a></li>
   <li><a href="#deciding-on-an-operational-definition" id="toc-deciding-on-an-operational-definition" class="nav-link" data-scroll-target="#deciding-on-an-operational-definition">Deciding on an Operational Definition</a></li>
   </ul></li>
-  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary"><span class="header-section-number">6.5</span> Glossary</a></li>
+  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary"><span class="header-section-number">6.5</span> Glossary</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.5.1</span> References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -290,11 +327,11 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Researchers Tara MacDonald and Alanna Martineau were interested in the effect of female college students’ moods on their intentions to have unprotected sexual intercourse <span class="citation" data-cites="macdonald2002self">(<a href="references.html#ref-macdonald2002self" role="doc-biblioref"><strong>macdonald2002self?</strong></a>)</span>. In a carefully designed empirical study, they found that being in a negative mood increased intentions to have unprotected sex—but only for students who were low in self-esteem. Although there are many challenges involved in conducting a study like this, one of the primary ones is the measurement of the relevant variables. In this study, the researchers needed to know whether each of their participants had high or low self-esteem, which of course required measuring their self-esteem. They also needed to be sure that their attempt to put people into a negative mood (by having them think negative thoughts) was successful, which required measuring their moods. Finally, they needed to see whether self-esteem and mood were related to participants’ intentions to have unprotected sexual intercourse, which required measuring these intentions.</p>
+<p>Researchers Tara MacDonald and Alanna Martineau were interested in the effect of female college students’ moods on their intentions to have unprotected sexual intercourse <span class="citation" data-cites="macdonald2002self">(<a href="#ref-macdonald2002self" role="doc-biblioref">MacDonald &amp; Martineau, 2002</a>)</span>. In a carefully designed empirical study, they found that being in a negative mood increased intentions to have unprotected sex—but only for students who were low in self-esteem. Although there are many challenges involved in conducting a study like this, one of the primary ones is the measurement of the relevant variables. In this study, the researchers needed to know whether each of their participants had high or low self-esteem, which of course required measuring their self-esteem. They also needed to be sure that their attempt to put people into a negative mood (by having them think negative thoughts) was successful, which required measuring their moods. Finally, they needed to see whether self-esteem and mood were related to participants’ intentions to have unprotected sexual intercourse, which required measuring these intentions.</p>
 <p>To students who are just getting started in psychological research, the challenge of measuring such variables might seem insurmountable. Is it really possible to measure things as intangible as self-esteem, mood, or an intention to do something? The answer is a resounding yes, and in this chapter we look closely at the nature of the variables that psychologists study and how they can be measured. We also look at some practical issues in psychological measurement.</p>
 <section id="do-you-feel-you-are-a-person-of-worth" class="level5 unnumbered fyi">
 <h5 class="unnumbered anchored" data-anchor-id="do-you-feel-you-are-a-person-of-worth">Do You Feel You Are a Person of Worth?</h5>
-<p>The Rosenberg Self-Esteem Scale is one of the most common measures of self-esteem and the one that MacDonald and Martineau used in their study <span class="citation" data-cites="rosenberg1989society">(<a href="references.html#ref-rosenberg1989society" role="doc-biblioref"><strong>rosenberg1989society?</strong></a>)</span>. Participants respond to each of the 10 items that follow with a rating on a 4-point scale: <em>Strongly Agree, Agree, Disagree, Strongly Disagree</em>. Score Items 1, 2, 4, 6, and 7 by assigning 3 points for each <em>Strongly Agree</em> response, 2 for each <em>Agree</em>, 1 for each <em>Disagree</em>, and 0 for each <em>Strongly Disagree</em>. Reverse the scoring for Items 3, 5, 8, 9, and 10 by assigning 0 points for each <em>Strongly Agree</em>, 1 point for each <em>Agree</em>, and so on. The overall score is the total number of points.</p>
+<p>The Rosenberg Self-Esteem Scale is one of the most common measures of self-esteem and the one that MacDonald and Martineau used in their study <span class="citation" data-cites="rosenberg1989society">(<a href="#ref-rosenberg1989society" role="doc-biblioref">Rosenberg, 1989</a>)</span>. Participants respond to each of the 10 items that follow with a rating on a 4-point scale: <em>Strongly Agree, Agree, Disagree, Strongly Disagree</em>. Score Items 1, 2, 4, 6, and 7 by assigning 3 points for each <em>Strongly Agree</em> response, 2 for each <em>Agree</em>, 1 for each <em>Disagree</em>, and 0 for each <em>Strongly Disagree</em>. Reverse the scoring for Items 3, 5, 8, 9, and 10 by assigning 0 points for each <em>Strongly Agree</em>, 1 point for each <em>Agree</em>, and so on. The overall score is the total number of points.</p>
 <ol type="1">
 <li>I feel that I’m a person of worth, at least on an equal plane with others.</li>
 <li>I feel that I have a number of good qualities.</li>
@@ -331,7 +368,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Psychological constructs cannot be observed directly. One reason is that they often represent tendencies to think, feel, or act in certain ways. For example, to say that a particular college student is highly extroverted (see FYI box “The Big Five”) does not necessarily mean that she is behaving in an extroverted way right now. In fact, she might be sitting quietly by herself, reading a book. Instead, it means that she has a general tendency to behave in extroverted ways (talking, laughing, etc.) across a variety of situations. Another reason psychological constructs cannot be observed directly is that they often involve internal processes. Fear, for example, involves the activation of certain central and peripheral nervous system structures, along with certain kinds of thoughts, feelings, and behaviors—none of which is necessarily obvious to an outside observer. Notice also that neither extroversion nor fear “reduces to” any particular thought, feeling, act, or physiological structure or process. Instead, each is a kind of summary of a complex set of behaviors and internal processes.</p>
 <section id="the-big-five" class="level5 unnumbered fyi">
 <h5 class="unnumbered anchored" data-anchor-id="the-big-five">The Big Five</h5>
-<p>The Big Five is a set of five broad dimensions that capture much of the variation in human personality. Each of the Big Five can even be defined in terms of six more specific constructs called “facets” <span class="citation" data-cites="costa1992normal">(<a href="references.html#ref-costa1992normal" role="doc-biblioref"><strong>costa1992normal?</strong></a>)</span>.</p>
+<p>The Big Five is a set of five broad dimensions that capture much of the variation in human personality. Each of the Big Five can even be defined in terms of six more specific constructs called “facets” <span class="citation" data-cites="costa1992normal">(<a href="#ref-costa1992normal" role="doc-biblioref">Costa &amp; McCrae, 1992</a>)</span>.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -348,7 +385,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="operational-definitions" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="operational-definitions">Operational Definitions</h3>
-<p>An <a href="#operational-definition">operational definition</a> is a definition of a variable in terms of precisely how it is to be measured. These measures generally fall into one of three broad categories. <a href="#self-report-measure">Self-report measures</a> are those in which participants report on their own thoughts, feelings, and actions, as with the Rosenberg Self-Esteem Scale. <a href="#behavioral-measure">Behavioral measures</a> are those in which some other aspect of participants’ behavior is observed and recorded. This is an extremely broad category that includes the observation of people’s behavior both in highly structured laboratory tasks and in more natural settings. A good example of the former would be measuring working memory capacity using the backward digit span task. A good example of the latter is a famous operational definition of physical aggression from researcher Albert Bandura and his colleagues <span class="citation" data-cites="bandura1961transmission">(<a href="references.html#ref-bandura1961transmission" role="doc-biblioref"><strong>bandura1961transmission?</strong></a>)</span>. They let each of several children play for 20 minutes in a room that contained a clown-shaped punching bag called a Bobo doll. They filmed each child and counted the number of acts of physical aggression he or she committed. These included hitting the doll with a mallet, punching it, and kicking it. Their operational definition, then, was the number of these specifically defined acts that the child committed in the 20-minute period. Finally, <a href="#physiological-measure">physiological measures</a> are those that involve recording any of a wide variety of physiological processes, including heart rate and blood pressure, galvanic skin response, hormone levels, and electrical activity and blood flow in the brain.</p>
+<p>An <a href="#operational-definition">operational definition</a> is a definition of a variable in terms of precisely how it is to be measured. These measures generally fall into one of three broad categories. <a href="#self-report-measure">Self-report measures</a> are those in which participants report on their own thoughts, feelings, and actions, as with the Rosenberg Self-Esteem Scale. <a href="#behavioral-measure">Behavioral measures</a> are those in which some other aspect of participants’ behavior is observed and recorded. This is an extremely broad category that includes the observation of people’s behavior both in highly structured laboratory tasks and in more natural settings. A good example of the former would be measuring working memory capacity using the backward digit span task. A good example of the latter is a famous operational definition of physical aggression from researcher Albert Bandura and his colleagues <span class="citation" data-cites="bandura1961transmission">(<a href="#ref-bandura1961transmission" role="doc-biblioref">Bandura et al., 1961</a>)</span>. They let each of several children play for 20 minutes in a room that contained a clown-shaped punching bag called a Bobo doll. They filmed each child and counted the number of acts of physical aggression he or she committed. These included hitting the doll with a mallet, punching it, and kicking it. Their operational definition, then, was the number of these specifically defined acts that the child committed in the 20-minute period. Finally, <a href="#physiological-measure">physiological measures</a> are those that involve recording any of a wide variety of physiological processes, including heart rate and blood pressure, galvanic skin response, hormone levels, and electrical activity and blood flow in the brain.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -360,12 +397,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>For any given variable or construct, there will be multiple operational definitions. Stress is a good example. A rough conceptual definition is that stress is an adaptive response to a perceived danger or threat that involves physiological, cognitive, affective, and behavioral components. But researchers have operationally defined it in several ways. The Social Readjustment Rating Scale is a self-report questionnaire on which people identify stressful events that they have experienced in the past year and assigns points for each one depending on its severity. For example, a man who has been divorced (73 points), changed jobs (36 points), and had a change in sleeping habits (16 points) in the past year would have a total score of 125. The Daily Hassles and Uplifts Scale is similar but focuses on everyday stressors like misplacing things and being concerned about one’s weight. The Perceived Stress Scale is another self-report measure that focuses on people’s feelings of stress (e.g., “How often have you felt nervous and stressed?”). Researchers have also operationally defined stress in terms of several physiological variables including blood pressure and levels of the stress hormone cortisol.</p>
-<p>When psychologists use multiple operational definitions of the same construct—either within a study or across studies—they are using <a href="#converging-operations">converging operations</a>. The idea is that the various operational definitions are “converging” on the same construct. When scores based on several different operational definitions are closely related to each other and produce similar patterns of results, this constitutes good evidence that the construct is being measured effectively and that it is useful. The various measures of stress, for example, are all correlated with each other and have all been shown to be correlated with other variables such as immune system functioning (also measured in a variety of ways) <span class="citation" data-cites="segerstrom2004psychological">(<a href="references.html#ref-segerstrom2004psychological" role="doc-biblioref"><strong>segerstrom2004psychological?</strong></a>)</span>. This is what allows researchers eventually to draw useful general conclusions, such as “stress is negatively correlated with immune system functioning,” as opposed to more specific and less useful ones, such as “people’s scores on the Perceived Stress Scale are negatively correlated with their white blood counts.”</p>
+<p>When psychologists use multiple operational definitions of the same construct—either within a study or across studies—they are using <a href="#converging-operations">converging operations</a>. The idea is that the various operational definitions are “converging” on the same construct. When scores based on several different operational definitions are closely related to each other and produce similar patterns of results, this constitutes good evidence that the construct is being measured effectively and that it is useful. The various measures of stress, for example, are all correlated with each other and have all been shown to be correlated with other variables such as immune system functioning (also measured in a variety of ways) <span class="citation" data-cites="segerstrom2004psychological">(<a href="#ref-segerstrom2004psychological" role="doc-biblioref">Segerstrom &amp; Miller, 2004</a>)</span>. This is what allows researchers eventually to draw useful general conclusions, such as “stress is negatively correlated with immune system functioning,” as opposed to more specific and less useful ones, such as “people’s scores on the Perceived Stress Scale are negatively correlated with their white blood counts.”</p>
 </section>
 </section>
 <section id="levels-of-measurement" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="levels-of-measurement"><span class="header-section-number">6.2</span> Levels of Measurement</h2>
-<p>The psychologist S. S. Stevens suggested that scores can be assigned to individuals so that they communicate more or less quantitative information about the variable of interest <span class="citation" data-cites="stevens1946theory">(<a href="references.html#ref-stevens1946theory" role="doc-biblioref"><strong>stevens1946theory?</strong></a>)</span>. For example, the officials at a 100-m race could simply rank order the runners as they crossed the finish line (first, second, etc.), or they could time each runner to the nearest tenth of a second using a stopwatch (11.5 s, 12.1 s, etc.). In either case, they would be measuring the runners’ times by systematically assigning scores to represent those times. But while the rank ordering procedure communicates the fact that the second-place runner took longer to finish than the first-place finisher, the stopwatch procedure also communicates how much longer the second-place finisher took. Stevens actually suggested four different <a href="#levels-of-measurement">levels of measurement</a> (which he called “scales of measurement”) that correspond to four different levels of quantitative information that can be communicated by a set of scores.</p>
+<p>The psychologist S. S. Stevens suggested that scores can be assigned to individuals so that they communicate more or less quantitative information about the variable of interest <span class="citation" data-cites="stevens1946theory">(<a href="#ref-stevens1946theory" role="doc-biblioref">Stevens, 1946</a>)</span>. For example, the officials at a 100-m race could simply rank order the runners as they crossed the finish line (first, second, etc.), or they could time each runner to the nearest tenth of a second using a stopwatch (11.5 s, 12.1 s, etc.). In either case, they would be measuring the runners’ times by systematically assigning scores to represent those times. But while the rank ordering procedure communicates the fact that the second-place runner took longer to finish than the first-place finisher, the stopwatch procedure also communicates how much longer the second-place finisher took. Stevens actually suggested four different <a href="#levels-of-measurement">levels of measurement</a> (which he called “scales of measurement”) that correspond to four different levels of quantitative information that can be communicated by a set of scores.</p>
 <p>The <a href="#nominal-level">nominal level</a> of measurement is used for categorical variables and involves assigning scores that are category labels. Category labels communicate whether any two individuals are the same or different in terms of the variable being measured. For example, if you look at your research participants as they enter the room, decide whether each one is male or female, and type this information into a spreadsheet, you are engaged in nominal-level measurement. Or if you ask your participants to indicate which of several ethnicities they identify themselves with, you are again engaged in nominal-level measurement.</p>
 <p>The remaining three levels of measurement are used for quantitative variables. The <a href="#ordinal-level">ordinal level</a> of measurement involves assigning scores so that they represent the rank order of the individuals. Ranks communicate not only whether any two individuals are the same or different in terms of the variable being measured but also whether one individual is higher or lower on that variable. The <a href="#interval-level">interval level</a> of measurement involves assigning scores so that they represent the precise magnitude of the difference between individuals, but a score of zero does not actually represent the complete absence of the characteristic. A classic example is the measurement of heat using the Celsius or Fahrenheit scale. The difference between temperatures of 20°C and 25°C is precisely 5°, but a temperature of 0°C does not mean that there is a complete absence of heat. In psychology, the intelligence quotient (IQ) is often considered to be measured at the interval level. Finally, the <a href="#ratio-level">ratio level</a> of measurement involves assigning scores in such a way that there is a true zero point that represents the complete absence of the quantity. Height measured in meters and weight measured in kilograms are good examples. So are counts of discrete objects or events such as the number of siblings one has or the number of questions a student answers correctly on an exam.</p>
 <p>Stevens’s levels of measurement are important for at least two reasons. First, they emphasize the generality of the concept of measurement. Although people do not normally think of categorizing or ranking individuals as measurement, in fact they are as long as they are done so that they represent some characteristic of the individuals. Second, the levels of measurement can serve as a rough guide to the statistical procedures that can be used with the data and the conclusions that can be drawn from them. With nominal-level measurement, for example, the only available measure of central tendency is the mode. Also, ratio-level measurement is the only level that allows meaningful statements about ratios of scores. One cannot say that someone with an IQ of 140 is twice as intelligent as someone with an IQ of 70 because IQ is measured at the interval level, but one can say that someone with six siblings has twice as many as someone with three because number of siblings is measured at the ratio level.</p>
@@ -454,7 +491,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Face validity is at best a very weak kind of evidence that a measurement method is measuring what it is supposed to. One reason is that it is based on people’s intuitions about human behavior, which are frequently wrong. It is also the case that many established measures in psychology work quite well despite lacking face validity. The Minnesota Multiphasic Personality Inventory (MMPI) measures many personality characteristics and disorders by having people decide whether each of over 567 different statements applies to them—where many of the statements do not have any obvious relationship to the construct that they measure. Another example is the Implicit Association Test, which measures prejudice in a way that is nonintuitive to most people.</p>
 <section id="how-to-measure-implicit-prejudice" class="level5 unnumbered fyi">
 <h5 class="unnumbered anchored" data-anchor-id="how-to-measure-implicit-prejudice">How to Measure Implicit Prejudice?</h5>
-<p>The Implicit Association Test (IAT) is used to measure people’s attitudes toward various social groups. The IAT is a behavioral measure designed to reveal negative attitudes that people might not admit to on a self-report measure. It focuses on how quickly people are able to categorize words and images representing two contrasting groups (e.g., gay and straight) along with other positive and negative stimuli (e.g., the words “wonderful” or “nasty”). The IAT has been used in dozens of published research studies, and there is strong evidence for both its reliability and its validity <span class="citation" data-cites="nosek2007implicit">(<a href="references.html#ref-nosek2007implicit" role="doc-biblioref"><strong>nosek2007implicit?</strong></a>)</span>. You can learn more about the IAT—and take many of them for yourself—at the following website: https://implicit.harvard.edu/implicit.</p>
+<p>The Implicit Association Test (IAT) is used to measure people’s attitudes toward various social groups. The IAT is a behavioral measure designed to reveal negative attitudes that people might not admit to on a self-report measure. It focuses on how quickly people are able to categorize words and images representing two contrasting groups (e.g., gay and straight) along with other positive and negative stimuli (e.g., the words “wonderful” or “nasty”). The IAT has been used in dozens of published research studies, and there is strong evidence for both its reliability and its validity <span class="citation" data-cites="nosek2007implicit">(<a href="#ref-nosek2007implicit" role="doc-biblioref">Nosek et al., 2007</a>)</span>. You can learn more about the IAT—and take many of them for yourself—at the following website: https://implicit.harvard.edu/implicit.</p>
 </section>
 </section>
 <section id="content-validity" class="level4 unnumbered">
@@ -465,7 +502,7 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="unnumbered anchored" data-anchor-id="criterion-validity">Criterion Validity</h4>
 <p><a href="#criterion-validity">Criterion validity</a> is the extent to which people’s scores on a measure are correlated with other variables (known as <a href="#criteria">criteria</a>) that one would expect them to be correlated with. For example, people’s scores on a new measure of test anxiety should be negatively correlated with their performance on an important school exam. If it were found that people’s scores were in fact negatively correlated with their exam performance, then this would be a piece of evidence that these scores really represent people’s test anxiety. But if it were found that people scored equally well on the exam regardless of their test anxiety scores, then this would cast doubt on the validity of the measure.</p>
 <p>A criterion can be any variable that one has reason to think should be correlated with the construct being measured, and there will usually be many of them. For example, one would expect test anxiety scores to be negatively correlated with exam performance and course grades and positively correlated with general anxiety and with blood pressure during an exam. Or imagine that a researcher develops a new measure of physical risk taking. People’s scores on this measure should be correlated with their participation in “extreme” activities such as snowboarding and rock climbing, the number of speeding tickets they have received, and even the number of broken bones they have had over the years. Criteria can also include other measures of the same construct. For example, one would expect new measures of test anxiety or physical risk taking to be positively correlated with existing measures of the same constructs. So the use of converging operations is one way to examine criterion validity.</p>
-<p>Assessing criterion validity requires collecting data using the measure. Researchers John Cacioppo and Richard Petty did this when they created their self-report Need for Cognition Scale to measure how much people value and engage in thinking <span class="citation" data-cites="cacioppo1982need">(<a href="references.html#ref-cacioppo1982need" role="doc-biblioref"><strong>cacioppo1982need?</strong></a>)</span>. In a series of studies, they showed that college faculty scored higher than assembly-line workers, that people’s scores were positively correlated with their scores on a standardized academic achievement test, and that their scores were negatively correlated with their scores on a measure of dogmatism (which represents a tendency toward obedience). In the years since it was created, the Need for Cognition Scale has been used in literally hundreds of studies and has been shown to be correlated with a wide variety of other variables, including the effectiveness of an advertisement, interest in politics, and juror decisions <span class="citation" data-cites="petty2009need">(<a href="references.html#ref-petty2009need" role="doc-biblioref"><strong>petty2009need?</strong></a>)</span>.</p>
+<p>Assessing criterion validity requires collecting data using the measure. Researchers John Cacioppo and Richard Petty did this when they created their self-report Need for Cognition Scale to measure how much people value and engage in thinking <span class="citation" data-cites="cacioppo1982need">(<a href="#ref-cacioppo1982need" role="doc-biblioref">Cacioppo &amp; Petty, 1982</a>)</span>. In a series of studies, they showed that college faculty scored higher than assembly-line workers, that people’s scores were positively correlated with their scores on a standardized academic achievement test, and that their scores were negatively correlated with their scores on a measure of dogmatism (which represents a tendency toward obedience). In the years since it was created, the Need for Cognition Scale has been used in literally hundreds of studies and has been shown to be correlated with a wide variety of other variables, including the effectiveness of an advertisement, interest in politics, and juror decisions <span class="citation" data-cites="petty2009need">(<a href="#ref-petty2009need" role="doc-biblioref">Petty et al., 2009</a>)</span>.</p>
 </section>
 <section id="discriminant-validity" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="discriminant-validity">Discriminant Validity</h4>
@@ -513,13 +550,13 @@ ul.task-list li input[type="checkbox"] {
 <section id="using-an-existing-measure" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="using-an-existing-measure">Using an Existing Measure</h4>
 <p>It is usually a good idea to use an existing measure that has been used successfully in previous research. Among the advantages are that (a) you save the time and trouble of creating your own, (b) there is already some evidence that the measure is valid (if it has been used successfully), and (c) your results can more easily be compared with and combined with previous results. In fact, if there already exists a reliable and valid measure of a construct, other researchers might expect you to use it unless you have a good and clearly stated reason for not doing so.</p>
-<p>If you choose to use an existing measure, you may still have to choose among several alternatives. You might choose the most common one, the one with the best evidence of reliability and validity, the one that best measures a particular aspect of a construct that you are interested in (e.g., a physiological measure of stress if you are most interested in its underlying physiology), or even the one that would be easiest to use. For example, the Ten-Item Personality Inventory (TIPI) is a self-report questionnaire that measures all the Big Five personality dimensions with just 10 items <span class="citation" data-cites="gosling2003very">(<a href="references.html#ref-gosling2003very" role="doc-biblioref"><strong>gosling2003very?</strong></a>)</span>. It is not as reliable or valid as longer and more comprehensive measures, but a researcher might choose to use it when testing time is severely limited.</p>
+<p>If you choose to use an existing measure, you may still have to choose among several alternatives. You might choose the most common one, the one with the best evidence of reliability and validity, the one that best measures a particular aspect of a construct that you are interested in (e.g., a physiological measure of stress if you are most interested in its underlying physiology), or even the one that would be easiest to use. For example, the Ten-Item Personality Inventory (TIPI) is a self-report questionnaire that measures all the Big Five personality dimensions with just 10 items <span class="citation" data-cites="gosling2003very">(<a href="#ref-gosling2003very" role="doc-biblioref">Gosling et al., 2003</a>)</span>. It is not as reliable or valid as longer and more comprehensive measures, but a researcher might choose to use it when testing time is severely limited.</p>
 <p>When an existing measure was created primarily for use in scientific research, it is usually described in detail in a published research article and is free to use in your own research—with a proper citation. You might find that later researchers who use the same measure describe it only briefly but provide a reference to the original article, in which case you would have to get the details from the original article. The American Psychological Association also publishes the <em>Directory of Unpublished Experimental Measures</em>, which is an extensive catalog of measures that have been used in previous research. Many existing measures—especially those that have applications in clinical psychology—are proprietary. This means that a publisher owns the rights to them and that you would have to purchase them. These include many standard intelligence tests, the Beck Depression Inventory, and the Minnesota Multiphasic Personality Inventory (MMPI). Details about many of these measures and how to obtain them can be found in other reference books, including <em>Tests in Print</em> and the <em>Mental Measurements Yearbook</em>. There is a good chance you can find these reference books in your college or university library.</p>
 </section>
 <section id="creating-your-own-measure" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="creating-your-own-measure">Creating Your Own Measure</h4>
 <p>Instead of using an existing measure, you might want to create your own. Perhaps there is no existing measure of the construct you are interested in or existing ones are too difficult or time-consuming to use. Or perhaps you want to use a new measure specifically to see whether it works in the same way as existing measures—that is, to demonstrate converging operations. In this section, we consider some general issues in creating new measures that apply equally to self-report, behavioral, and physiological measures. More detailed guidelines for creating self-report measures are presented in the chapter on survey research.</p>
-<p>First, be aware that most new measures in psychology are really variations of existing measures, so you should still look to the research literature for ideas. Perhaps you can modify an existing questionnaire, create a paper-and-pencil version of a measure that is normally computerized (or vice versa), or adapt a measure that has traditionally been used for another purpose. For example, the famous Stroop task <span class="citation" data-cites="stroop1935studies">(<a href="references.html#ref-stroop1935studies" role="doc-biblioref"><strong>stroop1935studies?</strong></a>)</span>—in which people quickly name the colors that various color words are printed in—has been adapted for the study of social anxiety. Socially anxious people are slower at color naming when the words have negative social connotations such as “stupid” <span class="citation" data-cites="amir2002enhanced">(<a href="references.html#ref-amir2002enhanced" role="doc-biblioref"><strong>amir2002enhanced?</strong></a>)</span>.</p>
+<p>First, be aware that most new measures in psychology are really variations of existing measures, so you should still look to the research literature for ideas. Perhaps you can modify an existing questionnaire, create a paper-and-pencil version of a measure that is normally computerized (or vice versa), or adapt a measure that has traditionally been used for another purpose. For example, the famous Stroop task <span class="citation" data-cites="stroop1935studies">(<a href="#ref-stroop1935studies" role="doc-biblioref">Stroop, 1935</a>)</span>—in which people quickly name the colors that various color words are printed in—has been adapted for the study of social anxiety. Socially anxious people are slower at color naming when the words have negative social connotations such as “stupid” <span class="citation" data-cites="amir2002enhanced">(<a href="#ref-amir2002enhanced" role="doc-biblioref">Amir et al., 2002</a>)</span>.</p>
 <p>When you create a new measure, you should strive for simplicity. Remember that your participants are not as interested in your research as you are and that they will vary widely in their ability to understand and carry out whatever task you give them. You should create a set of clear instructions using simple language that you can present in writing or read aloud (or both). It is also a good idea to include one or more practice items so that participants can become familiar with the task, and to build in an opportunity for them to ask questions before continuing. It is also best to keep the measure brief to avoid boring or frustrating your participants to the point that their responses start to become less reliable and valid.</p>
 <p>The need for brevity, however, needs to be weighed against the fact that it is nearly always better for a measure to include multiple items rather than a single item. There are two reasons for this. One is a matter of content validity. Multiple items are often required to cover a construct adequately. The other is a matter of reliability. People’s responses to single items can be influenced by all sorts of irrelevant factors—misunderstanding the particular item, a momentary distraction, or a simple error such as checking the wrong response option. But when several responses are summed or averaged, the effects of these irrelevant factors tend to cancel each other out to produce more reliable scores. Remember, however, that multiple items must be structured in a way that allows them to be combined into a single overall score by summing or averaging. To measure “financial responsibility,” a student might ask people about their annual income, obtain their credit score, and have them rate how “thrifty” they are—but there is no obvious way to combine these responses into an overall score. To create a true multiple-item measure, the student might instead ask people to rate the degree to which 10 statements about financial responsibility describe them on the same five-point scale.</p>
 <p>Finally, the very best way to assure yourself that your measure has clear instructions, includes sufficient practice, and is an appropriate length is to test several people. (Family and friends often serve this purpose nicely). Observe them as they complete the task, time them, and ask them afterward to comment on how easy or difficult it was, whether the instructions were clear, and anything else you might be wondering about. Obviously, it is better to discover problems with a measure before beginning any large-scale data collection.</p>
@@ -680,6 +717,47 @@ ul.task-list li input[type="checkbox"] {
 <section id="validity-1" class="level5 unnumbered">
 <h5 class="unnumbered anchored" data-anchor-id="validity-1">validity</h5>
 <p>The extent to which scores on a measure represent the variable or construct they are intended to. Validity is a judgment based on the available evidence.</p>
+</section>
+<section id="references" class="level3" data-number="6.5.1">
+<h3 data-number="6.5.1" class="anchored" data-anchor-id="references"><span class="header-section-number">6.5.1</span> References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-amir2002enhanced" class="csl-entry" role="listitem">
+Amir, N., Freshman, M., &amp; Foa, E. (2002). Enhanced stroop interference for threat in social phobia. <em>Journal of Anxiety Disorders</em>, <em>16</em>(1), 1–9.
+</div>
+<div id="ref-bandura1961transmission" class="csl-entry" role="listitem">
+Bandura, A., Ross, D., &amp; Ross, S. A. (1961). Transmission of aggression through imitation of aggressive models. <em>The Journal of Abnormal and Social Psychology</em>, <em>63</em>(3), 575.
+</div>
+<div id="ref-cacioppo1982need" class="csl-entry" role="listitem">
+Cacioppo, J. T., &amp; Petty, R. E. (1982). The need for cognition. <em>Journal of Personality and Social Psychology</em>, <em>42</em>(1), 116.
+</div>
+<div id="ref-costa1992normal" class="csl-entry" role="listitem">
+Costa, P. T., &amp; McCrae, R. R. (1992). Normal personality assessment in clinical practice: The NEO personality inventory. <em>Psychological Assessment</em>, <em>4</em>(1), 5.
+</div>
+<div id="ref-gosling2003very" class="csl-entry" role="listitem">
+Gosling, S. D., Rentfrow, P. J., &amp; Swann Jr, W. B. (2003). A very brief measure of the big-five personality domains. <em>Journal of Research in Personality</em>, <em>37</em>(6), 504–528.
+</div>
+<div id="ref-macdonald2002self" class="csl-entry" role="listitem">
+MacDonald, T. K., &amp; Martineau, A. M. (2002). Self-esteem, mood, and intentions to use condoms: When does low self-esteem lead to risky health behaviors? <em>Journal of Experimental Social Psychology</em>, <em>38</em>(3), 299–306.
+</div>
+<div id="ref-nosek2007implicit" class="csl-entry" role="listitem">
+Nosek, B. A., Greenwald, A. G., &amp; Banaji, M. R. (2007). <em>The implicit association test at age 7: A methodological and conceptual review.</em>
+</div>
+<div id="ref-petty2009need" class="csl-entry" role="listitem">
+Petty, R. E., Briñol, P., Loersch, C., &amp; McCaslin, M. J. (2009). <em>The need for cognition.</em>
+</div>
+<div id="ref-rosenberg1989society" class="csl-entry" role="listitem">
+Rosenberg, M. (1989). <em>Society and the adolescent self-image</em>. Princeton university press.
+</div>
+<div id="ref-segerstrom2004psychological" class="csl-entry" role="listitem">
+Segerstrom, S. C., &amp; Miller, G. E. (2004). Psychological stress and the human immune system: A meta-analytic study of 30 years of inquiry. <em>Psychological Bulletin</em>, <em>130</em>(4), 601.
+</div>
+<div id="ref-stevens1946theory" class="csl-entry" role="listitem">
+Stevens, S. S. (1946). On the theory of scales of measurement. <em>Science</em>, <em>103</em>(2684), 677–680.
+</div>
+<div id="ref-stroop1935studies" class="csl-entry" role="listitem">
+Stroop, J. R. (1935). Studies of interference in serial verbal reactions. <em>Journal of Experimental Psychology</em>, <em>18</em>(6), 643.
+</div>
+</div>
 
 
 </section>

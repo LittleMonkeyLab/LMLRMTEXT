@@ -767,3 +767,8 @@ interpretation.
 ##### variable {#variable .unnumbered}
 
 A quantity or quality that varies across individuals.
+
+### References
+
+::: {#refs}
+:::

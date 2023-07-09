@@ -1,19 +1,5 @@
 ---
-title: "Research 🐵 Methods in Psychology"
-author: "Adapted by Dr. Gordon Wright from https://github.com/pilegard/psychmethods"
-date: "Current version rendered `r Sys.Date()`"
-# site: bookdown::bookdown_site
-# documentclass: krantz
-bibliography: [book.bib, packages.bib]
-csl: apa.csl
-# url: https://pilegard.github.io/psychmethods/
-# favicon: images/favicon.ico
-# cover-image: images/cover.png
-description: |
-  This is a an OER textbook for introductory research methods in psychology.
-link-citations: true
-github-repo: LittleMonkeyLab/RMText
-repo-url: https://github.com/LittleMonkeyLab/RMText
+title: "Foreword"
 ---
 
 # Welcome {.unnumbered}
@@ -79,3 +65,8 @@ deemphasized or removed.
 Revisions to portions from Çetinkaya-Rundel & Hardi: Changes in
 formatting. Stratified random sampling figure adapted to proportionate
 stratified random sampling.
+
+### References
+
+::: {#refs}
+:::

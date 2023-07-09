@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Research Methods in Psychology">
+<meta name="description" content="This is a an OER textbook for introductory research methods in psychology.">
 
 <title>Monkey Methods - 9&nbsp; Nonexperimental Research</title>
 <style>
@@ -21,7 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -43,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -65,8 +84,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script type="application/json" class="js-hypothesis-config">
 {
-  "theme": "clean",
-  "openSidebar": false
+  "theme": "clean"
 }
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
@@ -88,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./09-nonexperiments.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-science-of-psych.html">Research Methods Text</a></li><li class="breadcrumb-item"><a href="./09-nonexperiments.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -123,103 +141,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Research 🐵 Methods in Psychology</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Principles of Research in Psychology</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./02-getting-started.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./03-theory.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./04-ethics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./05-experiments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Experimental Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./06-measurement.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./07-sampling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sampling</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./08-complex-designs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Complex Research Designs</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./09-nonexperiments.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./10-single-N.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Single-Subject Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./11-ideas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(PART*) Conducting Your Own Study</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./12-presenting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./13-descriptives.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(PART*) Analyzing Data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./14-inferentials.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./15-references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foreword</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">Research Methods Text</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -227,14 +155,120 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./webexercises.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span></a>
+  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles of Research in Psychology</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+  <a href="./02-getting-started.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Experimental Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-measurement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-sampling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sampling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-complex-designs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Complex Research Designs</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-nonexperiments.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-single-N.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Single-Subject Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-ideas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conducting Your Own Study</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-presenting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-descriptives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analyzing Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-inferentials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Statistics Text</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles of Research in Psychology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./webexercises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span></a>
   </div>
 </li>
       </ul>
@@ -277,7 +311,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#interrupted-time-series-design" id="toc-interrupted-time-series-design" class="nav-link" data-scroll-target="#interrupted-time-series-design">Interrupted Time Series Design</a></li>
   <li><a href="#combination-designs" id="toc-combination-designs" class="nav-link" data-scroll-target="#combination-designs">Combination Designs</a></li>
   </ul></li>
-  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary"><span class="header-section-number">9.5</span> Glossary</a></li>
+  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary"><span class="header-section-number">9.5</span> Glossary</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">9.5.1</span> References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -303,10 +340,10 @@ ul.task-list li input[type="checkbox"] {
 
 <p>What do the following classic studies have in common?</p>
 <ul>
-<li>Stanley Milgram found that about two thirds of his research participants were willing to administer dangerous shocks to another person just because they were told to by an authority figure <span class="citation" data-cites="milgram1963behavioral">(<a href="references.html#ref-milgram1963behavioral" role="doc-biblioref"><strong>milgram1963behavioral?</strong></a>)</span>.</li>
-<li>Elizabeth Loftus and Jacqueline Pickrell showed that it is relatively easy to “implant” false memories in people by repeatedly asking them about childhood events that did not actually happen to them <span class="citation" data-cites="loftus1995formation">(<a href="references.html#ref-loftus1995formation" role="doc-biblioref"><strong>loftus1995formation?</strong></a>)</span>.</li>
-<li>John Cacioppo and Richard Petty evaluated the validity of their Need for Cognition Scale—a measure of the extent to which people like and value thinking—by comparing the scores of college professors with those of factory workers <span class="citation" data-cites="cacioppo1982need">(<a href="references.html#ref-cacioppo1982need" role="doc-biblioref"><strong>cacioppo1982need?</strong></a>)</span>.</li>
-<li>David Rosenhan found that confederates who went to psychiatric hospitals claiming to have heard voices saying things like “empty” and “thud” were labeled as schizophrenic by the hospital staff and kept there even though they behaved normally in all other ways <span class="citation" data-cites="rosenhan1973being">(<a href="references.html#ref-rosenhan1973being" role="doc-biblioref"><strong>rosenhan1973being?</strong></a>)</span>.</li>
+<li>Stanley Milgram found that about two thirds of his research participants were willing to administer dangerous shocks to another person just because they were told to by an authority figure <span class="citation" data-cites="milgram1963behavioral">(<a href="#ref-milgram1963behavioral" role="doc-biblioref">Stanley Milgram, 1963</a>)</span>.</li>
+<li>Elizabeth Loftus and Jacqueline Pickrell showed that it is relatively easy to “implant” false memories in people by repeatedly asking them about childhood events that did not actually happen to them <span class="citation" data-cites="loftus1995formation">(<a href="#ref-loftus1995formation" role="doc-biblioref">Loftus &amp; Pickrell, 1995</a>)</span>.</li>
+<li>John Cacioppo and Richard Petty evaluated the validity of their Need for Cognition Scale—a measure of the extent to which people like and value thinking—by comparing the scores of college professors with those of factory workers <span class="citation" data-cites="cacioppo1982need">(<a href="#ref-cacioppo1982need" role="doc-biblioref">Cacioppo &amp; Petty, 1982</a>)</span>.</li>
+<li>David Rosenhan found that confederates who went to psychiatric hospitals claiming to have heard voices saying things like “empty” and “thud” were labeled as schizophrenic by the hospital staff and kept there even though they behaved normally in all other ways <span class="citation" data-cites="rosenhan1973being">(<a href="#ref-rosenhan1973being" role="doc-biblioref">Rosenhan, 1973</a>)</span>.</li>
 </ul>
 <p>The answer for purposes of this chapter is that they are not experiments. In this chapter we look more closely at nonexperimental research. We begin with a general definition of nonexperimental research, along with a discussion of when and why nonexperimental research is more appropriate than experimental research. We then look separately at three important types of nonexperimental research: correlational research, quasi-experimental research, and qualitative research.</p>
 <section id="overview-of-nonexperimental-research" class="level2" data-number="9.1">
@@ -332,14 +369,14 @@ ul.task-list li input[type="checkbox"] {
 <li>The research question can be about a causal relationship, but the independent variable cannot be manipulated or participants cannot be randomly assigned to conditions or orders of conditions (e.g., Does damage to a person’s hippocampus impair the formation of long-term memory traces?).</li>
 <li>The research question can be broad and exploratory, or it can be about what it is like to have a particular experience (e.g., What is it like to be a working mother diagnosed with depression?).</li>
 </ul>
-<p>Again, the choice between the experimental and nonexperimental approaches is generally dictated by the nature of the research question. If it is about a causal relationship and involves an independent variable that can be manipulated, the experimental approach is typically preferred. Otherwise, the nonexperimental approach is preferred. But the two approaches can also be used to address the same research question in complementary ways. For example, nonexperimental studies establishing that there is a relationship between watching violent television and aggressive behavior have been complemented by experimental studies confirming that the relationship is a causal one <span class="citation" data-cites="bushman2001effects">(<a href="references.html#ref-bushman2001effects" role="doc-biblioref"><strong>bushman2001effects?</strong></a>)</span>. Similarly, after his original study, Milgram conducted experiments to explore the factors that affect obedience. He manipulated several independent variables, such as the distance between the experimenter and the participant, the participant and the confederate, and the location of the study <span class="citation" data-cites="milgram1964obedience">(<a href="references.html#ref-milgram1964obedience" role="doc-biblioref"><strong>milgram1964obedience?</strong></a>)</span>.</p>
+<p>Again, the choice between the experimental and nonexperimental approaches is generally dictated by the nature of the research question. If it is about a causal relationship and involves an independent variable that can be manipulated, the experimental approach is typically preferred. Otherwise, the nonexperimental approach is preferred. But the two approaches can also be used to address the same research question in complementary ways. For example, nonexperimental studies establishing that there is a relationship between watching violent television and aggressive behavior have been complemented by experimental studies confirming that the relationship is a causal one <span class="citation" data-cites="bushman2001effects">(<a href="#ref-bushman2001effects" role="doc-biblioref">Bushman &amp; Huesmann, 2001</a>)</span>. Similarly, after his original study, Milgram conducted experiments to explore the factors that affect obedience. He manipulated several independent variables, such as the distance between the experimenter and the participant, the participant and the confederate, and the location of the study <span class="citation" data-cites="milgram1964obedience">(<a href="#ref-milgram1964obedience" role="doc-biblioref">S. Milgram, 1974</a>)</span>.</p>
 </section>
 <section id="types-of-nonexperimental-research" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="types-of-nonexperimental-research">Types of Nonexperimental Research</h3>
 <p>Nonexperimental research falls into three broad categories: single-variable research, correlational and quasi-experimental research, and qualitative research. First, research can be nonexperimental because it focuses on a single variable rather than a statistical relationship between two variables. Although there is no widely shared term for this kind of research, we will call it <a href="#single-variable-research">single-variable research</a>. Milgram’s original obedience study was nonexperimental in this way. He was primarily interested in one variable—the extent to which participants obeyed the researcher when he told them to shock the confederate—and he observed all participants performing the same task under the same conditions. The study by Loftus and Pickrell described at the beginning of this chapter is also a good example of single-variable research. The variable was whether participants “remembered” having experienced mildly traumatic childhood events (e.g., getting lost in a shopping mall) that they had not actually experienced but that the research asked them about repeatedly. In this particular study, nearly a third of the participants “remembered” at least one event. (As with Milgram’s original study, this study inspired several later experiments on the factors that affect false memories.)</p>
 <p>As these examples make clear, single-variable research can answer interesting and important questions. What it cannot do, however, is answer questions about statistical relationships between variables. This is a point that beginning researchers sometimes miss. Imagine, for example, a group of research methods students interested in the relationship between children’s being the victim of bullying and the children’s self-esteem. The first thing that is likely to occur to these researchers is to obtain a sample of middle-school students who have been bullied and then to measure their self-esteem. But this would be a single-variable study with self-esteem as the only variable. Although it would tell the researchers something about the self-esteem of children who have been bullied, it would not tell them what they really want to know, which is how the self-esteem of children who have been bullied <em>compares</em> with the self-esteem of children who have not. Is it lower? Is it the same? Could it even be higher? To answer this question, their sample would also have to include middle-school students who have not been bullied.</p>
 <p>Research can also be nonexperimental because it focuses on a statistical relationship between two variables but does not include the manipulation of an independent variable, random assignment of participants to conditions or orders of conditions, or both. This kind of research takes two basic forms: correlational research and quasi-experimental research. In <a href="#correlational-research">correlational research</a>, the researcher measures the two variables of interest with little or no attempt to control extraneous variables and then assesses the relationship between them. A research methods student who finds out whether each of several middle-school students has been bullied and then measures each student’s self-esteem is conducting correlational research. In <a href="#quasi-experimental-research">quasi-experimental research</a>, the researcher manipulates an independent variable but does not randomly assign participants to conditions or orders of conditions. For example, a researcher might start an antibullying program (a kind of treatment) at one school and compare the incidence of bullying at that school with the incidence at a similar school that has no antibullying program.</p>
-<p>The final way in which research can be nonexperimental is that it can be qualitative. The types of research we have discussed so far are all quantitative, referring to the fact that the data consist of numbers that are analyzed using statistical techniques. In [qualitative research], the data are usually nonnumerical and are analyzed using nonstatistical techniques. Rosenhan’s study of the experience of people in a psychiatric ward was primarily qualitative. The data were the notes taken by the “pseudopatients”—the people pretending to have heard voices—along with their hospital records. Rosenhan’s analysis consists mainly of a written description of the experiences of the pseudopatients, supported by several concrete examples. To illustrate the hospital staff’s tendency to “depersonalize” their patients, he noted, “Upon being admitted, I and other pseudopatients took the initial physical examinations in a semipublic room, where staff members went about their own business as if we were not there” <span class="citation" data-cites="rosenhan1973being">(<a href="references.html#ref-rosenhan1973being" role="doc-biblioref"><strong>rosenhan1973being?</strong></a>)</span>.</p>
+<p>The final way in which research can be nonexperimental is that it can be qualitative. The types of research we have discussed so far are all quantitative, referring to the fact that the data consist of numbers that are analyzed using statistical techniques. In [qualitative research], the data are usually nonnumerical and are analyzed using nonstatistical techniques. Rosenhan’s study of the experience of people in a psychiatric ward was primarily qualitative. The data were the notes taken by the “pseudopatients”—the people pretending to have heard voices—along with their hospital records. Rosenhan’s analysis consists mainly of a written description of the experiences of the pseudopatients, supported by several concrete examples. To illustrate the hospital staff’s tendency to “depersonalize” their patients, he noted, “Upon being admitted, I and other pseudopatients took the initial physical examinations in a semipublic room, where staff members went about their own business as if we were not there” <span class="citation" data-cites="rosenhan1973being">(<a href="#ref-rosenhan1973being" role="doc-biblioref">Rosenhan, 1973, p. 256</a>)</span>.</p>
 </section>
 <section id="internal-validity-revisited" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="internal-validity-revisited">Internal Validity Revisited</h3>
@@ -389,7 +426,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-is-correlational-research" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="what-is-correlational-research">What Is Correlational Research?</h3>
 <p>Correlational research is a type of nonexperimental research in which the researcher measures two variables and assesses the statistical relationship (i.e., the correlation) between them with little or no effort to control extraneous variables. There are essentially two reasons that researchers interested in statistical relationships between variables would choose to conduct a correlational study rather than an experiment. The first is that they do not believe that the statistical relationship is a causal one. For example, a researcher might evaluate the validity of a brief extraversion test by administering it to a large group of participants along with a longer extraversion test that has already been shown to be valid. This researcher might then check to see whether participants’ scores on the brief test are strongly correlated with their scores on the longer one. Neither test score is thought to cause the other, so there is no independent variable to manipulate. In fact, the terms <em>independent variable</em> and <em>dependent variable</em> do not apply to this kind of research.</p>
-<p>The other reason that researchers would choose to use a correlational study rather than an experiment is that the statistical relationship of interest is thought to be causal, but the researcher cannot manipulate the independent variable because it is impossible, impractical, or unethical. For example, Allen Kanner and his colleagues thought that the number of “daily hassles” (e.g., rude salespeople, heavy traffic) that people experience affects the number of physical and psychological symptoms they have <span class="citation" data-cites="kanner1981comparison">(<a href="references.html#ref-kanner1981comparison" role="doc-biblioref"><strong>kanner1981comparison?</strong></a>)</span>. But because they could not manipulate the number of daily hassles their participants experienced, they had to settle for measuring the number of daily hassles—along with the number of symptoms—using self-report questionnaires. Although the strong positive relationship they found between these two variables is consistent with their idea that hassles cause symptoms, it is also consistent with the idea that symptoms cause hassles or that some third variable (e.g., neuroticism) causes both.</p>
+<p>The other reason that researchers would choose to use a correlational study rather than an experiment is that the statistical relationship of interest is thought to be causal, but the researcher cannot manipulate the independent variable because it is impossible, impractical, or unethical. For example, Allen Kanner and his colleagues thought that the number of “daily hassles” (e.g., rude salespeople, heavy traffic) that people experience affects the number of physical and psychological symptoms they have <span class="citation" data-cites="kanner1981comparison">(<a href="#ref-kanner1981comparison" role="doc-biblioref">Kanner et al., 1981</a>)</span>. But because they could not manipulate the number of daily hassles their participants experienced, they had to settle for measuring the number of daily hassles—along with the number of symptoms—using self-report questionnaires. Although the strong positive relationship they found between these two variables is consistent with their idea that hassles cause symptoms, it is also consistent with the idea that symptoms cause hassles or that some third variable (e.g., neuroticism) causes both.</p>
 <p>A common misconception among beginning researchers is that correlational research must involve two quantitative variables, such as scores on two extraversion tests or the number of hassles and number of symptoms people have experienced. However, the defining feature of correlational research is that the two variables are measured—neither one is manipulated—and this is true regardless of whether the variables are quantitative or categorical. Imagine, for example, that a researcher administers the Rosenberg Self-Esteem Scale to 50 American college students and 50 Japanese college students. Although this “feels” like a between-subjects experiment, it is a correlational study because the researcher did not manipulate the students’ nationalities. The same is true of the study by Cacioppo and Petty comparing college faculty and factory workers in terms of their need for cognition. It is a correlational study because the researchers did not manipulate the participants’ occupations.</p>
 <p>Figure @ref(fig:todo) shows data from a hypothetical study on the relationship between whether people make a daily list of things to do (a “to-do list”) and stress. Notice that it is unclear whether this is an experiment or a correlational study because it is unclear whether the independent variable was manipulated. If the researcher randomly assigned some participants to make daily to-do lists and others not to, then it is an experiment. If the researcher simply asked participants whether they made daily to-do lists, then it is a correlational study. The distinction is important because if the study was an experiment, then it could be concluded that making the daily to-do lists reduced participants’ stress. But if it was a correlational study, it could only be concluded that these variables are statistically related. Perhaps being stressed has a negative effect on people’s ability to plan ahead (the directionality problem). Or perhaps people who are more conscientious are more likely to make to-do lists and less likely to be stressed (the third-variable problem). The crucial point is that what defines a study as experimental or correlational is not the variables being studied, nor whether the variables are quantitative or categorical, nor the type of graph or statistics used to analyze the data. It is how the study is conducted.</p>
 <div class="cell" data-layout-align="center">
@@ -409,11 +446,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="naturalistic-observation" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="naturalistic-observation">Naturalistic Observation</h4>
 <p><a href="#naturalistic-observation">Naturalistic observation</a> is an approach to data collection that involves observing people’s behavior in the environment in which it typically occurs. Thus naturalistic observation is a type of field research (as opposed to a type of laboratory research). It could involve observing shoppers in a grocery store, children on a school playground, or psychiatric inpatients in their wards. Researchers engaged in naturalistic observation usually make their observations as unobtrusively as possible so that participants are often not aware that they are being studied. Ethically, this is considered to be acceptable if the participants remain anonymous and the behavior occurs in a public setting where people would not normally have an expectation of privacy. Grocery shoppers putting items into their shopping carts, for example, are engaged in public behavior that is easily observable by store employees and other shoppers. For this reason, most researchers would consider it ethically acceptable to observe them for a study. On the other hand, one of the arguments against the ethicality of the naturalistic observation of “bathroom behavior” discussed earlier in the book is that people have a reasonable expectation of privacy even in a public restroom and that this expectation was violated.</p>
-<p>Researchers Robert Levine and Ara Norenzayan used naturalistic observation to study differences in the “pace of life” across countries <span class="citation" data-cites="levine1999pace">(<a href="references.html#ref-levine1999pace" role="doc-biblioref"><strong>levine1999pace?</strong></a>)</span>. One of their measures involved observing pedestrians in a large city to see how long it took them to walk 60 feet. They found that people in some countries walked reliably faster than people in other countries. For example, people in the United States and Japan covered 60 feet in about 12 seconds on average, while people in Brazil and Romania took close to 17 seconds.</p>
+<p>Researchers Robert Levine and Ara Norenzayan used naturalistic observation to study differences in the “pace of life” across countries <span class="citation" data-cites="levine1999pace">(<a href="#ref-levine1999pace" role="doc-biblioref">Levine &amp; Norenzayan, 1999</a>)</span>. One of their measures involved observing pedestrians in a large city to see how long it took them to walk 60 feet. They found that people in some countries walked reliably faster than people in other countries. For example, people in the United States and Japan covered 60 feet in about 12 seconds on average, while people in Brazil and Romania took close to 17 seconds.</p>
 <p>Because naturalistic observation takes place in the complex and even chaotic “real world,” there are two closely related issues that researchers must deal with before collecting data. The first is sampling. When, where, and under what conditions will the observations be made, and who exactly will be observed? Levine and Norenzayan described their sampling process as follows:</p>
 <p>Male and female walking speed over a distance of 60 feet was measured in at least two locations in main downtown areas in each city. Measurements were taken during main business hours on clear summer days. All locations were flat, unobstructed, had broad sidewalks, and were sufficiently uncrowded to allow pedestrians to move at potentially maximum speeds. To control for the effects of socializing, only pedestrians walking alone were used. Children, individuals with obvious physical handicaps, and window-shoppers were not timed. Thirty-five men and 35 women were timed in most cities. (p.&nbsp;186)</p>
 <p>Precise specification of the sampling process in this way makes data collection manageable for the observers, and it also provides some control over important extraneous variables. For example, by making their observations on clear summer days in all countries, Levine and Norenzayan controlled for effects of the weather on people’s walking speeds.</p>
-<p>The second issue is measurement. What specific behaviors will be observed? In Levine and Norenzayan’s study, measurement was relatively straightforward. They simply measured out a 60-foot distance along a city sidewalk and then used a stopwatch to time participants as they walked over that distance. Often, however, the behaviors of interest are not so obvious or objective. For example, researchers Robert Kraut and Robert Johnston wanted to study bowlers’ reactions to their shots, both when they were facing the pins and then when they turned toward their companions <span class="citation" data-cites="kraut1979social">(<a href="references.html#ref-kraut1979social" role="doc-biblioref"><strong>kraut1979social?</strong></a>)</span>. But what “reactions” should they observe? Based on previous research and their own pilot testing, Kraut and Johnston created a list of reactions that included “closed smile,” “open smile,” “laugh,” “neutral face,” “look down,” “look away,” and “face cover” (covering one’s face with one’s hands). The observers committed this list to memory and then practiced by coding the reactions of bowlers who had been videotaped. During the actual study, the observers spoke into an audio recorder, describing the reactions they observed. Among the most interesting results of this study was that bowlers rarely smiled while they still faced the pins. They were much more likely to smile after they turned toward their companions, suggesting that smiling is not purely an expression of happiness but also a form of social communication.</p>
+<p>The second issue is measurement. What specific behaviors will be observed? In Levine and Norenzayan’s study, measurement was relatively straightforward. They simply measured out a 60-foot distance along a city sidewalk and then used a stopwatch to time participants as they walked over that distance. Often, however, the behaviors of interest are not so obvious or objective. For example, researchers Robert Kraut and Robert Johnston wanted to study bowlers’ reactions to their shots, both when they were facing the pins and then when they turned toward their companions <span class="citation" data-cites="kraut1979social">(<a href="#ref-kraut1979social" role="doc-biblioref">Kraut &amp; Johnston, 1979</a>)</span>. But what “reactions” should they observe? Based on previous research and their own pilot testing, Kraut and Johnston created a list of reactions that included “closed smile,” “open smile,” “laugh,” “neutral face,” “look down,” “look away,” and “face cover” (covering one’s face with one’s hands). The observers committed this list to memory and then practiced by coding the reactions of bowlers who had been videotaped. During the actual study, the observers spoke into an audio recorder, describing the reactions they observed. Among the most interesting results of this study was that bowlers rarely smiled while they still faced the pins. They were much more likely to smile after they turned toward their companions, suggesting that smiling is not purely an expression of happiness but also a form of social communication.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -428,8 +465,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="archival-data" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="archival-data">Archival Data</h4>
-<p>Another approach to correlational research is the use of <a href="#archival-data">archival data</a>, which are data that have already been collected for some other purpose. An example is a study by Brett Pelham and his colleagues on “implicit egotism”—the tendency for people to prefer people, places, and things that are similar to themselves <span class="citation" data-cites="pelham2005implicit">(<a href="references.html#ref-pelham2005implicit" role="doc-biblioref"><strong>pelham2005implicit?</strong></a>)</span>. In one study, they examined Social Security records to show that women with the names Virginia, Georgia, Louise, and Florence were especially likely to have moved to the states of Virginia, Georgia, Louisiana, and Florida, respectively.</p>
-<p>As with naturalistic observation, measurement can be more or less straightforward when working with archival data. For example, counting the number of people named Virginia who live in various states based on Social Security records is relatively straightforward. But consider a study by Christopher Peterson and his colleagues on the relationship between optimism and health using data that had been collected many years before for a study on adult development <span class="citation" data-cites="peterson1988pessimistic">(<a href="references.html#ref-peterson1988pessimistic" role="doc-biblioref"><strong>peterson1988pessimistic?</strong></a>)</span>. In the 1940s, healthy male college students had completed an open-ended questionnaire about difficult wartime experiences. In the late 1980s, Peterson and his colleagues reviewed the men’s questionnaire responses to obtain a measure of explanatory style—their habitual ways of explaining bad events that happen to them. More pessimistic people tend to blame themselves and expect long-term negative consequences that affect many aspects of their lives, while more optimistic people tend to blame outside forces and expect limited negative consequences. To obtain a measure of explanatory style for each participant, the researchers used a procedure in which all negative events mentioned in the questionnaire responses, and any causal explanations for them, were identified and written on index cards. These were given to a separate group of raters who rated each explanation in terms of three separate dimensions of optimism-pessimism. These ratings were then averaged to produce an explanatory style score for each participant. The researchers then assessed the statistical relationship between the men’s explanatory style as college students and archival measures of their health at approximately 60 years of age. The primary result was that the more optimistic the men were as college students, the healthier they were as older men. Pearson’s r was +.25.</p>
+<p>Another approach to correlational research is the use of <a href="#archival-data">archival data</a>, which are data that have already been collected for some other purpose. An example is a study by Brett Pelham and his colleagues on “implicit egotism”—the tendency for people to prefer people, places, and things that are similar to themselves <span class="citation" data-cites="pelham2005implicit">(<a href="#ref-pelham2005implicit" role="doc-biblioref">Pelham et al., 2005</a>)</span>. In one study, they examined Social Security records to show that women with the names Virginia, Georgia, Louise, and Florence were especially likely to have moved to the states of Virginia, Georgia, Louisiana, and Florida, respectively.</p>
+<p>As with naturalistic observation, measurement can be more or less straightforward when working with archival data. For example, counting the number of people named Virginia who live in various states based on Social Security records is relatively straightforward. But consider a study by Christopher Peterson and his colleagues on the relationship between optimism and health using data that had been collected many years before for a study on adult development <span class="citation" data-cites="peterson1988pessimistic">(<a href="#ref-peterson1988pessimistic" role="doc-biblioref">C. Peterson et al., 1988</a>)</span>. In the 1940s, healthy male college students had completed an open-ended questionnaire about difficult wartime experiences. In the late 1980s, Peterson and his colleagues reviewed the men’s questionnaire responses to obtain a measure of explanatory style—their habitual ways of explaining bad events that happen to them. More pessimistic people tend to blame themselves and expect long-term negative consequences that affect many aspects of their lives, while more optimistic people tend to blame outside forces and expect limited negative consequences. To obtain a measure of explanatory style for each participant, the researchers used a procedure in which all negative events mentioned in the questionnaire responses, and any causal explanations for them, were identified and written on index cards. These were given to a separate group of raters who rated each explanation in terms of three separate dimensions of optimism-pessimism. These ratings were then averaged to produce an explanatory style score for each participant. The researchers then assessed the statistical relationship between the men’s explanatory style as college students and archival measures of their health at approximately 60 years of age. The primary result was that the more optimistic the men were as college students, the healthier they were as older men. Pearson’s r was +.25.</p>
 <p>This is an example of <a href="#content-analysis">content analysis</a>—a family of systematic approaches to measurement using complex archival data. Just as naturalistic observation requires specifying the behaviors of interest and then noting them as they occur, content analysis requires specifying keywords, phrases, or ideas and then finding all occurrences of them in the data. These occurrences can then be counted, timed (e.g., the amount of time devoted to entertainment topics on the nightly news show), or analyzed in a variety of other ways.</p>
 <section id="key-takeaways-1" class="level5 unnumbered takeaways">
 <h5 class="unnumbered anchored" data-anchor-id="key-takeaways-1">KEY TAKEAWAYS</h5>
@@ -468,7 +505,7 @@ ul.task-list li input[type="checkbox"] {
 <li>List the four major ways to conduct a survey along with some pros and cons of each.</li>
 </ol>
 </section>
-<p>Shortly after the terrorist attacks in New York City and Washington, DC, in September of 2001, researcher Jennifer Lerner and her colleagues conducted an Internet-based survey of nearly 2,000 American teens and adults ranging in age from 13 to 88 <span class="citation" data-cites="lerner2003effects">(<a href="references.html#ref-lerner2003effects" role="doc-biblioref"><strong>lerner2003effects?</strong></a>)</span>. They asked participants about their reactions to the attacks and for their judgments of various terrorism-related and other risks. Among the results were that the participants tended to overestimate most risks, that females did so more than males, and that there were no differences between teens and adults. The most interesting result, however, had to do with the fact that some participants were “primed” to feel anger by asking them what made them angry about the attacks and by presenting them with a photograph and audio clip intended to evoke anger. Others were primed to feel fear by asking them what made them fearful about the attacks and by presenting them with a photograph and audio clip intended to evoke fear. As the researchers hypothesized, the participants who were primed to feel anger perceived less risk than the participants who had been primed to feel fear—showing how risk perceptions are strongly tied to specific emotions.</p>
+<p>Shortly after the terrorist attacks in New York City and Washington, DC, in September of 2001, researcher Jennifer Lerner and her colleagues conducted an Internet-based survey of nearly 2,000 American teens and adults ranging in age from 13 to 88 <span class="citation" data-cites="lerner2003effects">(<a href="#ref-lerner2003effects" role="doc-biblioref">Lerner et al., 2003</a>)</span>. They asked participants about their reactions to the attacks and for their judgments of various terrorism-related and other risks. Among the results were that the participants tended to overestimate most risks, that females did so more than males, and that there were no differences between teens and adults. The most interesting result, however, had to do with the fact that some participants were “primed” to feel anger by asking them what made them angry about the attacks and by presenting them with a photograph and audio clip intended to evoke anger. Others were primed to feel fear by asking them what made them fearful about the attacks and by presenting them with a photograph and audio clip intended to evoke fear. As the researchers hypothesized, the participants who were primed to feel anger perceived less risk than the participants who had been primed to feel fear—showing how risk perceptions are strongly tied to specific emotions.</p>
 <p>The study by Lerner and her colleagues is an example of survey research in psychology—the topic of this chapter. We begin with an overview of survey research, including its definition, some history, and a bit about who conducts it and why. We then look at survey responding as a psychological process and the implications of this for constructing good survey questionnaires. Finally, we consider some issues related to actually conducting survey research, including sampling the participants and collecting the data.</p>
 <section id="what-is-survey-research" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="what-is-survey-research">What Is Survey Research?</h3>
@@ -476,7 +513,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Most survey research is nonexperimental. It is used to describe single variables (e.g., the percentage of voters who prefer one presidential candidate or another, the prevalence of schizophrenia in the general population) and also to assess statistical relationships between variables (e.g., the relationship between income and health). But surveys can also be experimental. The study by Lerner and her colleagues is a good example. Their use of self-report measures and a large national sample identifies their work as survey research. But their manipulation of an independent variable (anger vs.&nbsp;fear) to assess its effect on a dependent variable (risk judgments) also identifies their work as experimental.</p>
 <section id="history-and-uses-of-survey-research" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="history-and-uses-of-survey-research">History and Uses of Survey Research</h4>
-<p>Survey research may have its roots in English and American “social surveys” conducted around the turn of the 20th century by researchers and reformers who wanted to document the extent of social problems such as poverty <span class="citation" data-cites="converse2017survey">(<a href="references.html#ref-converse2017survey" role="doc-biblioref"><strong>converse2017survey?</strong></a>)</span>. By the 1930s, the US government was conducting surveys to document economic and social conditions in the country. The need to draw conclusions about the entire population helped spur advances in sampling procedures. At about the same time, several researchers who had already made a name for themselves in market research, studying consumer preferences for American businesses, turned their attention to election polling. A watershed event was the presidential election of 1936 between Alf Landon and Franklin Roosevelt. A magazine called <em>Literary Digest</em> conducted a survey by sending ballots (which were also subscription requests) to millions of Americans. Based on this “straw poll,” the editors predicted that Landon would win in a landslide. At the same time, the new pollsters were using scientific methods with much smaller samples to predict just the opposite—that Roosevelt would win in a landslide. In fact, one of them, George Gallup, publicly criticized the methods of <em>Literary Digest</em> before the election and all but guaranteed that his prediction would be correct. And of course it was. (We will consider the reasons that Gallup was right later in this chapter.)</p>
+<p>Survey research may have its roots in English and American “social surveys” conducted around the turn of the 20th century by researchers and reformers who wanted to document the extent of social problems such as poverty <span class="citation" data-cites="converse2017survey">(<a href="#ref-converse2017survey" role="doc-biblioref">Converse, 2017</a>)</span>. By the 1930s, the US government was conducting surveys to document economic and social conditions in the country. The need to draw conclusions about the entire population helped spur advances in sampling procedures. At about the same time, several researchers who had already made a name for themselves in market research, studying consumer preferences for American businesses, turned their attention to election polling. A watershed event was the presidential election of 1936 between Alf Landon and Franklin Roosevelt. A magazine called <em>Literary Digest</em> conducted a survey by sending ballots (which were also subscription requests) to millions of Americans. Based on this “straw poll,” the editors predicted that Landon would win in a landslide. At the same time, the new pollsters were using scientific methods with much smaller samples to predict just the opposite—that Roosevelt would win in a landslide. In fact, one of them, George Gallup, publicly criticized the methods of <em>Literary Digest</em> before the election and all but guaranteed that his prediction would be correct. And of course it was. (We will consider the reasons that Gallup was right later in this chapter.)</p>
 <p>From market research and election polling, survey research made its way into several academic fields, including political science, sociology, and public health—where it continues to be one of the primary approaches to collecting new data. Beginning in the 1930s, psychologists made important advances in questionnaire design, including techniques that are still used today, such as the Likert scale. (See “What Is a Likert Scale?” in Section @ref(Constructing Survey Questionnaires) Survey research has a strong historical association with the social psychological study of attitudes, stereotypes, and prejudice. Early attitude researchers were also among the first psychologists to seek larger and more diverse samples than the convenience samples of college students that were routinely used in psychology (and still are).</p>
 <p>Survey research continues to be important in psychology today. For example, survey data have been instrumental in estimating the prevalence of various mental disorders and identifying statistical relationships among those disorders and with various other factors. The National Comorbidity Survey is a large-scale mental health survey conducted in the United States (more <a href="https://www.hcp.med.harvard.edu/ncs/">here</a>). In just one part of this survey, nearly 10,000 adults were given a structured mental health interview in their homes in 2002 and 2003. Table @ref(tab:comorbidity) presents results on the lifetime prevalence of some anxiety, mood, and substance use disorders. Obviously, this kind of information can be of great use both to basic researchers seeking to understand the causes and correlates of mental disorders and also to clinicians and policymakers who need to understand exactly how common these disorders are.</p>
 <div class="cell">
@@ -541,7 +578,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="survey-responding-as-a-psychological-process" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="survey-responding-as-a-psychological-process">Survey Responding as a Psychological Process</h4>
 <p>Before looking at specific principles of survey questionnaire construction, it will help to consider survey responding as a psychological process.</p>
-<p>Figure @ref(fig:cogsurvey) presents a model of the cognitive processes that people engage in when responding to a survey item <span class="citation" data-cites="sudman1996thinking">(<a href="references.html#ref-sudman1996thinking" role="doc-biblioref"><strong>sudman1996thinking?</strong></a>)</span>. Respondents must interpret the question, retrieve relevant information from memory, form a tentative judgment, convert the tentative judgment into one of the response options provided (e.g., a rating on a 1-to-7 scale), and finally edit their response as necessary.</p>
+<p>Figure @ref(fig:cogsurvey) presents a model of the cognitive processes that people engage in when responding to a survey item <span class="citation" data-cites="sudman1996thinking">(<a href="#ref-sudman1996thinking" role="doc-biblioref">Sudman et al., 1996</a>)</span>. Respondents must interpret the question, retrieve relevant information from memory, form a tentative judgment, convert the tentative judgment into one of the response options provided (e.g., a rating on a 1-to-7 scale), and finally edit their response as necessary.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -565,8 +602,8 @@ _____ a lot fewer than average</p>
 <p>From this perspective, what at first appears to be a simple matter of asking people how much they drink (and receiving a straightforward answer from them) turns out to be much more complex.</p>
 <section id="context-effects-on-questionnaire-responses" class="level5 unnumbered">
 <h5 class="unnumbered anchored" data-anchor-id="context-effects-on-questionnaire-responses">Context Effects on Questionnaire Responses</h5>
-<p>Again, this complexity can lead to unintended influences on respondents’ answers. These are often referred to as <a href="05-experiments.html#context-effect">context effects</a> because they are not related to the content of the item but to the context in which the item appears <span class="citation" data-cites="schwarz1991context">(<a href="references.html#ref-schwarz1991context" role="doc-biblioref"><strong>schwarz1991context?</strong></a>)</span>. For example, there is an <a href="#item-order-effect">item-order effect</a> when the order in which the items are presented affects people’s responses. One item can change how participants interpret a later item or change the information that they retrieve to respond to later items. For example, researcher Fritz Strack and his colleagues asked college students about both their general life satisfaction and their dating frequency <span class="citation" data-cites="strack1988priming">(<a href="references.html#ref-strack1988priming" role="doc-biblioref"><strong>strack1988priming?</strong></a>)</span>. When the life satisfaction item came first, the correlation between the two was only −.12, suggesting that the two variables are only weakly related. But when the dating frequency item came first, the correlation between the two was +.66, suggesting that those who date more have a strong tendency to be more satisfied with their lives. Reporting the dating frequency first made that information more accessible in memory so that they were more likely to base their life satisfaction rating on it.</p>
-<p>The response options provided can also have unintended effects on people’s responses <span class="citation" data-cites="schwarz1999self">(<a href="references.html#ref-schwarz1999self" role="doc-biblioref"><strong>schwarz1999self?</strong></a>)</span>. For example, when people are asked how often they are “really irritated” and given response options ranging from “less than once a year” to “more than once a month,” they tend to think of major irritations and report being irritated infrequently. But when they are given response options ranging from “less than once a day” to “several times a month,” they tend to think of minor irritations and report being irritated frequently. People also tend to assume that middle response options represent what is normal or typical. So if they think of themselves as normal or typical, they tend to choose middle response options. For example, people are likely to report watching more television when the response options are centered on a middle option of 4 hours than when centered on a middle option of 2 hours.</p>
+<p>Again, this complexity can lead to unintended influences on respondents’ answers. These are often referred to as <a href="05-experiments.html#context-effect">context effects</a> because they are not related to the content of the item but to the context in which the item appears <span class="citation" data-cites="schwarz1991context">(<a href="#ref-schwarz1991context" role="doc-biblioref">Schwarz &amp; Strack, 1991</a>)</span>. For example, there is an <a href="#item-order-effect">item-order effect</a> when the order in which the items are presented affects people’s responses. One item can change how participants interpret a later item or change the information that they retrieve to respond to later items. For example, researcher Fritz Strack and his colleagues asked college students about both their general life satisfaction and their dating frequency <span class="citation" data-cites="strack1988priming">(<a href="#ref-strack1988priming" role="doc-biblioref">Strack et al., 1988</a>)</span>. When the life satisfaction item came first, the correlation between the two was only −.12, suggesting that the two variables are only weakly related. But when the dating frequency item came first, the correlation between the two was +.66, suggesting that those who date more have a strong tendency to be more satisfied with their lives. Reporting the dating frequency first made that information more accessible in memory so that they were more likely to base their life satisfaction rating on it.</p>
+<p>The response options provided can also have unintended effects on people’s responses <span class="citation" data-cites="schwarz1999self">(<a href="#ref-schwarz1999self" role="doc-biblioref">Schwarz, 1999</a>)</span>. For example, when people are asked how often they are “really irritated” and given response options ranging from “less than once a year” to “more than once a month,” they tend to think of major irritations and report being irritated infrequently. But when they are given response options ranging from “less than once a day” to “several times a month,” they tend to think of minor irritations and report being irritated frequently. People also tend to assume that middle response options represent what is normal or typical. So if they think of themselves as normal or typical, they tend to choose middle response options. For example, people are likely to report watching more television when the response options are centered on a middle option of 4 hours than when centered on a middle option of 2 hours.</p>
 </section>
 </section>
 </section>
@@ -615,14 +652,14 @@ _____ Over 70</p>
 <section id="what-is-a-likert-scale" class="level5 unnumbered fyi">
 <h5 class="unnumbered anchored" data-anchor-id="what-is-a-likert-scale">What Is a Likert Scale?</h5>
 <p>In reading about psychological research, you are likely to encounter the term <em>Likert scale</em>. Although this term is sometimes used to refer to almost any rating scale (e.g., a 0-to-10 life satisfaction scale), it has a much more precise meaning.</p>
-<p>In the 1930s, researcher Rensis Likert (pronounced LICK-ert) created a new approach for measuring people’s attitudes <span class="citation" data-cites="likert1932technique">(<a href="references.html#ref-likert1932technique" role="doc-biblioref"><strong>likert1932technique?</strong></a>)</span>. It involves presenting people with several statements—including both favorable and unfavorable statements—about some person, group, or idea. Respondents then express their agreement or disagreement with each statement on a 5-point scale: <em>Strongly Agree, Agree, Neither Agree nor Disagree, Disagree, Strongly Disagree</em>. Numbers are assigned to each response (with reverse coding as necessary) and then summed across all items to produce a score representing the attitude toward the person, group, or idea. The entire set of items came to be called a Likert scale.</p>
+<p>In the 1930s, researcher Rensis Likert (pronounced LICK-ert) created a new approach for measuring people’s attitudes <span class="citation" data-cites="likert1932technique">(<a href="#ref-likert1932technique" role="doc-biblioref">Likert, 1932</a>)</span>. It involves presenting people with several statements—including both favorable and unfavorable statements—about some person, group, or idea. Respondents then express their agreement or disagreement with each statement on a 5-point scale: <em>Strongly Agree, Agree, Neither Agree nor Disagree, Disagree, Strongly Disagree</em>. Numbers are assigned to each response (with reverse coding as necessary) and then summed across all items to produce a score representing the attitude toward the person, group, or idea. The entire set of items came to be called a Likert scale.</p>
 <p>Thus unless you are measuring people’s attitude toward something by assessing their level of agreement with several statements about it, it is best to avoid calling it a Likert scale. You are probably just using a “rating scale.”</p>
 </section>
 </section>
 </section>
 <section id="writing-effective-items" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="writing-effective-items">Writing Effective Items</h3>
-<p>We can now consider some principles of writing questionnaire items that minimize unintended context effects and maximize the reliability and validity of participants’ responses. A rough guideline for writing questionnaire items is provided by the BRUSO model <span class="citation" data-cites="peterson2000constructing">(<a href="references.html#ref-peterson2000constructing" role="doc-biblioref"><strong>peterson2000constructing?</strong></a>)</span>. An acronym, <a href="#bruso">BRUSO</a> stands for “brief,” “relevant,” “unambiguous,” “specific,” and “objective.” Effective questionnaire items are <em>brief</em> and to the point. They avoid long, overly technical, or unnecessary words. This makes them easier for respondents to understand and faster for them to complete. Effective questionnaire items are also <em>relevant</em> to the research question. If a respondent’s sexual orientation, marital status, or income is not relevant, then items on them should probably not be included. Again, this makes the questionnaire faster to complete, but it also avoids annoying respondents with what they will rightly perceive as irrelevant or even “nosy” questions. Effective questionnaire items are also <em>unambiguous</em>; they can be interpreted in only one way. Part of the problem with the alcohol item presented earlier in this section is that different respondents might have different ideas about what constitutes “an alcoholic drink” or “a typical day.” Effective questionnaire items are also <em>specific</em>, so that it is clear to respondents what their response should be about and clear to researchers what it is about. A common problem here is closed-ended items that are “double barreled.” They ask about two conceptually separate issues but allow only one response. For example, “Please rate the extent to which you have been feeling anxious and depressed.” This item should probably be split into two separate items—one about anxiety and one about depression. Finally, effective questionnaire items are <em>objective</em> in the sense that they do not reveal the researcher’s own opinions or lead participants to answer in a particular way. Table 9.2 “BRUSO Model of Writing Effective Questionnaire Items, Plus Examples” shows some examples of poor and effective questionnaire items based on the BRUSO criteria.</p>
+<p>We can now consider some principles of writing questionnaire items that minimize unintended context effects and maximize the reliability and validity of participants’ responses. A rough guideline for writing questionnaire items is provided by the BRUSO model <span class="citation" data-cites="peterson2000constructing">(<a href="#ref-peterson2000constructing" role="doc-biblioref">R. A. Peterson, 2000</a>)</span>. An acronym, <a href="#bruso">BRUSO</a> stands for “brief,” “relevant,” “unambiguous,” “specific,” and “objective.” Effective questionnaire items are <em>brief</em> and to the point. They avoid long, overly technical, or unnecessary words. This makes them easier for respondents to understand and faster for them to complete. Effective questionnaire items are also <em>relevant</em> to the research question. If a respondent’s sexual orientation, marital status, or income is not relevant, then items on them should probably not be included. Again, this makes the questionnaire faster to complete, but it also avoids annoying respondents with what they will rightly perceive as irrelevant or even “nosy” questions. Effective questionnaire items are also <em>unambiguous</em>; they can be interpreted in only one way. Part of the problem with the alcohol item presented earlier in this section is that different respondents might have different ideas about what constitutes “an alcoholic drink” or “a typical day.” Effective questionnaire items are also <em>specific</em>, so that it is clear to respondents what their response should be about and clear to researchers what it is about. A common problem here is closed-ended items that are “double barreled.” They ask about two conceptually separate issues but allow only one response. For example, “Please rate the extent to which you have been feeling anxious and depressed.” This item should probably be split into two separate items—one about anxiety and one about depression. Finally, effective questionnaire items are <em>objective</em> in the sense that they do not reveal the researcher’s own opinions or lead participants to answer in a particular way. Table 9.2 “BRUSO Model of Writing Effective Questionnaire Items, Plus Examples” shows some examples of poor and effective questionnaire items based on the BRUSO criteria.</p>
 <div class="cell">
 <div class="cell-output-display">
 <table class="table table-sm table-striped small">
@@ -679,11 +716,11 @@ _____ Over 70</p>
 <p>Extremely Unlikely | Somewhat Unlikely | As Likely as Not | Somewhat Likely | Extremely Likely</p>
 </blockquote>
 <p>Note, however, that a middle or neutral response option does not have to be included. Researchers sometimes choose to leave it out because they want to encourage respondents to think more deeply about their response and not simply choose the middle option by default.</p>
-<p>Numerical rating scales often begin at 1 and go up to 5 or 7. However, they can also begin at 0 if the lowest response option means the complete absence of something (e.g., no pain). They can also have 0 as their midpoint, but it is important to think about how this might change people’s interpretation of the response options. For example, when asked to rate how successful in life they have been on a 0-to-10 scale, many people use numbers in the lower half of the scale because they interpret this to mean that they have been only somewhat successful in life. But when asked to rate how successful they have been in life on a −5 to +5 scale, very few people use numbers in the lower half of the scale because they interpret this to mean they have actually been unsuccessful in life <span class="citation" data-cites="schwarz1999self">(<a href="references.html#ref-schwarz1999self" role="doc-biblioref"><strong>schwarz1999self?</strong></a>)</span>.</p>
+<p>Numerical rating scales often begin at 1 and go up to 5 or 7. However, they can also begin at 0 if the lowest response option means the complete absence of something (e.g., no pain). They can also have 0 as their midpoint, but it is important to think about how this might change people’s interpretation of the response options. For example, when asked to rate how successful in life they have been on a 0-to-10 scale, many people use numbers in the lower half of the scale because they interpret this to mean that they have been only somewhat successful in life. But when asked to rate how successful they have been in life on a −5 to +5 scale, very few people use numbers in the lower half of the scale because they interpret this to mean they have actually been unsuccessful in life <span class="citation" data-cites="schwarz1999self">(<a href="#ref-schwarz1999self" role="doc-biblioref">Schwarz, 1999</a>)</span>.</p>
 </section>
 <section id="formatting-the-questionnaire" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="formatting-the-questionnaire">Formatting the Questionnaire</h3>
-<p>Writing effective items is only one part of constructing a survey questionnaire. For one thing, every survey questionnaire should have a written or spoken introduction that serves two basic functions <span class="citation" data-cites="peterson2000constructing">(<a href="references.html#ref-peterson2000constructing" role="doc-biblioref"><strong>peterson2000constructing?</strong></a>)</span>. One is to encourage respondents to participate in the survey. In many types of research, such encouragement is not necessary either because participants do not know they are in a study (as in naturalistic observation) or because they are part of a subject pool and have already shown their willingness to participate by signing up and showing up for the study. Survey research usually catches respondents by surprise when they answer their phone, go to their mailbox, or check their e-mail—and the researcher must make a good case for why they should agree to participate. Thus the introduction should briefly explain the purpose of the survey and its importance, provide information about the sponsor of the survey (university-based surveys tend to generate higher response rates), acknowledge the importance of the respondent’s participation, and describe any incentives for participating.</p>
+<p>Writing effective items is only one part of constructing a survey questionnaire. For one thing, every survey questionnaire should have a written or spoken introduction that serves two basic functions <span class="citation" data-cites="peterson2000constructing">(<a href="#ref-peterson2000constructing" role="doc-biblioref">R. A. Peterson, 2000</a>)</span>. One is to encourage respondents to participate in the survey. In many types of research, such encouragement is not necessary either because participants do not know they are in a study (as in naturalistic observation) or because they are part of a subject pool and have already shown their willingness to participate by signing up and showing up for the study. Survey research usually catches respondents by surprise when they answer their phone, go to their mailbox, or check their e-mail—and the researcher must make a good case for why they should agree to participate. Thus the introduction should briefly explain the purpose of the survey and its importance, provide information about the sponsor of the survey (university-based surveys tend to generate higher response rates), acknowledge the importance of the respondent’s participation, and describe any incentives for participating.</p>
 <p>The second function of the introduction is to establish informed consent. Remember that this means describing to respondents everything that might affect their decision to participate. This includes the topics covered by the survey, the amount of time it is likely to take, the respondent’s option to withdraw at any time, confidentiality issues, and so on. Written consent forms are not typically used in survey research, so it is important that this part of the introduction be well documented and presented clearly and in its entirety to every respondent.</p>
 <p>The introduction should be followed by the substantive questionnaire items. But first, it is important to present clear instructions for completing the questionnaire, including examples of how to use any unusual response scales. Remember that this is the point at which respondents are usually most interested and least fatigued, so it is good practice to start with the most important items for purposes of the research and proceed to less important items. Items should also be grouped by topic or by type. For example, items using the same rating scale (e.g., a 5-point agreement scale) should be grouped together if possible to make things faster and easier for respondents. Demographic items are often presented last because they are least interesting to participants but also easy to answer in the event respondents have become tired or bored. Of course, any survey should end with an expression of appreciation to the respondent.</p>
 </section>
@@ -746,7 +783,7 @@ _____ Over 70</p>
 <li>Describe three different types of quasi-experimental research designs (nonequivalent groups, pretest-posttest, and interrupted time series) and identify examples of each one.</li>
 </ol>
 </section>
-<p>The prefix <em>quasi</em> means “resembling.” Thus quasi-experimental research is research that resembles experimental research but is not true experimental research. Although the independent variable is manipulated, participants are not randomly assigned to conditions or orders of conditions <span class="citation" data-cites="cook1979quasi">(<a href="references.html#ref-cook1979quasi" role="doc-biblioref"><strong>cook1979quasi?</strong></a>)</span>. Because the independent variable is manipulated before the dependent variable is measured, quasi-experimental research eliminates the directionality problem. But because participants are not randomly assigned—making it likely that there are other differences between conditions—quasi-experimental research does not eliminate the problem of confounding variables. In terms of internal validity, therefore, quasi-experiments are generally somewhere between correlational studies and true experiments.</p>
+<p>The prefix <em>quasi</em> means “resembling.” Thus quasi-experimental research is research that resembles experimental research but is not true experimental research. Although the independent variable is manipulated, participants are not randomly assigned to conditions or orders of conditions <span class="citation" data-cites="cook1979quasi">(<a href="#ref-cook1979quasi" role="doc-biblioref">Cook et al., 1979</a>)</span>. Because the independent variable is manipulated before the dependent variable is measured, quasi-experimental research eliminates the directionality problem. But because participants are not randomly assigned—making it likely that there are other differences between conditions—quasi-experimental research does not eliminate the problem of confounding variables. In terms of internal validity, therefore, quasi-experiments are generally somewhere between correlational studies and true experiments.</p>
 <p>Quasi-experiments are most likely to be conducted in field settings in which random assignment is difficult or impossible. They are often conducted to evaluate the effectiveness of a treatment—perhaps a type of psychotherapy or an educational intervention. There are many different kinds of quasi-experiments, but we will discuss just a few of the most common ones here.</p>
 <section id="nonequivalent-groups-design" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="nonequivalent-groups-design">Nonequivalent Groups Design</h3>
@@ -758,11 +795,11 @@ _____ Over 70</p>
 <h3 class="unnumbered anchored" data-anchor-id="pretest-posttest-design">Pretest-Posttest Design</h3>
 <p>In a <a href="#pretest-posttest-design">pretest-posttest design</a>, the dependent variable is measured once before the treatment is implemented and once after it is implemented. Imagine, for example, a researcher who is interested in the effectiveness of an antidrug education program on elementary school students’ attitudes toward illegal drugs. The researcher could measure the attitudes of students at a particular elementary school during one week, implement the antidrug program during the next week, and finally, measure their attitudes again the following week. The pretest-posttest design is much like a within-subjects experiment in which each participant is tested first under the control condition and then under the treatment condition. It is unlike a within-subjects experiment, however, in that the order of conditions is not counterbalanced because it typically is not possible for a participant to be tested in the treatment condition first and then in an “untreated” control condition.</p>
 <p>If the average posttest score is better than the average pretest score, then it makes sense to conclude that the treatment might be responsible for the improvement. Unfortunately, one often cannot conclude this with a high degree of certainty because there may be other explanations for why the posttest scores are better. One category of alternative explanations goes under the name of <a href="#history">history</a>. Other things might have happened between the pretest and the posttest. Perhaps an antidrug program aired on television and many of the students watched it, or perhaps a celebrity died of a drug overdose and many of the students heard about it. Another category of alternative explanations goes under the name of <a href="#maturation">maturation</a>. Participants might have changed between the pretest and the posttest in ways that they were going to anyway because they are growing and learning. If it were a yearlong program, participants might become less impulsive or better reasoners and this might be responsible for the change.</p>
-<p>Another alternative explanation for a change in the dependent variable in a pretest-posttest design is <a href="#regression-to-the-mean">regression to the mean</a>. This refers to the statistical fact that an individual who scores extremely on a variable on one occasion will tend to score less extremely on the next occasion. For example, a bowler with a long-term average of 150 who suddenly bowls a 220 will almost certainly score lower in the next game. Her score will “regress” toward her mean score of 150. Regression to the mean can be a problem when participants are selected for further study because of their extreme scores. Imagine, for example, that only students who scored especially low on a test of fractions are given a special training program and then retested. Regression to the mean all but guarantees that their scores will be higher even if the training program has no effect. A closely related concept—and an extremely important one in psychological research—is <a href="#spontaneous-remission">spontaneous remission</a>. This is the tendency for many medical and psychological problems to improve over time without any form of treatment. The common cold is a good example. If one were to measure symptom severity in 100 common cold sufferers today, give them a bowl of chicken soup every day, and then measure their symptom severity again in a week, they would probably be much improved. This does not mean that the chicken soup was responsible for the improvement, however, because they would have been much improved without any treatment at all. The same is true of many psychological problems. A group of severely depressed people today is likely to be less depressed on average in 6 months. In reviewing the results of several studies of treatments for depression, researchers Michael Posternak and Ivan Miller found that participants in waitlist control conditions improved an average of 10 to 15% before they received any treatment at all <span class="citation" data-cites="posternak2001untreated">(<a href="references.html#ref-posternak2001untreated" role="doc-biblioref"><strong>posternak2001untreated?</strong></a>)</span>. Thus one must generally be very cautious about inferring causality from pretest-posttest designs.</p>
+<p>Another alternative explanation for a change in the dependent variable in a pretest-posttest design is <a href="#regression-to-the-mean">regression to the mean</a>. This refers to the statistical fact that an individual who scores extremely on a variable on one occasion will tend to score less extremely on the next occasion. For example, a bowler with a long-term average of 150 who suddenly bowls a 220 will almost certainly score lower in the next game. Her score will “regress” toward her mean score of 150. Regression to the mean can be a problem when participants are selected for further study because of their extreme scores. Imagine, for example, that only students who scored especially low on a test of fractions are given a special training program and then retested. Regression to the mean all but guarantees that their scores will be higher even if the training program has no effect. A closely related concept—and an extremely important one in psychological research—is <a href="#spontaneous-remission">spontaneous remission</a>. This is the tendency for many medical and psychological problems to improve over time without any form of treatment. The common cold is a good example. If one were to measure symptom severity in 100 common cold sufferers today, give them a bowl of chicken soup every day, and then measure their symptom severity again in a week, they would probably be much improved. This does not mean that the chicken soup was responsible for the improvement, however, because they would have been much improved without any treatment at all. The same is true of many psychological problems. A group of severely depressed people today is likely to be less depressed on average in 6 months. In reviewing the results of several studies of treatments for depression, researchers Michael Posternak and Ivan Miller found that participants in waitlist control conditions improved an average of 10 to 15% before they received any treatment at all <span class="citation" data-cites="posternak2001untreated">(<a href="#ref-posternak2001untreated" role="doc-biblioref">Posternak &amp; Miller, 2001</a>)</span>. Thus one must generally be very cautious about inferring causality from pretest-posttest designs.</p>
 <section id="does-psychotherapy-work" class="level5 unnumbered fyi">
 <h5 class="unnumbered anchored" data-anchor-id="does-psychotherapy-work">Does Psychotherapy Work?</h5>
-<p>Early studies on the effectiveness of psychotherapy tended to use pretest-posttest designs. In a classic 1952 article, researcher Hans Eysenck summarized the results of 24 such studies showing that about two thirds of patients improved between the pretest and the posttest <span class="citation" data-cites="eysenck1952effects">(<a href="references.html#ref-eysenck1952effects" role="doc-biblioref"><strong>eysenck1952effects?</strong></a>)</span>. But Eysenck also compared these results with archival data from state hospital and insurance company records showing that similar patients recovered at about the same rate without receiving psychotherapy. This suggested to Eysenck that the improvement that patients showed in the pretest-posttest studies might be no more than spontaneous remission. Note that Eysenck did not conclude that psychotherapy was ineffective. He merely concluded that there was no evidence that it was, and he wrote of “the necessity of properly planned and executed experimental studies into this important field” (p.&nbsp;323). You can read the entire article <a href="http://psychclassics.yorku.ca/Eysenck/psychotherapy.htm">here</a>.</p>
-<p>Fortunately, many other researchers took up Eysenck’s challenge, and by 1980 hundreds of experiments had been conducted in which participants were randomly assigned to treatment and control conditions, and the results were summarized in a classic book by Mary Lee Smith, Gene Glass, and Thomas Miller <span class="citation" data-cites="smith1980benefits">(<a href="references.html#ref-smith1980benefits" role="doc-biblioref"><strong>smith1980benefits?</strong></a>)</span>. They found that overall psychotherapy was quite effective, with about 80% of treatment participants improving more than the average control participant. Subsequent research has focused more on the conditions under which different types of psychotherapy are more or less effective.</p>
+<p>Early studies on the effectiveness of psychotherapy tended to use pretest-posttest designs. In a classic 1952 article, researcher Hans Eysenck summarized the results of 24 such studies showing that about two thirds of patients improved between the pretest and the posttest <span class="citation" data-cites="eysenck1952effects">(<a href="#ref-eysenck1952effects" role="doc-biblioref">Eysenck, 1952</a>)</span>. But Eysenck also compared these results with archival data from state hospital and insurance company records showing that similar patients recovered at about the same rate without receiving psychotherapy. This suggested to Eysenck that the improvement that patients showed in the pretest-posttest studies might be no more than spontaneous remission. Note that Eysenck did not conclude that psychotherapy was ineffective. He merely concluded that there was no evidence that it was, and he wrote of “the necessity of properly planned and executed experimental studies into this important field” (p.&nbsp;323). You can read the entire article <a href="http://psychclassics.yorku.ca/Eysenck/psychotherapy.htm">here</a>.</p>
+<p>Fortunately, many other researchers took up Eysenck’s challenge, and by 1980 hundreds of experiments had been conducted in which participants were randomly assigned to treatment and control conditions, and the results were summarized in a classic book by Mary Lee Smith, Gene Glass, and Thomas Miller <span class="citation" data-cites="smith1980benefits">(<a href="#ref-smith1980benefits" role="doc-biblioref">Smith et al., 1980</a>)</span>. They found that overall psychotherapy was quite effective, with about 80% of treatment participants improving more than the average control participant. Subsequent research has focused more on the conditions under which different types of psychotherapy are more or less effective.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -777,7 +814,7 @@ _____ Over 70</p>
 </section>
 <section id="interrupted-time-series-design" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="interrupted-time-series-design">Interrupted Time Series Design</h3>
-<p>A variant of the pretest-posttest design is the <a href="#interrupted-time-series-design-1">interrupted time-series design</a>. A time series is a set of measurements taken at intervals over a period of time. For example, a manufacturing company might measure its workers’ productivity each week for a year. In an interrupted time series-design, a time series like this is “interrupted” by a treatment. In one classic example, the treatment was the reduction of the work shifts in a factory from 10 hours to 8 hours <span class="citation" data-cites="cook1979quasi">(<a href="references.html#ref-cook1979quasi" role="doc-biblioref"><strong>cook1979quasi?</strong></a>)</span>. Because productivity increased rather quickly after the shortening of the work shifts, and because it remained elevated for many months afterward, the researcher concluded that the shortening of the shifts caused the increase in productivity. Notice that the interrupted time-series design is like a pretest-posttest design in that it includes measurements of the dependent variable both before and after the treatment. It is unlike the pretest-posttest design, however, in that it includes multiple pretest and posttest measurements.</p>
+<p>A variant of the pretest-posttest design is the <a href="#interrupted-time-series-design-1">interrupted time-series design</a>. A time series is a set of measurements taken at intervals over a period of time. For example, a manufacturing company might measure its workers’ productivity each week for a year. In an interrupted time series-design, a time series like this is “interrupted” by a treatment. In one classic example, the treatment was the reduction of the work shifts in a factory from 10 hours to 8 hours <span class="citation" data-cites="cook1979quasi">(<a href="#ref-cook1979quasi" role="doc-biblioref">Cook et al., 1979</a>)</span>. Because productivity increased rather quickly after the shortening of the work shifts, and because it remained elevated for many months afterward, the researcher concluded that the shortening of the shifts caused the increase in productivity. Notice that the interrupted time-series design is like a pretest-posttest design in that it includes measurements of the dependent variable both before and after the treatment. It is unlike the pretest-posttest design, however, in that it includes multiple pretest and posttest measurements.</p>
 <p>Figure @ref(fig:timeseries) shows data from a hypothetical interrupted time-series study. The dependent variable is the number of student absences per week in a research methods course. The treatment is that the instructor begins publicly taking attendance each day so that students know that the instructor is aware of who is present and who is absent. The top panel of Figure @ref(fig:timeseries) shows how the data might look if this treatment worked. There is a consistently high number of absences before the treatment, and there is an immediate and sustained drop in absences after the treatment. The bottom panel of Figure @ref(fig:timeseries) shows how the data might look if this treatment did not work. On average, the number of absences after the treatment is about the same as the number before. This figure also illustrates an advantage of the interrupted time-series design over a simpler pretest-posttest design. If there had been only one measurement of absences before the treatment at Week 7 and one afterward at Week 8, then it would have looked as though the treatment were responsible for the reduction. The multiple measurements both before and after the treatment suggest that the reduction between Weeks 7 and 8 is nothing more than normal week-to-week variation.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -914,6 +951,80 @@ _____ Over 70</p>
 <section id="survey-research-1" class="level5 unnumbered">
 <h5 class="unnumbered anchored" data-anchor-id="survey-research-1">survey research</h5>
 <p>A quantitative research approach that uses self-report measures and large, carefully selected samples.</p>
+</section>
+<section id="references" class="level3" data-number="9.5.1">
+<h3 data-number="9.5.1" class="anchored" data-anchor-id="references"><span class="header-section-number">9.5.1</span> References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-bushman2001effects" class="csl-entry" role="listitem">
+Bushman, B. J., &amp; Huesmann, L. R. (2001). Effects of televised violence on aggression. <em>Handbook of Children and the Media</em>, 223–254.
+</div>
+<div id="ref-cacioppo1982need" class="csl-entry" role="listitem">
+Cacioppo, J. T., &amp; Petty, R. E. (1982). The need for cognition. <em>Journal of Personality and Social Psychology</em>, <em>42</em>(1), 116.
+</div>
+<div id="ref-converse2017survey" class="csl-entry" role="listitem">
+Converse, J. M. (2017). <em>Survey research in the united states: Roots and emergence 1890-1960</em>. Routledge.
+</div>
+<div id="ref-cook1979quasi" class="csl-entry" role="listitem">
+Cook, T. D., Campbell, D. T., &amp; Day, A. (1979). <em>Quasi-experimentation: Design &amp; analysis issues for field settings</em> (Vol. 351). Houghton Mifflin Boston.
+</div>
+<div id="ref-eysenck1952effects" class="csl-entry" role="listitem">
+Eysenck, H. J. (1952). The effects of psychotherapy: An evaluation. <em>Journal of Consulting Psychology</em>, <em>16</em>(5), 319.
+</div>
+<div id="ref-kanner1981comparison" class="csl-entry" role="listitem">
+Kanner, A. D., Coyne, J. C., Schaefer, C., &amp; Lazarus, R. S. (1981). Comparison of two modes of stress measurement: Daily hassles and uplifts versus major life events. <em>Journal of Behavioral Medicine</em>, <em>4</em>(1), 1–39.
+</div>
+<div id="ref-kraut1979social" class="csl-entry" role="listitem">
+Kraut, R. E., &amp; Johnston, R. E. (1979). Social and emotional messages of smiling: An ethological approach. <em>Journal of Personality and Social Psychology</em>, <em>37</em>(9).
+</div>
+<div id="ref-lerner2003effects" class="csl-entry" role="listitem">
+Lerner, J. S., Gonzalez, R. M., Small, D. A., &amp; Fischhoff, B. (2003). Effects of fear and anger on perceived risks of terrorism: A national field experiment. <em>Psychological Science</em>, <em>14</em>(2), 144–150.
+</div>
+<div id="ref-levine1999pace" class="csl-entry" role="listitem">
+Levine, R. V., &amp; Norenzayan, A. (1999). The pace of life in 31 countries. <em>Journal of Cross-Cultural Psychology</em>, <em>30</em>(2), 178–205.
+</div>
+<div id="ref-likert1932technique" class="csl-entry" role="listitem">
+Likert, R. (1932). A technique for the measurement of attitudes. <em>Archives of Psychology</em>.
+</div>
+<div id="ref-loftus1995formation" class="csl-entry" role="listitem">
+Loftus, E. F., &amp; Pickrell, J. E. (1995). The formation of false memories. In <em>Psychiatric annals</em> (No. 12; Vol. 25, pp. 720–725). SLACK Incorporated Thorofare, NJ.
+</div>
+<div id="ref-milgram1963behavioral" class="csl-entry" role="listitem">
+Milgram, Stanley. (1963). Behavioral study of obedience. <em>The Journal of Abnormal and Social Psychology</em>, <em>67</em>(4), 371.
+</div>
+<div id="ref-milgram1964obedience" class="csl-entry" role="listitem">
+Milgram, S. (1974). <em>Obedience to authority: An experimental view</em>. Harper &amp; Row.
+</div>
+<div id="ref-pelham2005implicit" class="csl-entry" role="listitem">
+Pelham, B. W., Carvallo, M., &amp; Jones, J. T. (2005). Implicit egotism. <em>Current Directions in Psychological Science</em>, <em>14</em>(2), 106–110.
+</div>
+<div id="ref-peterson1988pessimistic" class="csl-entry" role="listitem">
+Peterson, C., Seligman, M. E., &amp; Vaillant, G. E. (1988). Pessimistic explanatory style is a risk factor for physical illness: A thirty-five-year longitudinal study. <em>Journal of Personality and Social Psychology</em>, <em>55</em>(1), 23.
+</div>
+<div id="ref-peterson2000constructing" class="csl-entry" role="listitem">
+Peterson, R. A. (2000). <em>Constructing effective questionnaires</em> (Vol. 1). Sage publications Thousand Oaks, CA.
+</div>
+<div id="ref-posternak2001untreated" class="csl-entry" role="listitem">
+Posternak, M. A., &amp; Miller, I. (2001). Untreated short-term course of major depression: A meta-analysis of outcomes from studies using wait-list control groups. <em>Journal of Affective Disorders</em>, <em>66</em>(2-3), 139–146.
+</div>
+<div id="ref-rosenhan1973being" class="csl-entry" role="listitem">
+Rosenhan, D. L. (1973). On being sane in insane places. <em>Science</em>, <em>179</em>(4070), 250–258.
+</div>
+<div id="ref-schwarz1999self" class="csl-entry" role="listitem">
+Schwarz, N. (1999). Self-reports: How the questions shape the answers. <em>American Psychologist</em>, <em>54</em>(2), 93.
+</div>
+<div id="ref-schwarz1991context" class="csl-entry" role="listitem">
+Schwarz, N., &amp; Strack, F. (1991). Context effects in attitude surveys: Applying cognitive theory to social research. <em>European Review of Social Psychology</em>, <em>2</em>(1), 31–50.
+</div>
+<div id="ref-smith1980benefits" class="csl-entry" role="listitem">
+Smith, M. L., Glass, G. V., &amp; Miller, T. I. (1980). <em>The benefits of psychotherapy</em>. Johns Hopkins University Press.
+</div>
+<div id="ref-strack1988priming" class="csl-entry" role="listitem">
+Strack, F., Martin, L. L., &amp; Schwarz, N. (1988). Priming and communication: Social determinants of information use in judgments of life satisfaction. <em>European Journal of Social Psychology</em>, <em>18</em>(5), 429–442.
+</div>
+<div id="ref-sudman1996thinking" class="csl-entry" role="listitem">
+Sudman, S., Bradburn, N. M., &amp; Schwarz, N. (1996). <em>Thinking about answers: The application of cognitive processes to survey methodology.</em> Jossey-Bass.
+</div>
+</div>
 
 
 </section>

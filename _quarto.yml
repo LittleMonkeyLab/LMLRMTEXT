@@ -9,21 +9,31 @@ execute:
 book:
   title: Monkey Methods
   subtitle: "Welcome to the Jungle"
-  author: "Dr. Gordon Wright"
+  author: 
+    - name: Dr. Gordon Wright
+      id: GW
+      orcid: 0000-0002-1825-0097
+      email: gordon@littlemonkeylab.com
+      affiliation: 
+        - name: Goldsmiths, University of London
+          city: London
+          state: UK
+          url: www.littlemonkeylab.com
+  description: "This is a an OER textbook for introductory research methods in psychology."
+  date: "2023-07-09"
   doi: ""
-  license: CC-BY-NC-SA 4.0
-  description: "Research Methods in Psychology"
-  cover-image: images/logos/logo.png
+  cover-image: images/logos/LMLLOGO.png
   image: images/logos/LMLLOGO.png
   favicon: images/logos/LMLLOGO.png
   cookie-consent: false
+  license: CC BY-SA
   google-analytics: ""
   page-navigation: true
   search: true
   comments:
     hypothesis:
       theme: clean
-      openSidebar: false
+      # openSidebar: false
   downloads: [pdf]
   sharing: []
   sidebar:
@@ -45,39 +55,45 @@ book:
     left: "Made by Monkeys"
     right: "With love and Quarto"
   chapters:
-  - "index.qmd"
-  - "01-science-of-psych.qmd"
-  - "02-getting-started.qmd"
-  - "03-theory.qmd"
-  - "04-ethics.qmd"
-  - "05-experiments.qmd"
-  - "06-measurement.qmd"
-  - "07-sampling.qmd"
-  - "08-complex-designs.qmd"
-  - "09-nonexperiments.qmd"
-  - "10-single-N.qmd"
-  - "11-ideas.qmd"
-  - "12-presenting.qmd"
-  - "13-descriptives.qmd"
-  - "14-inferentials.qmd"
-  - "15-references.qmd"
-
+    - "index.qmd"
+    - part: "Research Methods Text"
+      chapters: 
+        - "01-science-of-psych.qmd"
+        - "02-getting-started.qmd"
+        - "03-theory.qmd"
+        - "04-ethics.qmd"
+        - "05-experiments.qmd"
+        - "06-measurement.qmd"
+        - "07-sampling.qmd"
+        - "08-complex-designs.qmd"
+        - "09-nonexperiments.qmd"
+        - "10-single-N.qmd"
+        - "11-ideas.qmd"
+        - "12-presenting.qmd"
+        - "13-descriptives.qmd"
+        - "14-inferentials.qmd"
+    - part: "Statistics Text"
+      chapters:
+         - "01-science-of-psych.qmd"
+   
+    
   appendices:
-  - webexercises.qmd
-  - references.qmd
+    - webexercises.qmd
 
 
-bibliography: include/references.bib
+
+bibliography: include/book.bib
 csl: include/apa.csl
+citation-location: document
 
 format:
   html:
     theme:
       light:
-      - flatly
+      - simplex
       - include/light.scss
       dark:
-      - darkly
+      - simplex
       - include/dark.scss
     css:
     - https://use.fontawesome.com/releases/v5.13.0/css/all.css
@@ -91,12 +107,17 @@ format:
     code-line-numbers: true
     code-overflow: wrap
     code-copy: hover
+    citation: true
     highlight-style: a11y
     mainfont: "Atkinson Hyperlegible"
     monofont: "Fira Code"
     include-after-body: [include/webex.js, include/script.js]
+    link-citations: true
+    github-repo: LittleMonkeyLab/RMText
+    repo-url: https://github.com/LittleMonkeyLab/RMText
+    repo-actions: [edit, issue]
   pdf:
-    # documentclass: scrbook
+    documentclass: scrbook
     default-image-extension: png
     keep-tex: false
     number-sections: false

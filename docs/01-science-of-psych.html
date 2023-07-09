@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Research Methods in Psychology">
+<meta name="description" content="This is a an OER textbook for introductory research methods in psychology.">
 
 <title>Monkey Methods - Principles of Research in Psychology</title>
 <style>
@@ -21,7 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -43,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -65,8 +84,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script type="application/json" class="js-hypothesis-config">
 {
-  "theme": "clean",
-  "openSidebar": false
+  "theme": "clean"
 }
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
@@ -88,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-science-of-psych.html">Principles of Research in Psychology</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-science-of-psych.html">Research Methods Text</a></li><li class="breadcrumb-item"><a href="./01-science-of-psych.html">Principles of Research in Psychology</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -123,103 +141,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Research 🐵 Methods in Psychology</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Principles of Research in Psychology</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./02-getting-started.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./03-theory.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./04-ethics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./05-experiments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Experimental Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./06-measurement.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./07-sampling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sampling</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./08-complex-designs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Complex Research Designs</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./09-nonexperiments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./10-single-N.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Single-Subject Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./11-ideas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(PART*) Conducting Your Own Study</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./12-presenting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./13-descriptives.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(PART*) Analyzing Data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./14-inferentials.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./15-references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foreword</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">Research Methods Text</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -227,14 +155,120 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./webexercises.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span></a>
+  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Principles of Research in Psychology</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+  <a href="./02-getting-started.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Experimental Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-measurement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-sampling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sampling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-complex-designs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Complex Research Designs</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-nonexperiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-single-N.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Single-Subject Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-ideas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conducting Your Own Study</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-presenting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-descriptives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analyzing Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-inferentials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Statistics Text</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles of Research in Psychology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./webexercises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span></a>
   </div>
 </li>
       </ul>
@@ -251,6 +285,10 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#the-science-of-psychology" id="toc-the-science-of-psychology" class="nav-link active" data-scroll-target="#the-science-of-psychology">The Science of Psychology</a>
   <ul class="collapse">
+  <li><a href="#example-questions" id="toc-example-questions" class="nav-link" data-scroll-target="#example-questions">Example Questions</a>
+  <ul class="collapse">
+  <li><a href="#fill-in-the-blanks-fitb" id="toc-fill-in-the-blanks-fitb" class="nav-link" data-scroll-target="#fill-in-the-blanks-fitb">Fill-In-The-Blanks (<code>fitb()</code>)</a></li>
+  </ul></li>
   <li><a href="#understanding-science" id="toc-understanding-science" class="nav-link" data-scroll-target="#understanding-science">Understanding Science</a>
   <ul class="collapse">
   <li><a href="#what-is-science" id="toc-what-is-science" class="nav-link" data-scroll-target="#what-is-science">What Is Science?</a></li>
@@ -270,6 +308,10 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#science-and-clinical-practice" id="toc-science-and-clinical-practice" class="nav-link" data-scroll-target="#science-and-clinical-practice">Science and Clinical Practice</a></li>
   <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary">Glossary</a></li>
+  <li><a href="#acknowledgments" id="toc-acknowledgments" class="nav-link" data-scroll-target="#acknowledgments">Acknowledgments</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -296,7 +338,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="the-science-of-psychology" class="level1">
 <h1>The Science of Psychology</h1>
-<p>Many people believe that women tend to talk more than men—with some even suggesting that this difference has a biological basis. One widely cited estimate is that women speak 20,000 words per day on average and men speak only 7,000. Is it true? A group of psychologists led by Matias Mehl decided to find out. They checked to see if anyone had actually tried to count the daily number of words spoken by women and men. No one had. So these researchers conducted a study in which female and male college students (369 in all) wore audio recorders while they went about their lives. The result? The women spoke an average of 16,215 words per day and the men spoke an average of 15,669—an extremely small difference that could easily be explained by chance. In an article in the journal Science, these researchers summed up their findings as follows: “We therefore conclude, on the basis of available empirical evidence, that the widespread and highly publicized stereotype about female talkativeness is unfounded” <span class="citation" data-cites="mehl2007women">(<a href="references.html#ref-mehl2007women" role="doc-biblioref"><strong>mehl2007women?</strong></a>)</span>.</p>
+<p>Many people believe that women tend to talk more than men—with some even suggesting that this difference has a biological basis. One widely cited estimate is that women speak 20,000 words per day on average and men speak only 7,000. Is it true? A group of psychologists led by Matias Mehl decided to find out. They checked to see if anyone had actually tried to count the daily number of words spoken by women and men. No one had. So these researchers conducted a study in which female and male college students (369 in all) wore audio recorders while they went about their lives. The result? The women spoke an average of 16,215 words per day and the men spoke an average of 15,669—an extremely small difference that could easily be explained by chance. In an article in the journal Science, these researchers summed up their findings as follows: “We therefore conclude, on the basis of available empirical evidence, that the widespread and highly publicized stereotype about female talkativeness is unfounded” <span class="citation" data-cites="mehl2007women">(<a href="#ref-mehl2007women" role="doc-biblioref">Mehl et al., 2007</a>)</span>.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -308,6 +350,16 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>Psychology is usually defined as the scientific study of human behavior and mental processes, and this example illustrates the features that make it scientific. In this chapter, we look closely at these features, introduce a model of scientific research in psychology, and address several basic questions that students often have about it. Who conducts scientific research in psychology? Why? Does scientific psychology tell us anything that common sense does not? Why should I bother to learn the scientific approach—especially if I want to be a clinical psychologist and not a researcher? These are extremely good questions, by the way, and answering them now will provide a solid foundation for learning the rest of the material in this book.</p>
+<section id="example-questions" class="level2">
+<h2 class="anchored" data-anchor-id="example-questions">Example Questions</h2>
+<section id="fill-in-the-blanks-fitb" class="level3">
+<h3 class="anchored" data-anchor-id="fill-in-the-blanks-fitb">Fill-In-The-Blanks (<code>fitb()</code>)</h3>
+<p>Create fill-in-the-blank questions using <code>fitb()</code>, providing the answer as the first argument.</p>
+<ul>
+<li>2 + 2 is <input class="webex-solveme nospaces" size="1" data-answer="[&quot;4&quot;]"></li>
+</ul>
+</section>
+</section>
 <section id="understanding-science" class="level2">
 <h2 class="anchored" data-anchor-id="understanding-science">Understanding Science</h2>
 <section id="learning-objectives" class="level5 unnumbered learningobjectives">
@@ -325,15 +377,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="features-of-science" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="features-of-science">Features of Science</h3>
-<p>The general scientific approach has three fundamental features <span class="citation" data-cites="stanovich2013think">(<a href="references.html#ref-stanovich2013think" role="doc-biblioref"><strong>stanovich2013think?</strong></a>)</span>. The first is <a href="#systematic-empiricism">systematic empiricism</a>. Empiricism refers to learning based on observation, and scientists learn about the natural world systematically, by carefully planning, making, recording, and analyzing observations of it. As we will see, logical reasoning and even creativity play important roles in science too, but scientists are unique in their insistence on checking their ideas about the way the world is against their systematic observations. Notice, for example, that Mehl and his colleagues did not trust other people’s stereotypes or even their own informal observations. Instead, they systematically recorded, counted, and compared the number of words spoken by a large sample of women and men. Furthermore, when their systematic observations turned out to conflict with people’s stereotypes, they trusted their systematic observations.</p>
+<p>The general scientific approach has three fundamental features <span class="citation" data-cites="stanovich2013think">(<a href="#ref-stanovich2013think" role="doc-biblioref">Stanovich, 2013</a>)</span>. The first is <a href="#systematic-empiricism">systematic empiricism</a>. Empiricism refers to learning based on observation, and scientists learn about the natural world systematically, by carefully planning, making, recording, and analyzing observations of it. As we will see, logical reasoning and even creativity play important roles in science too, but scientists are unique in their insistence on checking their ideas about the way the world is against their systematic observations. Notice, for example, that Mehl and his colleagues did not trust other people’s stereotypes or even their own informal observations. Instead, they systematically recorded, counted, and compared the number of words spoken by a large sample of women and men. Furthermore, when their systematic observations turned out to conflict with people’s stereotypes, they trusted their systematic observations.</p>
 <p>The second feature of the scientific approach—which follows in a straightforward way from the first—is that it is concerned with <a href="#empirical-question">empirical questions</a>. These are questions about the way the world actually is and, therefore, can be answered by systematically observing it. The question of whether women talk more than men is empirical in this way. Either women really do talk more than men or they do not, and this can be determined by systematically observing how much women and men actually talk. There are many interesting and important questions that are not empirically testable and that science cannot answer. Among them are questions about values—whether things are good or bad, just or unjust, or beautiful or ugly, and how the world <em>ought</em> to be. So although the question of whether a stereotype is accurate or inaccurate is an empirically testable one that science can answer, the question of whether it is wrong for people to hold inaccurate stereotypes is not. Similarly, the question of whether criminal behavior has a genetic component is an empirical question, but the question of what should be done with people who commit crimes is not. It is especially important for researchers in psychology to be mindful of this distinction.</p>
 <p>The third feature of science is that it creates <a href="#public-knowledge">public knowledge</a>. After asking their empirical questions, making their systematic observations, and drawing their conclusions, scientists publish their work. This usually means writing an article for publication in a professional journal, in which they put their research question in the context of previous research, describe in detail the methods they used to answer their question, and clearly present their results and conclusions. Publication is an essential feature of science for two reasons. One is that science is a social process—a large-scale collaboration among many researchers distributed across both time and space. Our current scientific knowledge of most topics is based on many different studies conducted by many different researchers who have shared their work with each other over the years. The second is that publication allows science to be self-correcting. Individual scientists understand that despite their best efforts, their methods can be flawed and their conclusions incorrect. Publication allows others in the scientific community to detect and correct these errors so that, over time, scientific knowledge increasingly reflects the way the world actually is.</p>
 </section>
 <section id="science-versus-pseudoscience" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="science-versus-pseudoscience">Science Versus Pseudoscience</h3>
-<p><a href="#pseudoscience">Pseudoscience</a> refers to activities and beliefs that are claimed to be scientific by their proponents—and may <em>appear</em> to be scientific at first glance—but are not. Consider the theory of biorhythms (not to be confused with sleep cycles or other biological cycles that do have a scientific basis). The idea is that people’s physical, intellectual, and emotional abilities run in cycles that begin when they are born and continue until they die. The physical cycle has a period of 23 days, the intellectual cycle a period of 33 days, and the emotional cycle a period of 28 days. So, for example, if you had the option of when to schedule an exam, you would want to schedule it for a time when your intellectual cycle will be at a high point. The theory of biorhythms has been around for more than 100 years, and you can find numerous popular books and websites about biorhythms, often containing impressive and scientific-sounding terms like <em>sinusoidal wave</em> and <em>bioelectricity</em>. The problem with biorhythms, however, is that there is no good reason to think they exist <span class="citation" data-cites="hines1998comprehensive">(<a href="references.html#ref-hines1998comprehensive" role="doc-biblioref"><strong>hines1998comprehensive?</strong></a>)</span>.</p>
+<p><a href="#pseudoscience">Pseudoscience</a> refers to activities and beliefs that are claimed to be scientific by their proponents—and may <em>appear</em> to be scientific at first glance—but are not. Consider the theory of biorhythms (not to be confused with sleep cycles or other biological cycles that do have a scientific basis). The idea is that people’s physical, intellectual, and emotional abilities run in cycles that begin when they are born and continue until they die. The physical cycle has a period of 23 days, the intellectual cycle a period of 33 days, and the emotional cycle a period of 28 days. So, for example, if you had the option of when to schedule an exam, you would want to schedule it for a time when your intellectual cycle will be at a high point. The theory of biorhythms has been around for more than 100 years, and you can find numerous popular books and websites about biorhythms, often containing impressive and scientific-sounding terms like <em>sinusoidal wave</em> and <em>bioelectricity</em>. The problem with biorhythms, however, is that there is no good reason to think they exist <span class="citation" data-cites="hines1998comprehensive">(<a href="#ref-hines1998comprehensive" role="doc-biblioref">Hines, 1998</a>)</span>.</p>
 <p>A set of beliefs or activities can be said to be pseudoscientific if (a) its adherents claim or imply that it is scientific but (b) it lacks one or more of the three features of science. It might lack systematic empiricism. Either there is no relevant scientific research or, as in the case of biorhythms, there is relevant scientific research but it is ignored. It might also lack public knowledge. People who promote the beliefs or activities might claim to have conducted scientific research but never publish that research in a way that allows others to evaluate it.</p>
-<p>A set of beliefs and activities might also be pseudoscientific because it does not address empirical questions. The philosopher Karl Popper was especially concerned with this idea <span class="citation" data-cites="popper2014conjectures">(<a href="references.html#ref-popper2014conjectures" role="doc-biblioref"><strong>popper2014conjectures?</strong></a>)</span>. He argued more specifically that any scientific claim must be expressed in such a way that there are observations that would—if they were made—count as evidence against the claim. In other words, scientific claims must be <a href="#falsifiable">falsifiable</a>. The claim that women talk more than men is falsifiable because systematic observations could reveal either that they do talk more than men or that they do not. As an example of an unfalsifiable claim, consider that many people who study extrasensory perception (ESP) and other psychic powers claim that such powers can disappear when they are observed too closely. This makes it so that no possible observation would count as evidence against ESP. If a careful test of a self-proclaimed psychic showed that she predicted the future at better-than-chance levels, this would be consistent with the claim that she had psychic powers. But if she failed to predict the future at better-than-chance levels, this would also be consistent with the claim because her powers can supposedly disappear when they are observed too closely.</p>
+<p>A set of beliefs and activities might also be pseudoscientific because it does not address empirical questions. The philosopher Karl Popper was especially concerned with this idea <span class="citation" data-cites="popper2014conjectures">(<a href="#ref-popper2014conjectures" role="doc-biblioref">Popper, 2014</a>)</span>. He argued more specifically that any scientific claim must be expressed in such a way that there are observations that would—if they were made—count as evidence against the claim. In other words, scientific claims must be <a href="#falsifiable">falsifiable</a>. The claim that women talk more than men is falsifiable because systematic observations could reveal either that they do talk more than men or that they do not. As an example of an unfalsifiable claim, consider that many people who study extrasensory perception (ESP) and other psychic powers claim that such powers can disappear when they are observed too closely. This makes it so that no possible observation would count as evidence against ESP. If a careful test of a self-proclaimed psychic showed that she predicted the future at better-than-chance levels, this would be consistent with the claim that she had psychic powers. But if she failed to predict the future at better-than-chance levels, this would also be consistent with the claim because her powers can supposedly disappear when they are observed too closely.</p>
 <p>Why should we concern ourselves with pseudoscience? There are at least three reasons. One is that learning about pseudoscience helps bring the fundamental features of science—and their importance—into sharper focus. A second is that biorhythms, psychic powers, astrology, and many other pseudoscientific beliefs are widely held and are promoted on the Internet, on television, and in books and magazines. Learning what makes them pseudoscientific can help us to identify and evaluate such beliefs and practices when we encounter them. A third reason is that many pseudosciences purport to explain some aspect of human behavior and mental processes, including biorhythms, astrology, graphology (handwriting analysis), and magnet therapy for pain control. It is important for students of psychology to distinguish their own field clearly from this “pseudopsychology.”</p>
 <section id="the-skeptics-dictionary" class="level5 unnumbered fyi">
 <h5 class="unnumbered anchored" data-anchor-id="the-skeptics-dictionary">The Skeptic’s Dictionary</h5>
@@ -387,7 +439,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>The research by Mehl and his colleagues is described nicely by this model. Their question—whether women are more talkative than men—was suggested to them both by people’s stereotypes and by published claims about the relative talkativeness of women and men. When they checked the research literature, however, they found that this question had not been adequately addressed in scientific studies. They conducted a careful empirical study, analyzed the results (finding very little difference between women and men), and published their work so that it became part of the research literature. The publication of their article is not the end of the story, however, because their work suggests many new questions (about the reliability of the result, about potential cultural differences, etc.) that will likely be taken up by them and by other researchers inspired by their work.</p>
-<p>As another example, consider that as cell phones became more widespread during the 1990s, people began to wonder whether, and to what extent, cell phone use had a negative effect on driving. Many psychologists decided to tackle this question scientifically <span class="citation" data-cites="collet2010phoning">(<a href="references.html#ref-collet2010phoning" role="doc-biblioref"><strong>collet2010phoning?</strong></a>)</span>. It was clear from previously published research that engaging in a simple verbal task impairs performance on a perceptual or motor task carried out at the same time, but no one had studied the effect specifically of cell phone use on driving. Under carefully controlled conditions, these researchers compared people’s driving performance while using a cell phone with their performance while not using a cell phone, both in the lab and on the road. They found that people’s ability to detect road hazards, reaction time, and control of the vehicle were all impaired by cell phone use. Each new study was published and became part of the growing research literature on this topic.</p>
+<p>As another example, consider that as cell phones became more widespread during the 1990s, people began to wonder whether, and to what extent, cell phone use had a negative effect on driving. Many psychologists decided to tackle this question scientifically <span class="citation" data-cites="collet2010phoning">(<a href="#ref-collet2010phoning" role="doc-biblioref">Collet et al., 2010</a>)</span>. It was clear from previously published research that engaging in a simple verbal task impairs performance on a perceptual or motor task carried out at the same time, but no one had studied the effect specifically of cell phone use on driving. Under carefully controlled conditions, these researchers compared people’s driving performance while using a cell phone with their performance while not using a cell phone, both in the lab and on the road. They found that people’s ability to detect road hazards, reaction time, and control of the vehicle were all impaired by cell phone use. Each new study was published and became part of the growing research literature on this topic.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -437,10 +489,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="can-we-rely-on-common-sense" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="can-we-rely-on-common-sense">Can We Rely on Common Sense?</h3>
-<p>Some people wonder whether the scientific approach to psychology is necessary. Can we not reach the same conclusions based on common sense or intuition? Certainly we all have intuitive beliefs about people’s behavior, thoughts, and feelings—and these beliefs are collectively referred to as <a href="#folk-psychology">folk psychology</a>. Although much of our folk psychology is probably reasonably accurate, it is clear that much of it is not. For example, most people believe that anger can be relieved by “letting it out”—perhaps by punching something or screaming loudly. Scientific research, however, has shown that this approach tends to leave people feeling more angry, not less <span class="citation" data-cites="bushman2002does">(<a href="references.html#ref-bushman2002does" role="doc-biblioref"><strong>bushman2002does?</strong></a>)</span>. Likewise, most people believe that no one would confess to a crime that he or she had not committed, unless perhaps that person was being physically tortured. But again, extensive empirical research has shown that false confessions are surprisingly common and occur for a variety of reasons <span class="citation" data-cites="kassin2004psychology">(<a href="references.html#ref-kassin2004psychology" role="doc-biblioref"><strong>kassin2004psychology?</strong></a>)</span>.</p>
+<p>Some people wonder whether the scientific approach to psychology is necessary. Can we not reach the same conclusions based on common sense or intuition? Certainly we all have intuitive beliefs about people’s behavior, thoughts, and feelings—and these beliefs are collectively referred to as <a href="#folk-psychology">folk psychology</a>. Although much of our folk psychology is probably reasonably accurate, it is clear that much of it is not. For example, most people believe that anger can be relieved by “letting it out”—perhaps by punching something or screaming loudly. Scientific research, however, has shown that this approach tends to leave people feeling more angry, not less <span class="citation" data-cites="bushman2002does">(<a href="#ref-bushman2002does" role="doc-biblioref">Bushman, 2002</a>)</span>. Likewise, most people believe that no one would confess to a crime that he or she had not committed, unless perhaps that person was being physically tortured. But again, extensive empirical research has shown that false confessions are surprisingly common and occur for a variety of reasons <span class="citation" data-cites="kassin2004psychology">(<a href="#ref-kassin2004psychology" role="doc-biblioref">Kassin &amp; Gudjonsson, 2004</a>)</span>.</p>
 <section id="some-great-myths" class="level5 unnumbered fyi">
 <h5 class="unnumbered anchored" data-anchor-id="some-great-myths">Some Great Myths</h5>
-<p>In 50 Great Myths of Popular Psychology, psychologist Scott Lilienfeld and colleagues discuss several widely held commonsense beliefs about human behavior that scientific research has shown to be incorrect <span class="citation" data-cites="lilienfeld2010five">(<a href="references.html#ref-lilienfeld2010five" role="doc-biblioref"><strong>lilienfeld2010five?</strong></a>)</span>.Here is a short list.</p>
+<p>In 50 Great Myths of Popular Psychology, psychologist Scott Lilienfeld and colleagues discuss several widely held commonsense beliefs about human behavior that scientific research has shown to be incorrect <span class="citation" data-cites="lilienfeld2010five">(<a href="#ref-lilienfeld2010five" role="doc-biblioref">Lilienfeld et al., 2010</a>)</span>.Here is a short list.</p>
 <ul>
 <li>“People use only 10% of their brain power.”</li>
 <li>“Most people experience a midlife crisis in their 40’s or 50’s.”</li>
@@ -452,7 +504,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="how-could-we-be-so-wrong" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="how-could-we-be-so-wrong">How Could We Be So Wrong?</h3>
-<p>How can so many of our intuitive beliefs about human behavior be so wrong? Notice that this is a psychological question, and it just so happens that psychologists have conducted scientific research on it and identified many contributing factors <span class="citation" data-cites="gilovich2008we">(<a href="references.html#ref-gilovich2008we" role="doc-biblioref"><strong>gilovich2008we?</strong></a>)</span>. One is that forming detailed and accurate beliefs requires powers of observation, memory, and analysis to an extent that we do not naturally possess. It would be nearly impossible to count the number of words spoken by the women and men we happen to encounter, estimate the number of words they spoke per day, average these numbers for both groups, and compare them—all in our heads. This is why we tend to rely on mental shortcuts in forming and maintaining our beliefs. For example, if a belief is widely shared—especially if it is endorsed by “experts”—and it makes intuitive sense, we tend to assume it is true. This is compounded by the fact that we then tend to focus on cases that confirm our intuitive beliefs and not on cases that disconfirm them. This is called <a href="#confirmation-bias">confirmation bias</a>. For example, once we begin to believe that women are more talkative than men, we tend to notice and remember talkative women and silent men but ignore or forget silent women and talkative men. We also hold incorrect beliefs in part because it would be nice if they were true. For example, many people believe that calorie-reducing diets are an effective long-term treatment for obesity, yet a thorough review of the scientific evidence has shown that they are not <span class="citation" data-cites="mann2007medicare">(<a href="references.html#ref-mann2007medicare" role="doc-biblioref"><strong>mann2007medicare?</strong></a>)</span>. People may continue to believe in the effectiveness of dieting in part because it gives them hope for losing weight if they are obese or makes them feel good about their own “self-control” if they are not.</p>
+<p>How can so many of our intuitive beliefs about human behavior be so wrong? Notice that this is a psychological question, and it just so happens that psychologists have conducted scientific research on it and identified many contributing factors <span class="citation" data-cites="gilovich2008we">(<a href="#ref-gilovich2008we" role="doc-biblioref">Gilovich, 2008</a>)</span>. One is that forming detailed and accurate beliefs requires powers of observation, memory, and analysis to an extent that we do not naturally possess. It would be nearly impossible to count the number of words spoken by the women and men we happen to encounter, estimate the number of words they spoke per day, average these numbers for both groups, and compare them—all in our heads. This is why we tend to rely on mental shortcuts in forming and maintaining our beliefs. For example, if a belief is widely shared—especially if it is endorsed by “experts”—and it makes intuitive sense, we tend to assume it is true. This is compounded by the fact that we then tend to focus on cases that confirm our intuitive beliefs and not on cases that disconfirm them. This is called <a href="#confirmation-bias">confirmation bias</a>. For example, once we begin to believe that women are more talkative than men, we tend to notice and remember talkative women and silent men but ignore or forget silent women and talkative men. We also hold incorrect beliefs in part because it would be nice if they were true. For example, many people believe that calorie-reducing diets are an effective long-term treatment for obesity, yet a thorough review of the scientific evidence has shown that they are not <span class="citation" data-cites="mann2007medicare">(<a href="#ref-mann2007medicare" role="doc-biblioref">Mann et al., 2007</a>)</span>. People may continue to believe in the effectiveness of dieting in part because it gives them hope for losing weight if they are obese or makes them feel good about their own “self-control” if they are not.</p>
 <p>Scientists—especially psychologists—understand that they are just as susceptible as anyone else to intuitive but incorrect beliefs. This is why they cultivate an attitude of <a href="#skepticism">skepticism</a>. Being skeptical does not mean being cynical or distrustful, nor does it mean questioning every belief or claim one comes across (which would be impossible anyway). Instead, it means pausing to consider alternatives and to search for evidence—especially systematically collected empirical evidence—when there is enough at stake to justify doing so. Imagine that you read a magazine article that claims that giving children a weekly allowance is a good way to help them develop financial responsibility. This is an interesting and potentially important claim (especially if you have kids). Taking an attitude of skepticism, however, would mean pausing to ask whether it might be instead that receiving an allowance merely teaches children to spend money—perhaps even to be more materialistic. Taking an attitude of skepticism would also mean asking what evidence supports the original claim. Is the author a scientific researcher? Is any scientific evidence cited? If the issue was important enough, it might also mean turning to the research literature to see if anyone else had studied it.</p>
 <p>Because there is often not enough evidence to fully evaluate a belief or claim, scientists also cultivate <a href="#tolerance-for-uncertainty">tolerance for uncertainty</a>. They accept that there are many things that they simply do not know. For example, it turns out that there is no scientific evidence that receiving an allowance causes children to be more financially responsible, nor is there any scientific evidence that it causes them to be materialistic. Although this kind of uncertainty can be problematic from a practical perspective—for example, making it difficult to decide what to do when our children ask for an allowance—it is exciting from a scientific perspective. If we do not know the answer to an interesting and empirically testable question, science may be able to provide the answer.</p>
 <section id="key-takeaways-2" class="level5 unnumbered takeaways">
@@ -486,7 +538,7 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 </section>
 <p>Again, psychology is the scientific study of behavior and mental processes. But it is also the application of scientific research to “help people, organizations, and communities function better” (American Psychological Association, 2011). By far the most common and widely known application is the <a href="#clinical-practice-of-psychology">clinical practice of psychology</a>—the diagnosis and treatment of psychological disorders and related problems. Let us use the term <em>clinical practice</em> broadly to refer to the activities of clinical and counseling psychologists, school psychologists, marriage and family therapists, licensed clinical social workers, and others who work with people individually or in small groups to identify and solve their psychological problems. It is important to consider the relationship between scientific research and clinical practice because many students are especially interested in clinical practice, perhaps even as a career.</p>
-<p>The main point is that psychological disorders and other behavioral problems are part of the natural world. This means that questions about their nature, causes, and consequences are empirically testable and therefore subject to scientific study. As with other questions about human behavior, we cannot rely on our intuition or common sense for detailed and accurate answers. Consider, for example, that dozens of popular books and thousands of websites claim that adult children of alcoholics have a distinct personality profile, including low self-esteem, feelings of powerlessness, and difficulties with intimacy. Although this sounds plausible, scientific research has demonstrated that adult children of alcoholics are no more likely to have these problems than anybody else <span class="citation" data-cites="lilienfeld2010five">(<a href="references.html#ref-lilienfeld2010five" role="doc-biblioref"><strong>lilienfeld2010five?</strong></a>)</span>. Similarly, questions about whether a particular psychotherapy works are empirically testable questions that can be answered by scientific research. If a new psychotherapy is an effective treatment for depression, then systematic observation should reveal that depressed people who receive this psychotherapy improve more than a similar group of depressed people who do not receive this psychotherapy (or who receive some alternative treatment). Treatments that have been shown to work in this way are called <a href="#empirically-supported-treatment">empirically supported treatments</a>.</p>
+<p>The main point is that psychological disorders and other behavioral problems are part of the natural world. This means that questions about their nature, causes, and consequences are empirically testable and therefore subject to scientific study. As with other questions about human behavior, we cannot rely on our intuition or common sense for detailed and accurate answers. Consider, for example, that dozens of popular books and thousands of websites claim that adult children of alcoholics have a distinct personality profile, including low self-esteem, feelings of powerlessness, and difficulties with intimacy. Although this sounds plausible, scientific research has demonstrated that adult children of alcoholics are no more likely to have these problems than anybody else <span class="citation" data-cites="lilienfeld2010five">(<a href="#ref-lilienfeld2010five" role="doc-biblioref">Lilienfeld et al., 2010</a>)</span>. Similarly, questions about whether a particular psychotherapy works are empirically testable questions that can be answered by scientific research. If a new psychotherapy is an effective treatment for depression, then systematic observation should reveal that depressed people who receive this psychotherapy improve more than a similar group of depressed people who do not receive this psychotherapy (or who receive some alternative treatment). Treatments that have been shown to work in this way are called <a href="#empirically-supported-treatment">empirically supported treatments</a>.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -510,7 +562,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>For a more complete list, see the following website, which is maintained by Division 12 of the American Psychological Association, the Society for Clinical Psychology: https://div12.org/treatments/.</p>
 </section>
-<p>Many in the clinical psychology community have argued that their field has not paid enough attention to scientific research—for example, by failing to use empirically supported treatments—and have suggested a variety of changes in the way clinicians are trained and treatments are evaluated and put into practice. Others believe that these claims are exaggerated and the suggested changes are unnecessary <span class="citation" data-cites="norcross2006evidence">(<a href="references.html#ref-norcross2006evidence" role="doc-biblioref"><strong>norcross2006evidence?</strong></a>)</span>. On both sides of the debate, however, there is agreement that a scientific approach to clinical psychology is essential if the goal is to diagnose and treat psychological problems based on detailed and accurate knowledge about those problems and the most effective treatments for them. So not only is it important for scientific research in clinical psychology to continue, but it is also important for clinicians who never conduct a scientific study themselves to be scientifically literate so that they can read and evaluate new research and make treatment decisions based on the best available evidence.</p>
+<p>Many in the clinical psychology community have argued that their field has not paid enough attention to scientific research—for example, by failing to use empirically supported treatments—and have suggested a variety of changes in the way clinicians are trained and treatments are evaluated and put into practice. Others believe that these claims are exaggerated and the suggested changes are unnecessary <span class="citation" data-cites="norcross2006evidence">(<a href="#ref-norcross2006evidence" role="doc-biblioref">Norcross et al., 2006</a>)</span>. On both sides of the debate, however, there is agreement that a scientific approach to clinical psychology is essential if the goal is to diagnose and treat psychological problems based on detailed and accurate knowledge about those problems and the most effective treatments for them. So not only is it important for scientific research in clinical psychology to continue, but it is also important for clinicians who never conduct a scientific study themselves to be scientifically literate so that they can read and evaluate new research and make treatment decisions based on the best available evidence.</p>
 <section id="key-takeaways-3" class="level5 unnumbered takeaways">
 <h5 class="unnumbered anchored" data-anchor-id="key-takeaways-3">KEY TAKEAWAYS</h5>
 <ul>
@@ -594,6 +646,48 @@ ul.task-list li input[type="checkbox"] {
 <section id="tolerance-for-uncertainty" class="level5 unnumbered">
 <h5 class="unnumbered anchored" data-anchor-id="tolerance-for-uncertainty">tolerance for uncertainty</h5>
 <p>A critical-thinking attitude that involves withholding judgment about whether a belief or claim is true when there is insufficient evidence for it.</p>
+</section>
+</section>
+<section id="acknowledgments" class="level2 appendix">
+<h2 class="appendix anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
+<p>This page includes content from a number of legendary authors and gangsters. Mention them all here alongside update information.</p>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-bushman2002does" class="csl-entry" role="listitem">
+Bushman, B. J. (2002). Does venting anger feed or extinguish the flame? Catharsis, rumination, distraction, anger, and aggressive responding. <em>Personality and Social Psychology Bulletin</em>, <em>28</em>(6), 724–731.
+</div>
+<div id="ref-collet2010phoning" class="csl-entry" role="listitem">
+Collet, C., Guillot, A., &amp; Petit, C. (2010). Phoning while driving i: A review of epidemiological, psychological, behavioural and physiological studies. <em>Ergonomics</em>, <em>53</em>(5), 589–601.
+</div>
+<div id="ref-gilovich2008we" class="csl-entry" role="listitem">
+Gilovich, T. (2008). <em>How we know what isn’t so</em>. Simon; Schuster.
+</div>
+<div id="ref-hines1998comprehensive" class="csl-entry" role="listitem">
+Hines, T. M. (1998). Comprehensive review of biorhythm theory. <em>Psychological Reports</em>, <em>83</em>(1), 19–64.
+</div>
+<div id="ref-kassin2004psychology" class="csl-entry" role="listitem">
+Kassin, S. M., &amp; Gudjonsson, G. H. (2004). The psychology of confessions: A review of the literature and issues. <em>Psychological Science in the Public Interest</em>, <em>5</em>(2), 33–67.
+</div>
+<div id="ref-lilienfeld2010five" class="csl-entry" role="listitem">
+Lilienfeld, S. O., Lynn, S. J., &amp; Beyerstein, B. L. (2010). The five great myths of popular psychology: Implications for psychotherapy. <em>Rational and Irrational Beliefs</em>, 313.
+</div>
+<div id="ref-mann2007medicare" class="csl-entry" role="listitem">
+Mann, T., Tomiyama, A. J., Westling, E., Lew, A.-M., Samuels, B., &amp; Chatman, J. (2007). Medicare’s search for effective obesity treatments: Diets are not the answer. <em>American Psychologist</em>, <em>62</em>(3), 220.
+</div>
+<div id="ref-mehl2007women" class="csl-entry" role="listitem">
+Mehl, M. R., Vazire, S., Ramı́rez-Esparza, N., Slatcher, R. B., &amp; Pennebaker, J. W. (2007). Are women really more talkative than men? <em>Science</em>, <em>317</em>(5834), 82–82.
+</div>
+<div id="ref-norcross2006evidence" class="csl-entry" role="listitem">
+Norcross, J. C., Beutler, L. E., &amp; Levant, R. F. (2006). <em>Evidence-based practices in mental health: Debate and dialogue on the fundamental questions.</em> American Psychological Association.
+</div>
+<div id="ref-popper2014conjectures" class="csl-entry" role="listitem">
+Popper, K. (2014). <em>Conjectures and refutations: The growth of scientific knowledge</em>. routledge.
+</div>
+<div id="ref-stanovich2013think" class="csl-entry" role="listitem">
+Stanovich, K. E. (2013). <em>How to think straight about psychology 10th ed.</em> Pearson Education, Inc., Boston.
+</div>
+</div>
 
 
 </section>
@@ -1215,7 +1309,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Research 🐵 Methods in Psychology</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foreword</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

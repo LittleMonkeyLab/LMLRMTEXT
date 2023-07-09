@@ -34,6 +34,23 @@ and not a researcher? These are extremely good questions, by the way,
 and answering them now will provide a solid foundation for learning the
 rest of the material in this book.
 
+```{r, echo = FALSE, results='asis'}
+knitr::opts_chunk$set(echo = FALSE)
+library(webexercises)
+
+# Uncomment to change widget colours:
+#style_widgets(incorrect = "goldenrod", correct = "purple", highlight = "firebrick")
+```
+
+## Example Questions
+
+### Fill-In-The-Blanks (`fitb()`)
+
+Create fill-in-the-blank questions using `fitb()`, providing the answer
+as the first argument.
+
+-   2 + 2 is `r fitb(4)`
+
 ## Understanding Science
 
 ::: learningobjectives
@@ -745,3 +762,13 @@ Learning about the world through careful observation.
 A critical-thinking attitude that involves withholding judgment about
 whether a belief or claim is true when there is insufficient evidence
 for it.
+
+## Acknowledgments {.appendix}
+
+This page includes content from a number of legendary authors and
+gangsters. Mention them all here alongside update information.
+
+### References
+
+::: {#refs}
+:::

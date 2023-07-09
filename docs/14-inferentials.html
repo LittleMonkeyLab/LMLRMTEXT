@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Research Methods in Psychology">
+<meta name="description" content="This is a an OER textbook for introductory research methods in psychology.">
 
 <title>Monkey Methods - 12&nbsp; Inferential Statistics</title>
 <style>
@@ -21,7 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./15-references.html" rel="next">
+<link href="./webexercises.html" rel="next">
 <link href="./13-descriptives.html" rel="prev">
 <link href="./images/logos/LMLLOGO.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -43,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -65,8 +84,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script type="application/json" class="js-hypothesis-config">
 {
-  "theme": "clean",
-  "openSidebar": false
+  "theme": "clean"
 }
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
@@ -90,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./14-inferentials.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-science-of-psych.html">Research Methods Text</a></li><li class="breadcrumb-item"><a href="./14-inferentials.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -125,103 +143,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Research 🐵 Methods in Psychology</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Principles of Research in Psychology</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./02-getting-started.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./03-theory.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./04-ethics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./05-experiments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Experimental Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./06-measurement.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./07-sampling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sampling</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./08-complex-designs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Complex Research Designs</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./09-nonexperiments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./10-single-N.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Single-Subject Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./11-ideas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(PART*) Conducting Your Own Study</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./12-presenting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./13-descriptives.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(PART*) Analyzing Data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./14-inferentials.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./15-references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foreword</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">Research Methods Text</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -229,14 +157,120 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./webexercises.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span></a>
+  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles of Research in Psychology</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+  <a href="./02-getting-started.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting Started in Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory in Psychology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Research Ethics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Experimental Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-measurement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Psychological Measurement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-sampling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sampling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-complex-designs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Complex Research Designs</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-nonexperiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nonexperimental Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-single-N.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Single-Subject Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-ideas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conducting Your Own Study</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-presenting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Presenting Your Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-descriptives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analyzing Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-inferentials.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Inferential Statistics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Statistics Text</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-science-of-psych.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles of Research in Psychology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./webexercises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span></a>
   </div>
 </li>
       </ul>
@@ -270,7 +304,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#statistical-power" id="toc-statistical-power" class="nav-link" data-scroll-target="#statistical-power">Statistical Power</a></li>
   <li><a href="#problems-with-null-hypothesis-testing-and-some-solutions" id="toc-problems-with-null-hypothesis-testing-and-some-solutions" class="nav-link" data-scroll-target="#problems-with-null-hypothesis-testing-and-some-solutions">Problems With Null Hypothesis Testing, and Some Solutions</a></li>
   </ul></li>
-  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary"><span class="header-section-number">12.4</span> Glossary</a></li>
+  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary"><span class="header-section-number">12.4</span> Glossary</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">12.4.1</span> References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -294,7 +331,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Recall that Matias Mehl and his colleagues, in their study of sex differences in talkativeness, found that the women in their sample spoke a mean of 16,215 words per day and the men a mean of 15,669 words per day <span class="citation" data-cites="mehl2007women">(<a href="references.html#ref-mehl2007women" role="doc-biblioref"><strong>mehl2007women?</strong></a>)</span>. But despite this sex difference in their sample, they concluded that there was no evidence of a sex difference in talkativeness in the population. Recall also that Allen Kanner and his colleagues, in their study of the relationship between daily hassles and symptoms, found a correlation of +.60 in their sample <span class="citation" data-cites="kanner1981comparison">(<a href="references.html#ref-kanner1981comparison" role="doc-biblioref"><strong>kanner1981comparison?</strong></a>)</span>. But they concluded that this means there <em>is</em> a relationship between hassles and symptoms in the population. This raises the question of how researchers can say whether their sample result reflects something that is true of the population.</p>
+<p>Recall that Matias Mehl and his colleagues, in their study of sex differences in talkativeness, found that the women in their sample spoke a mean of 16,215 words per day and the men a mean of 15,669 words per day <span class="citation" data-cites="mehl2007women">(<a href="#ref-mehl2007women" role="doc-biblioref">Mehl et al., 2007</a>)</span>. But despite this sex difference in their sample, they concluded that there was no evidence of a sex difference in talkativeness in the population. Recall also that Allen Kanner and his colleagues, in their study of the relationship between daily hassles and symptoms, found a correlation of +.60 in their sample <span class="citation" data-cites="kanner1981comparison">(<a href="#ref-kanner1981comparison" role="doc-biblioref">Kanner et al., 1981</a>)</span>. But they concluded that this means there <em>is</em> a relationship between hassles and symptoms in the population. This raises the question of how researchers can say whether their sample result reflects something that is true of the population.</p>
 <p>The answer to this question is that they use a set of techniques called inferential statistics, which is what this chapter is about. We focus, in particular, on null hypothesis testing, the most common approach to inferential statistics in psychological research. We begin with a conceptual overview of null hypothesis testing, including its purpose and basic logic. Then we look at several null hypothesis testing techniques for drawing conclusions about differences between means and about correlations between quantitative variables. Finally, we consider a few other important ideas related to null hypothesis testing, including some that can be helpful in planning new studies and interpreting results. We also look at some long-standing criticisms of null hypothesis testing and some ways of dealing with these criticisms.</p>
 <section id="understanding-null-hypothesis-testing" class="level2" data-number="12.1">
 <h2 data-number="12.1" class="anchored" data-anchor-id="understanding-null-hypothesis-testing"><span class="header-section-number">12.1</span> Understanding Null Hypothesis Testing</h2>
@@ -331,7 +368,7 @@ ul.task-list li input[type="checkbox"] {
 <p>A crucial step in null hypothesis testing is finding the likelihood of the sample result if the null hypothesis were true. This probability is called the <a href="#p-value"><em>p</em> value</a>. A low <em>p</em> value means that the sample result would be unlikely if the null hypothesis were true and leads to the rejection of the null hypothesis. A high <em>p</em> value means that the sample result would be likely if the null hypothesis were true and leads to the retention of the null hypothesis. But how low must the <em>p</em> value be before the sample result is considered unlikely enough to reject the null hypothesis? In null hypothesis testing, this criterion is called <a href="#α-alpha">α (alpha)</a> and is almost always set to .05. If there is less than a 5% chance of a result as extreme as the sample result if the null hypothesis were true, then the null hypothesis is rejected. When this happens, the result is said to be <a href="#statistically-significant">statistically significant</a>. If there is greater than a 5% chance of a result as extreme as the sample result when the null hypothesis is true, then the null hypothesis is retained. This does not necessarily mean that the researcher accepts the null hypothesis as true—only that there is not currently enough evidence to conclude that it is true. Researchers often use the expression “fail to reject the null hypothesis” rather than “retain the null hypothesis,” but they never use the expression “accept the null hypothesis.”</p>
 <section id="the-misunderstood-p-value" class="level5 unnumbered fyi">
 <h5 class="unnumbered anchored" data-anchor-id="the-misunderstood-p-value">The Misunderstood <em>p</em> Value</h5>
-<p>The <em>p</em> value is one of the most misunderstood quantities in psychological research <span class="citation" data-cites="cohen1994earth">(<a href="references.html#ref-cohen1994earth" role="doc-biblioref"><strong>cohen1994earth?</strong></a>)</span>. Even professional researchers misinterpret it, and it is not unusual for such misinterpretations to appear in statistics textbooks!</p>
+<p>The <em>p</em> value is one of the most misunderstood quantities in psychological research <span class="citation" data-cites="cohen1994earth">(<a href="#ref-cohen1994earth" role="doc-biblioref">Cohen, 1994</a>)</span>. Even professional researchers misinterpret it, and it is not unusual for such misinterpretations to appear in statistics textbooks!</p>
 <p>The most common misinterpretation is that the <em>p</em> value is the probability that the null hypothesis is true—that the sample result occurred by chance. For example, a misguided researcher might say that because the <em>p</em> value is .02, there is only a 2% chance that the result is due to chance and a 98% chance that it reflects a real relationship in the population. But this is <em>incorrect.</em> The <em>p</em> value is really the probability of a result at least as extreme as the sample result <em>if</em> the null hypothesis <em>were</em> true. So a <em>p</em> value of .02 means that if the null hypothesis were true, a sample result this extreme would occur only 2% of the time.</p>
 <p>You can avoid this misunderstanding by remembering that the <em>p</em> value is not the probability that any particular <em>hypothesis</em> is true or false. Instead, it is the probability of obtaining the <em>sample result</em> if the null hypothesis were true.</p>
 </section>
@@ -343,10 +380,10 @@ ul.task-list li input[type="checkbox"] {
 <table class="table">
 <caption>(#tab:strength) How relationship strength (weak, medium, strong) and sample size combine to determine whether a result is statistically significant.</caption>
 <colgroup>
-<col style="width: 34%">
-<col style="width: 24%">
-<col style="width: 12%">
-<col style="width: 28%">
+<col style="width: 32%">
+<col style="width: 26%">
+<col style="width: 10%">
+<col style="width: 30%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -387,7 +424,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="statistical-significance-versus-practical-significance" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="statistical-significance-versus-practical-significance">Statistical Significance Versus Practical Significance</h3>
-<p>Table @ref(tab:strength) illustrates another extremely important point. A statistically significant result is not necessarily a strong one. Even a very weak result can be statistically significant if it is based on a large enough sample. This is closely related to Janet Shibley Hyde’s argument about sex differences <span class="citation" data-cites="hyde2007new">(<a href="references.html#ref-hyde2007new" role="doc-biblioref"><strong>hyde2007new?</strong></a>)</span>. The differences between women and men in mathematical problem solving and leadership ability are statistically significant. But the word <em>significant</em> can cause people to interpret these differences as strong and important—perhaps even important enough to influence the college courses they take or even who they vote for. As we have seen, however, these statistically significant differences are actually quite weak—perhaps even “trivial.”</p>
+<p>Table @ref(tab:strength) illustrates another extremely important point. A statistically significant result is not necessarily a strong one. Even a very weak result can be statistically significant if it is based on a large enough sample. This is closely related to Janet Shibley Hyde’s argument about sex differences <span class="citation" data-cites="hyde2007new">(<a href="#ref-hyde2007new" role="doc-biblioref">Hyde, 2007</a>)</span>. The differences between women and men in mathematical problem solving and leadership ability are statistically significant. But the word <em>significant</em> can cause people to interpret these differences as strong and important—perhaps even important enough to influence the college courses they take or even who they vote for. As we have seen, however, these statistically significant differences are actually quite weak—perhaps even “trivial.”</p>
 <p>This is why it is important to distinguish between the <em>statistical</em> significance of a result and the <em>practical</em> significance of that result. <a href="#practical-significance">Practical significance</a> refers to the importance or usefulness of the result in some real-world context. Many sex differences are statistically significant—and may even be interesting for purely scientific reasons—but they are not practically significant. In clinical practice, this same concept is often referred to as “clinical significance.” For example, a study on a new treatment for social phobia might show that it produces a statistically significant positive effect. Yet this effect still might not be strong enough to justify the time, effort, and other costs of putting it into practice—especially if easier and cheaper treatments that work almost as well already exist. Although statistically significant, this result would be said to lack practical or clinical significance.</p>
 <section id="key-takeaways" class="level5 unnumbered takeaways">
 <h5 class="unnumbered anchored" data-anchor-id="key-takeaways">KEY TAKEAWAYS</h5>
@@ -923,11 +960,11 @@ Dieticians: 220, 250, 240, 275, 250, 230, 200, 240</p>
 <table class="table">
 <caption>(#tab:anovaoutput) Typical one-way ANOVA output from Excel</caption>
 <colgroup>
-<col style="width: 20%">
+<col style="width: 27%">
 <col style="width: 13%">
-<col style="width: 10%">
+<col style="width: 7%">
 <col style="width: 13%">
-<col style="width: 13%">
+<col style="width: 12%">
 <col style="width: 13%">
 <col style="width: 13%">
 </colgroup>
@@ -987,7 +1024,7 @@ Dieticians: 220, 250, 240, 275, 250, 230, 200, 240</p>
 </section>
 <section id="factorial-anova" class="level5 unnumbered">
 <h5 class="unnumbered anchored" data-anchor-id="factorial-anova">Factorial ANOVA</h5>
-<p>When more than one independent variable is included in a factorial design, the appropriate approach is the <a href="#factorial-anova">factorial ANOVA</a>. Again, the basics of the factorial ANOVA are the same as for the one-way and repeated-measures ANOVAs. The main difference is that it produces an <em>F</em> ratio and <em>p</em> value for each main effect and for each interaction. Returning to our calorie estimation example, imagine that the health psychologist tests the effect of participant major (psychology vs.&nbsp;nutrition) and food type (cookie vs.&nbsp;hamburger) in a factorial design. A factorial ANOVA would produce separate <em>F</em> ratios and <em>p</em> values for the main effect of major, the main effect of food type, and the interaction between major and food. Appropriate modifications must be made depending on whether the design is between subjects, within subjects, or mixed.</p>
+<p>When more than one independent variable is included in a factorial design, the appropriate approach is the <a href="#factorial-anova">factorial ANOVA</a>. Again, the basics of the factorial ANOVA are the same as for the one-way and repeated-measures ANOVAs. The main difference is that it produces an <em>F</em> ratio and <em>p</em> value for each main effect and for each interaction. Returning to our calorie estimation example, imagine that the health psychologist tests the effect of participant major (psychology vs. nutrition) and food type (cookie vs.&nbsp;hamburger) in a factorial design. A factorial ANOVA would produce separate <em>F</em> ratios and <em>p</em> values for the main effect of major, the main effect of food type, and the interaction between major and food. Appropriate modifications must be made depending on whether the design is between subjects, within subjects, or mixed.</p>
 </section>
 </section>
 </section>
@@ -1156,7 +1193,7 @@ Dieticians: 220, 250, 240, 275, 250, 230, 200, 240</p>
 <p>Rejecting the null hypothesis when it is true is called a <a href="#type-i-error">Type I error</a>. This means that we have concluded that there is a relationship in the population when in fact there is not. Type I errors occur because even when there is no relationship in the population, sampling error alone will occasionally produce an extreme result. In fact, when the null hypothesis is true and α is .05, we will mistakenly reject the null hypothesis 5% of the time. (This is why α is sometimes referred to as the “Type I error rate.”) Retaining the null hypothesis when it is false is called a <a href="#type-ii-error">Type II error</a>. This means that we have concluded that there is no relationship in the population when in fact there is. In practice, Type II errors occur primarily because the research design lacks adequate statistical power to detect the relationship (e.g., the sample is too small). We will have more to say about statistical power shortly.</p>
 <p>In principle, it is possible to reduce the chance of a Type I error by setting α to something less than .05. Setting it to .01, for example, would mean that if the null hypothesis is true, then there is only a 1% chance of mistakenly rejecting it. But making it harder to reject true null hypotheses also makes it harder to reject false ones and therefore increases the chance of a Type II error. Similarly, it is possible to reduce the chance of a Type II error by setting α to something greater than .05 (e.g., .10). But making it easier to reject false null hypotheses also makes it easier to reject true ones and therefore increases the chance of a Type I error. This provides some insight into why the convention is to set α to .05. There is some agreement among researchers that level of α keeps the rates of both Type I and Type II errors at acceptable levels.</p>
 <p>The possibility of committing Type I and Type II errors has several important implications for interpreting the results of our own and others’ research. One is that we should be cautious about interpreting the results of any individual study because there is a chance that it reflects a Type I or Type II error. This is why researchers consider it important to replicate their studies. Each time researchers replicate a study and find a similar result, they rightly become more confident that the result represents a real phenomenon and not just a Type I or Type II error.</p>
-<p>Another issue related to Type I errors is the so-called <a href="#file-drawer-problem">file drawer problem</a> <span class="citation" data-cites="rosenthal1979file">(<a href="references.html#ref-rosenthal1979file" role="doc-biblioref"><strong>rosenthal1979file?</strong></a>)</span>. The idea is that when researchers obtain statistically significant results, they tend to submit them for publication, and journal editors and reviewers tend to accept them. But when researchers obtain nonsignificant results, they tend not to submit them for publication, or if they do submit them, journal editors and reviewers tend not to accept them. Researchers end up putting these nonsignificant results away in a file drawer (or nowadays, in a folder on their hard drive). One effect of this is that the published literature probably contains a higher proportion of Type I errors than we might expect on the basis of statistical considerations alone. Even when there is a relationship between two variables in the population, the published research literature is likely to overstate the strength of that relationship. Imagine, for example, that the relationship between two variables in the population is positive but weak (e.g., ρ = +.10). If several researchers conduct studies on this relationship, sampling error is likely to produce results ranging from weak negative relationships (e.g., <em>r</em> = −.10) to moderately strong positive ones (e.g., <em>r</em> = +.40). But because of the file drawer problem, it is likely that only those studies producing moderate to strong positive relationships are published. The result is that the effect reported in the published literature tends to be stronger than it really is in the population.</p>
+<p>Another issue related to Type I errors is the so-called <a href="#file-drawer-problem">file drawer problem</a> <span class="citation" data-cites="rosenthal1979file">(<a href="#ref-rosenthal1979file" role="doc-biblioref">Rosenthal, 1979</a>)</span>. The idea is that when researchers obtain statistically significant results, they tend to submit them for publication, and journal editors and reviewers tend to accept them. But when researchers obtain nonsignificant results, they tend not to submit them for publication, or if they do submit them, journal editors and reviewers tend not to accept them. Researchers end up putting these nonsignificant results away in a file drawer (or nowadays, in a folder on their hard drive). One effect of this is that the published literature probably contains a higher proportion of Type I errors than we might expect on the basis of statistical considerations alone. Even when there is a relationship between two variables in the population, the published research literature is likely to overstate the strength of that relationship. Imagine, for example, that the relationship between two variables in the population is positive but weak (e.g., ρ = +.10). If several researchers conduct studies on this relationship, sampling error is likely to produce results ranging from weak negative relationships (e.g., <em>r</em> = −.10) to moderately strong positive ones (e.g., <em>r</em> = +.40). But because of the file drawer problem, it is likely that only those studies producing moderate to strong positive relationships are published. The result is that the effect reported in the published literature tends to be stronger than it really is in the population.</p>
 <p>The file drawer problem is a difficult one because it is a product of the way scientific research has traditionally been conducted and published. One solution might be for journal editors and reviewers to evaluate research submitted for publication without knowing the results of that research. The idea is that if the research question is judged to be interesting and the method judged to be sound, then a nonsignificant result should be just as important and worthy of publication as a significant one. Short of such a radical change in how research is evaluated for publication, researchers can still take pains to keep their nonsignificant results and share them as widely as possible (e.g., at professional conferences). Many scientific disciplines now have journals devoted to publishing nonsignificant results. In psychology, for example, there is the <em>Journal of Articles in Support of the Null Hypothesis</em> (http://www.jasnh.com).</p>
 </section>
 <section id="statistical-power" class="level3 unnumbered">
@@ -1166,9 +1203,9 @@ Dieticians: 220, 250, 240, 275, 250, 230, 200, 240</p>
 <table class="table">
 <caption>(#tab:power) Sample sizes needed to achieve statistical power of .80 for different expected relationship strengths for an independent-samples <em>t</em> test and a test of pearson’s <em>r</em>.</caption>
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 37%">
+<col style="width: 36%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1207,10 +1244,10 @@ Dieticians: 220, 250, 240, 275, 250, 230, 200, 240</p>
 <p>Again, null hypothesis testing is the most common approach to inferential statistics in psychology. It is not without its critics, however. In fact, in recent years the criticisms have become so prominent that the American Psychological Association convened a task force to make recommendations about how to deal with them (Wilkinson &amp; Task Force on Statistical Inference, 1999).Wilkinson, L., &amp; Task Force on Statistical Inference. (1999). Statistical methods in psychology journals: Guidelines and explanations. American Psychologist, 54, 594–604. In this section, we consider some of the criticisms and some of the recommendations.</p>
 <section id="criticisms-of-null-hypothesis-testing" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="criticisms-of-null-hypothesis-testing">Criticisms of Null Hypothesis Testing</h4>
-<p>Some criticisms of null hypothesis testing focus on researchers’ misunderstanding of it. We have already seen, for example, that the <em>p</em> value is widely misinterpreted as the probability that the null hypothesis is true. (Recall that it is really the probability of the sample result if the null hypothesis were true.) A closely related misinterpretation is that 1 − <em>p</em> is the probability of replicating a statistically significant result. In one study, 60% of a sample of professional researchers thought that a <em>p</em> value of .01—for an independent-samples <em>t</em> test with 20 participants in each sample—meant there was a 99% chance of replicating the statistically significant result <span class="citation" data-cites="oaks1986statistical">(<a href="references.html#ref-oaks1986statistical" role="doc-biblioref"><strong>oaks1986statistical?</strong></a>)</span>. Our earlier discussion of power should make it clear that this is far too optimistic. As Table @ref(tab:power) shows, even if there were a large difference between means in the population, it would require 26 participants per sample to achieve a power of .80. And the program G*Power shows that it would require 59 participants per sample to achieve a power of .99.</p>
+<p>Some criticisms of null hypothesis testing focus on researchers’ misunderstanding of it. We have already seen, for example, that the <em>p</em> value is widely misinterpreted as the probability that the null hypothesis is true. (Recall that it is really the probability of the sample result if the null hypothesis were true.) A closely related misinterpretation is that 1 − <em>p</em> is the probability of replicating a statistically significant result. In one study, 60% of a sample of professional researchers thought that a <em>p</em> value of .01—for an independent-samples <em>t</em> test with 20 participants in each sample—meant there was a 99% chance of replicating the statistically significant result <span class="citation" data-cites="oaks1986statistical">(<a href="#ref-oaks1986statistical" role="doc-biblioref">Oaks, 1986</a>)</span>. Our earlier discussion of power should make it clear that this is far too optimistic. As Table @ref(tab:power) shows, even if there were a large difference between means in the population, it would require 26 participants per sample to achieve a power of .80. And the program G*Power shows that it would require 59 participants per sample to achieve a power of .99.</p>
 <p>Another set of criticisms focuses on the logic of null hypothesis testing. To many, the strict convention of rejecting the null hypothesis when <em>p</em> is less than .05 and retaining it when <em>p</em> is greater than .05 makes little sense. This criticism does not have to do with the specific value of .05 but with the idea that there should be any rigid dividing line between results that are considered significant and results that are not. Imagine two studies on the same statistical relationship with similar sample sizes. One has a <em>p</em> value of .04 and the other a <em>p</em> value of .06. Although the two studies have produced essentially the same result, the former is likely to be considered interesting and worthy of publication and the latter simply not significant. This convention is likely to prevent good research from being published and to contribute to the file drawer problem.</p>
 <p>Yet another set of criticisms focus on the idea that null hypothesis testing—even when understood and carried out correctly—is simply not very informative. Recall that the null hypothesis is that there is no relationship between variables in the population (e.g., Cohen’s <em>d</em> or Pearson’s <em>r</em> is precisely 0). So to reject the null hypothesis is simply to say that there is <em>some</em> nonzero relationship in the population. But this is not really saying very much. Imagine if chemistry could tell us only that there is <em>some</em> relationship between the temperature of a gas and its volume—as opposed to providing a precise equation to describe that relationship. Some critics even argue that the relationship between two variables in the population is never precisely 0 if it is carried out to enough decimal places. In other words, the null hypothesis is never literally true. So rejecting it does not tell us anything we did not already know!</p>
-<p>To be fair, many researchers have come to the defense of null hypothesis testing. One of them, Robert Abelson, has argued that when it is correctly understood and carried out, null hypothesis testing does serve an important purpose <span class="citation" data-cites="abelson2012statistics">(<a href="references.html#ref-abelson2012statistics" role="doc-biblioref"><strong>abelson2012statistics?</strong></a>)</span>. Especially when dealing with new phenomena, it gives researchers a principled way to convince others that their results should not be dismissed as mere chance occurrences.</p>
+<p>To be fair, many researchers have come to the defense of null hypothesis testing. One of them, Robert Abelson, has argued that when it is correctly understood and carried out, null hypothesis testing does serve an important purpose <span class="citation" data-cites="abelson2012statistics">(<a href="#ref-abelson2012statistics" role="doc-biblioref">Abelson, 2012</a>)</span>. Especially when dealing with new phenomena, it gives researchers a principled way to convince others that their results should not be dismissed as mere chance occurrences.</p>
 </section>
 <section id="what-to-do" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="what-to-do">What to Do?</h4>
@@ -1372,6 +1409,32 @@ Dieticians: 220, 250, 240, 275, 250, 230, 200, 240</p>
 <section id="type-ii-error" class="level5 unnumbered">
 <h5 class="unnumbered anchored" data-anchor-id="type-ii-error">type II error</h5>
 <p>In null hypothesis testing, failing to reject the null hypothesis when it is false.</p>
+</section>
+<section id="references" class="level3" data-number="12.4.1">
+<h3 data-number="12.4.1" class="anchored" data-anchor-id="references"><span class="header-section-number">12.4.1</span> References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-abelson2012statistics" class="csl-entry" role="listitem">
+Abelson, R. P. (2012). <em>Statistics as principled argument</em>. Psychology Press.
+</div>
+<div id="ref-cohen1994earth" class="csl-entry" role="listitem">
+Cohen, J. (1994). The earth is round (p&lt;. 05). <em>American Psychologist</em>, 997–1003.
+</div>
+<div id="ref-hyde2007new" class="csl-entry" role="listitem">
+Hyde, J. S. (2007). New directions in the study of gender similarities and differences. <em>Current Directions in Psychological Science</em>, <em>16</em>(5), 259–263.
+</div>
+<div id="ref-kanner1981comparison" class="csl-entry" role="listitem">
+Kanner, A. D., Coyne, J. C., Schaefer, C., &amp; Lazarus, R. S. (1981). Comparison of two modes of stress measurement: Daily hassles and uplifts versus major life events. <em>Journal of Behavioral Medicine</em>, <em>4</em>(1), 1–39.
+</div>
+<div id="ref-mehl2007women" class="csl-entry" role="listitem">
+Mehl, M. R., Vazire, S., Ramı́rez-Esparza, N., Slatcher, R. B., &amp; Pennebaker, J. W. (2007). Are women really more talkative than men? <em>Science</em>, <em>317</em>(5834), 82–82.
+</div>
+<div id="ref-oaks1986statistical" class="csl-entry" role="listitem">
+Oaks, M. (1986). Statistical inference: A commentary for the social and behavioral sciences. <em>Great Britain: Wiley and Sons</em>.
+</div>
+<div id="ref-rosenthal1979file" class="csl-entry" role="listitem">
+Rosenthal, R. (1979). The file drawer problem and tolerance for null results. <em>Psychological Bulletin</em>, <em>86</em>(3).
+</div>
+</div>
 
 
 </section>
@@ -1992,12 +2055,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./13-descriptives.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">(PART*) Analyzing Data</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Analyzing Data</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./15-references.html" class="pagination-link">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./webexercises.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Webexercises</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
